@@ -78,7 +78,7 @@ using VRC.Udon;
         private int Hash(int key)
         {
             var len= _keys.Length;
-            var mod =key.GetHashCode() % len;
+            var mod =key % len;
             if(mod>=0){
                 return mod; 
             }else {
@@ -265,8 +265,13 @@ using VRC.Udon;
             return default;
         }
 
-        public void Remove(int key)
-        {
+        public void TryRemoveBatch(int[] keys,bool[] result){
+            for(int i=0;i<keys.Length;i++){
+                result[i]=TryRemove(keys[i]);
+            }
+        }
+
+        public bool TryRemove(int key){
             int index = Hash(key);
             var hashKeys=_keys[index];
             if(index==0){
@@ -277,7 +282,7 @@ using VRC.Udon;
                     if(hashKeys[i]==key){
                         hashKeys[i]=int.MaxValue;
                         _size--;
-                        return;
+                        return true;
                     }
                 }
             } else {
@@ -285,10 +290,14 @@ using VRC.Udon;
                     if(hashKeys[i]==key){
                         hashKeys[i]=default;
                         _size--;
-                        return;
+                        return true;
                     }
                 }
             }
-            Debug.LogError("Key not found");
+            return false;
+        }
+        public void Remove(int key)
+        {
+            if(!TryRemove(key))Debug.LogError("Key not found");
         }
     }

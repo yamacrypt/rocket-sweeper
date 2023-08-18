@@ -4,12 +4,19 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+public enum TestEnum{Test}
 public class CollenctionTest : UdonSharpBehaviour
 {
     [SerializeField]GameObject[] obj;
     [SerializeField]IntKeyGameObjectArrDictionary dict;
     [SerializeField]IntKeyBoolDictionary dict2;
     [SerializeField]IntQueue queue;
+    [SerializeField]GameObject empty;
+    [SerializeField]Material material;
+    [SerializeField]UdonSavingObjectPool _pool;
+    [SerializeField]UdonSavingObjectPool[] _pool2;
+    UdonSavingObjectPool[] poolArr;
+    UdonSavingObjectPool pool => poolArr[0];
     int chunkWidth=100;
     int chunkDepth=100;
      int GetChunkIndex(int x,int z){
@@ -19,8 +26,45 @@ public class CollenctionTest : UdonSharpBehaviour
     Vector3 FromChunkIndex(int chunkIndex){
         return new Vector3(chunkIndex%chunkWidth +XSTARTINDEX,0,chunkIndex/chunkWidth+ZSTARTINDEX);
     }
+
+    public void Spawn(){
+        var o=pool.TryToSpawn();
+        GameObject.Instantiate(o);
+        startSpawn=true;
+    }
+    UdonSavingObjectPool a;
+    bool startSpawn;
+    int i;
+    Vector3 zero;
+    Vector3 one=new Vector3(1,1,1);
+    Quaternion identity;
+    void Update()
+    {
+        if(!startSpawn)return;
+        for(i=0;i<30;i++){
+            // no alloc
+            float a1=one.x;
+            float a2=one.y;
+            float a3=one.z;
+            Vector3 a;
+            // alloc
+            //zero=one;
+            //zero.x=1;
+            //a.x=1;
+            
+            Instantiate(empty/*,one,identity,transform*/);
+            //var a=TestEnum.Test;
+            //_pool2[0].PeekIsInstantiated();
+        }
+    }
     void Start()
     {
+        zero=new Vector3(0,0,0);
+        identity=Quaternion.identity;
+        poolArr=new UdonSavingObjectPool[]{_pool};
+        GameObject newObj=Instantiate(empty);
+        newObj.GetComponent<MeshRenderer>().sharedMaterial=material;
+        SendCustomEventDelayedFrames(nameof(Spawn),3);
         XSTARTINDEX=-chunkWidth/2;
         XENDINDEX=chunkWidth-1-chunkWidth/2;
         ZSTARTINDEX=0;

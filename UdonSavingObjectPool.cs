@@ -4,7 +4,9 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-
+public enum PoolOperatorType{
+    TryToSpawn,Return,Store,Clear
+}
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class UdonSavingObjectPool : UdonSharpBehaviour
 {
@@ -24,7 +26,7 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
         for(int i=0;i<InitGenerateCount;i++){
             int id;GameObject instance;
             do{
-            instance = Object.Instantiate(prefab,Vector3.zero,Quaternion.identity,parent);
+            instance = GameObject.Instantiate(prefab/*,Vector3.zero,Quaternion.identity,parent*/);
             if(instance==null){
                 Debug.LogError("UdonObjectPool Setting Error: Prefab is null");
             }
@@ -34,20 +36,39 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
             notActiveObjQueue.Enqueue(id);
         }
     }
-
-
     public bool PeekIsInstantiated(){
         return isInstantiated;
     }
     bool isInstantiated=false;
 
+
+    public void Batch(PoolOperatorType[] opes,GameObject[] objs){
+        int i=0;
+        foreach(var ope in opes){
+            switch(ope){
+                case PoolOperatorType.TryToSpawn:
+                    TryToSpawn();
+                    break;
+                case PoolOperatorType.Return:
+                    Return(objs[i]);
+                    i++;
+                    break;
+                case PoolOperatorType.Store:
+                    Store();
+                    break;
+                case PoolOperatorType.Clear:
+                    Clear();
+                    break;
+            }
+        }
+    }
     public void Store(Transform p=null){
         if(idToObjDict.Count>idToObjDict.KeyLength)return;
         isInstantiated=true;
         GameObject instance;
         int id;
         do{
-        instance = Object.Instantiate(prefab,Vector3.zero,Quaternion.identity,p==null?parent:p);
+        instance = GameObject.Instantiate(prefab/*,Vector3.zero,Quaternion.identity,p==null?parent:p*/);
         if(instance==null){
             Debug.LogError("UdonObjectPool Setting Error: Prefab is null");
         }
@@ -56,6 +77,7 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
         }while(!idToObjDict.Add(id,instance));
         notActiveObjQueue.Enqueue(id);
     }
+    
     // falseで出してmeshcombinerで切り替える
     public GameObject TryToSpawn(Transform p=null){
         int id;
@@ -65,7 +87,7 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
             id = notActiveObjQueue.Dequeue();
             if(idToObjDict.HasItem(id)){
                 var obj= idToObjDict.GetValue(id);
-                itemOperator.SetActive(obj,false);
+                itemOperator.SetActive(obj,true);
                 return obj;
             } else {
                 Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
@@ -73,7 +95,7 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
         }
         GameObject instance;
         do{
-            instance = Object.Instantiate(prefab,Vector3.zero,Quaternion.identity,p==null?parent:p);
+            instance = GameObject.Instantiate(prefab/*,Vector3.zero,Quaternion.identity,p==null?parent:p*/);
             if(instance==null){
                 Debug.LogError("UdonObjectPool Setting Error: Prefab is null");
             }
@@ -82,6 +104,7 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
         //if(idToObjDict.HasItem(id))Debug.LogError("UdonObjectPool Error: InstanceID is duplicated!");
         return instance;
     }
+
     public  void Return(GameObject obj,bool force=false){
         if(obj==null)return;
         int id = obj.GetInstanceID().GetHashCode();
@@ -90,11 +113,11 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
             return;
         }
         // comment out ok
-        var isActive=itemOperator.IsActive(obj);
+        /*var isActive=itemOperator.IsActive(obj);
         if(!isActive && !force){
             Debug.LogWarning("UdonObjectPool Error: Object is already returned!");
             return;
-        }
+        }*/
         //
         itemOperator.SetActive(obj,false);
         notActiveObjQueue.Enqueue(id);
@@ -104,6 +127,8 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
     public bool IsMine(GameObject obj){
         return obj.name.Contains(prefab.name);
     }
+
+    public string prefabName=>prefab.name;
 
     public   void Clear(){
         notActiveObjQueue.Clear();

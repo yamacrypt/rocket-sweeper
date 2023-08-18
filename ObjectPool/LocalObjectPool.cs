@@ -9,8 +9,8 @@ namespace UdonObjectPool{
     [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
     public class LocalObjectPool : IObjectPool
     {
-        [SerializeField]ObjectPoolItem[] pool; 
-        public override ObjectPoolItem[] Pool=>pool; 
+        [SerializeField]IObjectPoolItem[] pool; 
+        public override IObjectPoolItem[] Pool=>pool; 
         void Start()
         {
             for(int i=0;i<Pool.Length;i++){

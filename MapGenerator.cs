@@ -121,8 +121,26 @@ public class MapGenerator : UdonSharpBehaviour
             Debug.LogError("Assertion failed!");
         }
     }
+
+    UdonSavingObjectPool[] pools;
+    string[] prefabNames;
     void Start()
     {
+        pools = new UdonSavingObjectPool[]{
+            grassPool,
+            tundraPool,
+            desertPool,
+            dirtPool,
+            rockPool,
+            sandPool,
+            waterPool,
+            darkPool
+        };
+        prefabNames = new string[pools.Length];
+        for(int i=0;i<pools.Length;i++){
+            prefabNames[i]=pools[i].prefabName;
+        }
+
         Assert(outlineDict!=chunkToCellsDict);
         Assert(removedChunkIndexDict!=loadedChunkIndexDict);
         Assert(loadedChunkIndexDict!=detailChunkIndexDict);
@@ -133,6 +151,9 @@ public class MapGenerator : UdonSharpBehaviour
         detailChunkIndexDict.SetCapacity(chunkCapacity);
         searchQueue.SetCapacity(1000);
         detailQueue.SetCapacity(1000);
+        tempBreakCellDictionary.SetCapacity(chunkCapacity);
+        permanentBreakCellDictionary.SetCapacity(150000);
+        brokenArr=new bool[chunkSize*chunkSize*chunkSize];
         _seedX = UnityEngine.Random.value * (float)Int16.MaxValue;
         _seedZ = UnityEngine.Random.value * (float)Int16.MaxValue;
         _seedTX = UnityEngine.Random.value * (float)Int16.MaxValue;
@@ -161,10 +182,11 @@ public class MapGenerator : UdonSharpBehaviour
         if(isGenerating)return;
         isGenerating=true;
         playerPos = Networking.LocalPlayer.GetPosition() /(chunkSize*TileScale);
-        zStartChunkIndex=GetInRangeStartZChunkIndex(playerPos,chunkLoadRange);
-        zEndChunkIndex=GetInRangeEndZChunkIndex(playerPos,chunkLoadRange);
-        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos,zStartChunkIndex,chunkLoadRange);
-        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos,zStartChunkIndex,chunkLoadRange);
+        CalcPosCorrection();
+        zStartChunkIndex=GetInRangeStartZChunkIndex(playerPos+posCorrection,chunkLoadRange);
+        zEndChunkIndex=GetInRangeEndZChunkIndex(playerPos+posCorrection,chunkLoadRange);
+        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
         //GenerateInitCellInterval();
         removeXIndex=XSTARTINDEX;
         removeZIndex=ZSTARTINDEX;
@@ -178,19 +200,32 @@ public class MapGenerator : UdonSharpBehaviour
     }
 
     float searchAdditionalInterval=>settings.searchAdditionalInterval;
-
+    Vector3 posCorrection=Vector3.zero;
+    Vector3 GetPlayerPosition(){
+        return Networking.LocalPlayer.GetPosition() / (chunkSize*TileScale);
+    }
+    void CalcPosCorrection(){
+        playerRot = Networking.LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).rotation;
+        // 極座標へ変換
+        float r = 2.5f; // 半径は通常1とするか、必要に応じて変更
+        var rad=Mathf.PI /2 - playerRot.eulerAngles.y*Mathf.Deg2Rad;
+        posCorrection.x=Mathf.Cos(rad)*r;
+        posCorrection.z=Mathf.Sin(rad)*r;
+        Debug.Log("posCorrection: "+posCorrection);
+    }
     void GenerateAdditional(){
         if(isGenerating)return;
         prePlayerPos=playerPos;
-        playerPos = Networking.LocalPlayer.GetPosition() / (chunkSize*TileScale);
-        Debug.Log("GenerateAdditional");
-        Debug.Log("player pos: "+playerPos);
-        zStartChunkIndex=GetInRangeStartZChunkIndex(playerPos,chunkLoadRange);
-        zEndChunkIndex=GetInRangeEndZChunkIndex(playerPos,chunkLoadRange);
-        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos,zStartChunkIndex,chunkLoadRange);//-1;
-        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos,zStartChunkIndex,chunkLoadRange);//-1;
-        exceptXStartChunkIndex=GetInRangeStartXChunkIndex(prePlayerPos,zStartChunkIndex,chunkLoadRange);
-        exceptXEndChunkIndex=GetInRangeEndXChunkIndex(prePlayerPos,zStartChunkIndex,chunkLoadRange);
+        playerPos = GetPlayerPosition();//Networking.LocalPlayer.GetPosition() / (chunkSize*TileScale);
+        CalcPosCorrection();
+        //Debug.Log("GenerateAdditional");
+        //Debug.Log("player pos: "+playerPos);
+        zStartChunkIndex=GetInRangeStartZChunkIndex(playerPos+posCorrection,chunkLoadRange);
+        zEndChunkIndex=GetInRangeEndZChunkIndex(playerPos+posCorrection,chunkLoadRange);
+        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);//-1;
+        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);//-1;
+        //exceptXStartChunkIndex=GetInRangeStartXChunkIndex(prePlayerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+        //exceptXEndChunkIndex=GetInRangeEndXChunkIndex(prePlayerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
 
         isGenerating=true;
         //GenerateCellInterval();
@@ -205,33 +240,40 @@ public class MapGenerator : UdonSharpBehaviour
             zSearchEndChunkIndex=GetInRangeEndZChunkIndex(playerPos,chunkUnLoadRange+searchMargin);;
             xSearchStartChunkIndex=GetInRangeStartXChunkIndex(playerPos,zSearchStartChunkIndex,chunkUnLoadRange+searchMargin);
             xSearchEndChunkIndex=GetInRangeEndXChunkIndex(playerPos,zSearchStartChunkIndex,chunkUnLoadRange+searchMargin);
-
+        
             isSearching=true;
         }
     }
 
  
     Vector3 playerPos;
+    Quaternion playerRot;
     Vector3 prePlayerPos;
+    float ellipseZ=1f;
     public int GetInRangeStartXChunkIndex(Vector3 pos,float z,float range ){
-        float diff =range*range - (pos.z-z)*(pos.z-z);
+        float diff =range*range - (pos.z-z)*(pos.z-z)/ (ellipseZ * ellipseZ);
         if(diff<=0)return chunkWidth/2;
         return Math.Max(XSTARTINDEX,(int)(pos.x-Mathf.Sqrt(diff)));
     }
 
     public int GetInRangeEndXChunkIndex(Vector3 pos,float z,float range ){
-        float diff = Math.Max(0,range*range - (pos.z-z)*(pos.z-z));
+        float diff = Math.Max(0,range*range - (pos.z-z)*(pos.z-z)/ (ellipseZ * ellipseZ));
         if(diff==0)return -chunkWidth/2;
         return Math.Min(XENDINDEX,(int)(pos.x+Mathf.Sqrt(diff)));
     }
 
     public int GetInRangeStartZChunkIndex(Vector3 pos,float range ){
-        return Math.Max(ZSTARTINDEX,(int)(pos.z-range));
+        return Math.Max(ZSTARTINDEX,(int)(pos.z-range*ellipseZ));
     }
 
     public int GetInRangeEndZChunkIndex(Vector3 pos,float range ){
-        return Math.Min(ZENDINDEX,(int)(pos.z+range));
+        return Math.Min(ZENDINDEX,(int)(pos.z+range*ellipseZ));
     }
+
+    bool IsInDetailRange(Vector3 pPos,int x,int z){
+        return (pPos.x-x)*(pPos.x-x)+(pPos.z-z)*(pPos.z-z)/(ellipseZ*ellipseZ)<chunkDetailRange*chunkDetailRange;
+    }
+
     int exceptXStartChunkIndex;
     int exceptXEndChunkIndex;
     int exceptZStartChunkIndex;
@@ -248,22 +290,28 @@ public class MapGenerator : UdonSharpBehaviour
     int storeCount=0;
     int storeMax=3;
     int biomeIndex=0;
+    UdonSavingObjectPool storeBiomePool;
+
+
     void StoreCell(){
-        var pool=GetBiomePool(biomeIndex);
-        pool.Store();
-        isInstantiated=pool.PeekIsInstantiated();
+        storeBiomePool=GetBiomePool(biomeIndex);
+        storeBiomePool.Store();
+        isInstantiated=storeBiomePool.PeekIsInstantiated();
         biomeIndex++;
         biomeIndex%=(int)Biome.Dark;
     }
+    int costIndex;
+    GenerateChunkMode mode;
+
     void Update()
     {
         if(isGenerating){
             //if(isUnLoading)return;
-            for(int cost=0;cost<batchCount*isInstantiatedCost;){
+            for(costIndex=0;costIndex<batchCount*isInstantiatedCost;){
                 //delay=generateInterval * count / batchCount;
-                GenerateChunkMode mode=GenerateChunk();
+                mode=GenerateChunk();
                 if(isInstantiated){
-                    cost+=isInstantiatedCost;
+                    costIndex+=isInstantiatedCost;
                     isInstantiated=false;
                 } else if(mode==GenerateChunkMode.Pass){
                     storeCount++;
@@ -272,13 +320,13 @@ public class MapGenerator : UdonSharpBehaviour
                         storeCount=0;
                     }
                     if(isInstantiated){
-                        cost+=isInstantiatedCost;
+                        costIndex+=isInstantiatedCost;
                         isInstantiated=false;
                     }else{
-                        cost++;
+                        costIndex++;
                     }
                 } else{
-                    cost+=poolCost;
+                    costIndex+=poolCost;
                 }
                 if(mode==GenerateChunkMode.Complete || mode==GenerateChunkMode.Pass){  
                     chunkXIndex=0;
@@ -287,12 +335,16 @@ public class MapGenerator : UdonSharpBehaviour
                     xStartChunkIndex++;
                     if(xStartChunkIndex>xEndChunkIndex){
                         zStartChunkIndex++;
-                        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos,zStartChunkIndex,chunkLoadRange);
-                        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos,zStartChunkIndex,chunkLoadRange);
+                        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+                        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
                         if(zStartChunkIndex>=zEndChunkIndex){
                             isGenerating=false;
-                            GenerateAdditional();
-                            //generateAdditionalDelta=generateAdditionalInterval;
+                            //GenerateAdditional();
+                            if(generateAdditionalInterval==0){
+                                GenerateAdditional();
+                            } else {
+                                generateAdditionalDelta=generateAdditionalInterval;
+                            }
                             //SendCustomEventDelayedSeconds(nameof(GenerateAdditional),generateAdditionalInterval);
                             break;
                         }
@@ -302,14 +354,15 @@ public class MapGenerator : UdonSharpBehaviour
                     break;
                 }
             }
-        } 
-        /*if(generateAdditionalDelta>=0){
-            generateAdditionalDelta-=Time.deltaTime;
-            if(generateAdditionalDelta<0){
-                GenerateAdditional();
+        } else {
+            if(generateAdditionalDelta>=0){
+                generateAdditionalDelta-=Time.deltaTime;
+                if(generateAdditionalDelta<0){
+                    GenerateAdditional();
+                }
             }
-        }*/
-        if(isRemoving&&removeOn){
+        }
+        /*if(isRemoving&&removeOn){
             //if(isUnLoading)return;
             for( removeCount=0;removeCount<removeBatchCount;removeCount++){
                 if(removeXIndex>=XENDINDEX){
@@ -325,20 +378,15 @@ public class MapGenerator : UdonSharpBehaviour
                 float delay=removeInterval * removeCount / removeBatchCount;
                 removeCount+=RemoveChunk(delay);
             }
-        }
-        /*if(searchAdditionalDelta>=0){
-            searchAdditionalDelta-=Time.deltaTime;
-            if(searchAdditionalDelta<0&&searchQueue.Count==0){
-                SearchAdditional();
-            }
         }*/
+        
 
         if(isSearching){
             //if(isUnLoading)return;
-            for(int index=0;index<searchBatchCount;index++){
+            for(costIndex=0;costIndex<searchBatchCount;costIndex++){
                 var x=xSearchStartChunkIndex;
                 var z=zSearchStartChunkIndex;
-                var chunkIndex=GetChunkIndex(x,z);
+                var chunkIndex=ToChunkIndex(x,z);
                 if(loadedChunkIndexDict.HasItem(chunkIndex)&&loadedChunkIndexDict.GetValue(chunkIndex)){
                     var diffx=x-playerPos.x;
                     var diffz=z-playerPos.z;
@@ -365,40 +413,49 @@ public class MapGenerator : UdonSharpBehaviour
                     xSearchEndChunkIndex=GetInRangeEndXChunkIndex(playerPos,zSearchStartChunkIndex,chunkUnLoadRange+searchMargin);
                     if(zSearchStartChunkIndex>=zSearchEndChunkIndex){
                         isSearching=false;
-                        //searchAdditionalDelta=searchAdditionalInterval;
                         break;
                     }
                 }
             }
         } else{
-            if(searchQueue.Count==0&&detailQueue.Count==0){
-                SearchAdditional();
+            if(searchAdditionalDelta>=0){
+                searchAdditionalDelta-=Time.deltaTime;
+                if(searchAdditionalDelta<0){
+                    SearchAdditional();
+                }
+            } else{
+                if(searchQueue.Count==0&&detailQueue.Count==0){
+                    searchAdditionalDelta=searchAdditionalInterval; // search処理で最後に一回だけ呼ばれる
+                };
             }
         }
-        for(int i=0;i<operationBatchCount;i++){
-            Vector4 operation;
-            if(detailQueue.Count>0){
-                operation=detailQueue.Dequeue();
-            } else {
-                if(searchQueue.Count==0)break;
-                operation=searchQueue.Dequeue();
+        if(searchQueue.Count>0||detailQueue.Count>0){
+            for(costIndex=0;costIndex<operationBatchCount;){
+                Vector4 operation;
+                if(detailQueue.Count>0){
+                    operation=detailQueue.Dequeue();
+                } else {
+                    if(searchQueue.Count==0)break;
+                    operation=searchQueue.Dequeue();
+                }
+                int mode = (int)operation.w;
+                if(mode==(int)ChunkOperation.Detail){
+                    //Debug.Log("operation detail: "+operation);
+                    if(DetailChunk((int)operation.x,(int)operation.z))costIndex++;
+                } else if(mode==(int)ChunkOperation.UnDetail){
+                    //Debug.Log("operation undetail: "+operation);
+                    if(UnDetailChunk((int)operation.x,(int)operation.z))costIndex++;
+                } else if(mode==(int)ChunkOperation.UnLoad){
+                    //Debug.Log("operation unload: "+operation);
+                    if(UnLoadChunk((int)operation.x,(int)operation.z,true))costIndex++;
+                } else {
+                    Debug.LogError("Invalid operation mode: "+mode);
+                }
             }
-            int mode = (int)operation.w;
-            if(mode==(int)ChunkOperation.Detail){
-                Debug.Log("operation detail: "+operation);
-                DetailChunk((int)operation.x,(int)operation.z);
-            } else if(mode==(int)ChunkOperation.UnDetail){
-                Debug.Log("operation undetail: "+operation);
-                UnDetailChunk((int)operation.x,(int)operation.z);
-            } else if(mode==(int)ChunkOperation.UnLoad){
-                Debug.Log("operation unload: "+operation);
-                UnLoadChunk((int)operation.x,(int)operation.z,true);
-            } else {
-                Debug.LogError("Invalid operation mode: "+mode);
-            }
+
         }
     }
-    float searchMargin=>chunkDetailRange*3;
+    float searchMargin=>chunkDetailRange*2;
 
     bool isSearching=false;
 
@@ -416,7 +473,7 @@ public class MapGenerator : UdonSharpBehaviour
     [SerializeField]MapCellOperatorGroup cellOperatorGroup;
 
     public int RemoveChunk(float delay){
-        int chunkIndex=GetChunkIndex(removeXIndex,removeZIndex);
+        int chunkIndex=ToChunkIndex(removeXIndex,removeZIndex);
         //Debug.Log("Try RemoveChunk: "+chunkIndex);
         removedChunkIndexDict.Add(chunkIndex,true);    
         if(outlineDict.HasItem(chunkIndex) && loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
@@ -432,12 +489,8 @@ public class MapGenerator : UdonSharpBehaviour
         return chunkSize*chunkSize*chunkSize;
     }
 
-    int GetChunkIndex(int x,int z){
+    int ToChunkIndex(int x,int z){
         return (z-ZSTARTINDEX)*chunkWidth + (x-XSTARTINDEX);
-    }
-
-    Vector3 FromChunkIndex(int chunkIndex){
-        return new Vector3(chunkIndex%chunkWidth +XSTARTINDEX,0,chunkIndex/chunkWidth+ZSTARTINDEX);
     }
     public const float AnimHeight=10f;
 
@@ -446,45 +499,58 @@ public class MapGenerator : UdonSharpBehaviour
     
     [SerializeField]IntKeyBoolDictionary detailChunkIndexDict;
 
-    void DetailChunk(int xIndex,int zIndex){
-        int chunkIndex=GetChunkIndex(xIndex,zIndex);
+    bool DetailChunk(int xIndex,int zIndex){
+        int chunkIndex=ToChunkIndex(xIndex,zIndex);
         if(!detailChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
             if(outlineDict.HasItem(chunkIndex)){
-                Debug.Log("DetailChunk: "+chunkIndex);
+                //Debug.Log("DetailChunk: "+chunkIndex);
                 var outlines = outlineDict.GetValue(chunkIndex);
                 var cells=chunkToCellsDict.GetValue(chunkIndex);
-                meshCombiner.SwitchCombineMesh(false,outlines,cells);
+                for(int i=0;i<cells.Length;i++){
+                    brokenArr[i]=false;
+                    if(tempBreakCellDictionary.HasItem(cells[i].GetInstanceID())||
+                    permanentBreakCellDictionary.HasItem(ToGlobalCellIndex(i,chunkIndex))){
+                        brokenArr[i]=true;
+                    }
+                }
+                meshCombiner.SwitchCombineMesh(false,outlines,cells,brokenArr);
                 detailChunkIndexDict.AddOrSetValue(chunkIndex,true);
+                return true;
             }else {
                 Debug.LogWarning("DetailChunk: chunkIndexDict not has item");
             }
         }
+        return false;
     }
 
-    void UnDetailChunk(int xIndex,int zIndex){
-        int chunkIndex=GetChunkIndex(xIndex,zIndex);
+    bool[] brokenArr;
+
+    bool UnDetailChunk(int xIndex,int zIndex){
+        int chunkIndex=ToChunkIndex(xIndex,zIndex);
         if(detailChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
             if(outlineDict.HasItem(chunkIndex)){
-                Debug.Log("UnDetailChunk: "+chunkIndex);
+                //Debug.Log("UnDetailChunk: "+chunkIndex);
                 var outlines = outlineDict.GetValue(chunkIndex);
                 var cells=chunkToCellsDict.GetValue(chunkIndex);
-                meshCombiner.SwitchCombineMesh(true,outlines,cells);
+                meshCombiner.SwitchCombineMesh(true,outlines,cells,brokenArr);
                 detailChunkIndexDict.AddOrSetValue(chunkIndex,false);
+                return true;
             } else {
                 Debug.LogWarning("UnDetailChunk: chunkIndexDict not has item");
             }
         }
+        return false;
     }
 
-    public void UnLoadChunk(int xIndex,int zIndex,bool setOnly=false){
-        int chunkIndex=GetChunkIndex(xIndex,zIndex);
+    public bool UnLoadChunk(int xIndex,int zIndex,bool setOnly=false){
+        int chunkIndex=ToChunkIndex(xIndex,zIndex);
         if(!loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
             Debug.Log("UnLoadChunk: not yet loaded");
             //遅延実行の関係上このケースは起こりえる
-            return;
+            return false;
         }
         if(outlineDict.HasItem(chunkIndex)){
-            Debug.Log("UnLoadChunk:"+chunkIndex);
+            //Debug.Log("UnLoadChunk:"+chunkIndex);
             var allParts = outlineDict.GetValue(chunkIndex);
             if(setOnly){
                 loadedChunkIndexDict.SetValue(chunkIndex,false);
@@ -506,19 +572,45 @@ public class MapGenerator : UdonSharpBehaviour
             } else {
                 Debug.LogWarning("Chunk pool is empty!");
             }
-            foreach(var cell in removeCells){
+            for(int i=0;i<removeCells.Length;i++){
+                var cell=removeCells[i];
                 if(cell!=null){
-                    UnloadCell(cell);
+                    if(tempBreakCellDictionary.TryRemove(cell.GetInstanceID())){
+                        permanentBreakCellDictionary.Add(ToGlobalCellIndex(i,chunkIndex),true);
+                        Debug.Log("permnanet break:" + ToGlobalCellIndex(i,chunkIndex));
+                    } else{
+                        UnloadCell(cell);
+                    }
                 } else {
                     Debug.LogWarning("Cell pool is empty!");
                 }
             }
+            return true;
+        }
+        return false;
+    }
 
+    [SerializeField]IntKeyBoolDictionary tempBreakCellDictionary;
+    [SerializeField]IntKeyBoolDictionary permanentBreakCellDictionary;
+    public void BreakCell(GameObject cell){
+        if(cell!=null){
+            var cellIndex=cell.GetInstanceID();
+            tempBreakCellDictionary.AddOrSetValue(cellIndex,true);
+            UnloadCell(cell);
+        } else {
+            Debug.LogWarning("Cell pool is empty!");
         }
     }
 
-    public void UnloadCell(GameObject cell){
-        if(grassPool.IsMine(cell)){
+    void UnloadCell(GameObject cell){
+        for(int i=0;i<prefabNames.Length;i++){
+            if(cell.name.Contains(prefabNames[i])){
+                pools[i].Return(cell,true);
+                return;
+            }
+        }
+        Debug.LogWarning("Cell "+ cell.name+" pool is empty! Or Make sure obj is cell type");
+        /*if(grassPool.IsMine(cell)){
             grassPool.Return(cell,true);
         } else if(sandPool.IsMine(cell)){
             sandPool.Return(cell,true);
@@ -536,7 +628,7 @@ public class MapGenerator : UdonSharpBehaviour
             darkPool.Return(cell,true);
         } else {
             Debug.LogWarning("Cell "+ cell.name+" pool is empty! Or Make sure obj is cell type");
-        } 
+        } */
   
     }
 
@@ -563,10 +655,22 @@ public class MapGenerator : UdonSharpBehaviour
     int chunkXIndex,chunkYIndex,chunkZIndex;
     GameObject chunkObj; 
     int chunkID;
+    public const string IndestructibleTag="Ignore Raycast";
+    public const string CellTag="Cell";
+
+
+    int ToLocalCellIndex(int xIndex,int yIndex,int zIndex){
+        return (xIndex*chunkSize+zIndex)*chunkSize+yIndex;
+    }
+
+    int ToGlobalCellIndex(int localCellIndex,int chunkIndex){
+        return localCellIndex+chunkIndex*chunkSize*chunkSize*chunkSize;
+    }
+
     GenerateChunkMode GenerateChunk(){
-        int chunkIndex=GetChunkIndex(xStartChunkIndex,zStartChunkIndex);
+        int chunkIndex=ToChunkIndex(xStartChunkIndex,zStartChunkIndex);
         if(loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false))return GenerateChunkMode.Pass;
-        if(removedChunkIndexDict.HasItem(chunkIndex)){
+        /*if(removedChunkIndexDict.HasItem(chunkIndex)){
             if(chunkObj!=null){
                 chunkPool.Return(chunkObj,true);
                 foreach(var cell in generatingCells){
@@ -576,10 +680,10 @@ public class MapGenerator : UdonSharpBehaviour
                 chunkObj=null;
             }
             return GenerateChunkMode.Pass;
-        }
+        }*/
         bool isInit=false;
         if(chunkXIndex==0&&chunkZIndex==0&&chunkYIndex==0){
-            Debug.Log("GenerateChunk: "+chunkIndex);
+            //Debug.Log("GenerateChunk: "+chunkIndex);
             isInit=true;
             if(chunkObj!=null)Debug.LogError("chunkObj is not null");
             chunkObj = chunkPool.TryToSpawn();
@@ -593,20 +697,34 @@ public class MapGenerator : UdonSharpBehaviour
         }
         //GameObject.Instantiate(chunkPrefab,Vector3.zero,Quaternion.identity,chunkParent);
         //MeshFilter[] meshFilters = new MeshFilter[chunkSize*chunkSize];
-        var resCell=GenerateCell(xStartChunkIndex*chunkSize+chunkXIndex,zStartChunkIndex*chunkSize+chunkZIndex,chunkYIndex-chunkSize+1,chunkObj.transform);
-        meshFilters[(chunkXIndex*chunkSize+chunkZIndex)*chunkSize+chunkYIndex]=resCell.GetComponent<MeshFilter>();
-        generatingCells[(chunkXIndex*chunkSize+chunkZIndex)*chunkSize+chunkYIndex]=resCell;
+        var resCell=GenerateCell(xStartChunkIndex*chunkSize+chunkXIndex,zStartChunkIndex*chunkSize+chunkZIndex,chunkYIndex-chunkSize+1,null);
+        if(chunkYIndex<indestructibleLine){
+            resCell.layer=LayerMask.NameToLayer(IndestructibleTag);
+        } else {
+            resCell.layer=LayerMask.NameToLayer(CellTag);
+        }
+        meshFilters[ToLocalCellIndex(chunkXIndex,chunkYIndex,chunkZIndex)]=resCell.GetComponent<MeshFilter>();
+        generatingCells[ToLocalCellIndex(chunkXIndex,chunkYIndex,chunkZIndex)]=resCell;
         chunkYIndex++;
         if(chunkYIndex==chunkSize){
             chunkYIndex=0;
             chunkZIndex++;
+            //resCell.name+=IndestructibleTag; // 底は破壊不可能にする
             if(chunkZIndex==chunkSize){
                 chunkZIndex=0;
                 chunkXIndex++;
                 if(chunkXIndex==chunkSize){
                     chunkToCellsDict.AddOrSetValue(chunkIndex,generatingCells);
-                    var CurrentChunkObj=chunkObj;
-                    var allParts = meshCombiner.CombineMesh(CurrentChunkObj,meshFilters);
+                    bool isInDetailRange=IsInDetailRange(GetPlayerPosition(),xStartChunkIndex,zStartChunkIndex);
+                    if(isInDetailRange){
+                        for(int i=0;i<generatingCells.Length;i++){
+                            brokenArr[i]=false;
+                            if(permanentBreakCellDictionary.HasItem(ToGlobalCellIndex(i,chunkIndex))){
+                                brokenArr[i]=true;
+                            }
+                        }
+                    }
+                    var allParts = meshCombiner.CombineMesh(chunkObj,meshFilters,isInDetailRange,brokenArr);
                     chunkObj=null;
                     outlineDict.AddOrSetValue(chunkIndex,allParts);
                     loadedChunkIndexDict.AddOrSetValue(chunkIndex,true);
@@ -619,16 +737,14 @@ public class MapGenerator : UdonSharpBehaviour
     }
 
 
-
+    int indestructibleLine=2;
     public GameObject GenerateCell(int xIndex,int zIndex,int yIndex,Transform parent){
         xValue = xIndex * scale + _seedX;
         zValue = zIndex  * scale+ _seedZ;
         perlinValue = fbm(xValue,zValue,4,0.4f);//Mathf.PerlinNoise(xValue, zValue);
         height = fieldHeight * (perlinValue-waterPercentage);
         height = Mathf.Round(height);
-        spawnPos.x=xIndex*TileScale;
-        spawnPos.y=(height+yIndex)*TileScale;
-        spawnPos.z=zIndex*TileScale;
+        spawnPos=new Vector3(xIndex,height+yIndex,zIndex)*TileScale;
         //spawnPos = new Vector3((xIndex)*TileScale,height,zIndex*TileScale);
 
         

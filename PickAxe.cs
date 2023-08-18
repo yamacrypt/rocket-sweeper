@@ -15,6 +15,6 @@ public class PickAxe : UdonSharpBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Try Destrou"+ other.gameObject.name);
-        mapGenerator.UnloadCell(other.gameObject);
+        mapGenerator.BreakCell(other.gameObject);
     }
 }

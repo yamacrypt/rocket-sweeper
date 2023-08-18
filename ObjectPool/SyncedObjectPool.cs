@@ -8,20 +8,21 @@ namespace UdonObjectPool{
     [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
     public class SyncedObjectPool : IObjectPool
     {
-        [SerializeField]ObjectPoolItem[] pool; 
-        public override ObjectPoolItem[] Pool=>pool; 
+        [SerializeField]IObjectPoolItem[] pool; 
+        public override IObjectPoolItem[] Pool=>pool; 
         void Start()
         {
             for(int i=0;i<Pool.Length;i++){
                 Pool[i].SetActive(false);
             }
-            if(Pool.Length>30){
-                Debug.LogError("WARN Pool.Length<30");
+            if(Pool.Length>poolMaxSize){
+                Debug.LogError("WARN Pool.Length<"+poolMaxSize);
             }
         }
-        [UdonSynced]bool[] actives=new bool[30];
-        [UdonSynced]bool[] syncedChanges=new bool[30];
+        [UdonSynced]bool[] actives=new bool[poolMaxSize];
+        [UdonSynced]bool[] syncedChanges=new bool[poolMaxSize];
         bool[] _changes=null;
+        const int poolMaxSize=500;
 
         bool[] changes{
             get{

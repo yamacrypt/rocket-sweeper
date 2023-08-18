@@ -43,12 +43,6 @@ public class MapCHunkOperator : UdonSharpBehaviour
     int animFrame=0;
     float accelerationAbs;
 
-    /*public void SetTile(TileType type){
-        tileManager.SetTile(this,type);
-    }
-    public void SetTile(Material mat){
-        mesh.material=mat;
-    }*/
     void SetMatHeight(float height){
         if(mesh==null || col==null){
             Debug.LogError("Target is null!");

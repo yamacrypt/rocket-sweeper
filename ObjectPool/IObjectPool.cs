@@ -9,7 +9,7 @@ namespace UdonObjectPool{
     [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
     public class IObjectPool : UdonSharpBehaviour
     {
-        public virtual ObjectPoolItem[] Pool=> null; 
+        public virtual IObjectPoolItem[] Pool=> null; 
         public virtual GameObject TryToSpawn(){
             Debug.LogError("Need to override TryToSpawn");
             return null;
@@ -18,7 +18,7 @@ namespace UdonObjectPool{
         public virtual void Return(GameObject obj){
             Debug.LogError("Need to override Return");
         }
-        public void Return(ObjectPoolItem obj){
+        public void Return(IObjectPoolItem obj){
             Return(obj.gameObject);
         }
 

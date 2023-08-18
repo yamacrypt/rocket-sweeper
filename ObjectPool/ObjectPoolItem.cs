@@ -10,7 +10,7 @@ namespace UdonObjectPool{
     }
 
     [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
-    public class ObjectPoolItem : UdonSharpBehaviour
+    public class ObjectPoolItem : IObjectPoolItem
     {
         [SerializeField]SkinnedMeshRenderer[] skinnedMeshRenderers;
         [SerializeField]MeshRenderer[] meshRenderers;
@@ -38,7 +38,7 @@ namespace UdonObjectPool{
 
         ActiveMode activeMode=ActiveMode.Undefined;
 
-        public bool SetActive(bool active,bool forceChange=false){
+        public override bool SetActive(bool active,bool forceChange=false){
             if(!forceChange){
                 if(activeMode==ActiveMode.Active && active)return false;
                 if(activeMode==ActiveMode.Deactive && !active)return false;
@@ -125,7 +125,7 @@ namespace UdonObjectPool{
 
         // This method does not change activeMode and teleport attached object to initial pos.
         // This is mainly used to return synced pool item by non-owner player 
-        public bool _SetActive(bool active){
+        public override bool _SetActive(bool active){
             if(activeMode==ActiveMode.Active && active)return false;
             if(activeMode==ActiveMode.Deactive && !active)return false;
             Toggle(active);

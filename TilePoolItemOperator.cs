@@ -17,7 +17,7 @@ public class TilePoolItemOperator : IPoolItemOperator
         }
         col.enabled=active;
         mesh.enabled=active;
-        mesh.material.SetFloat("_UpDown",0);
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
         return true;
     }
 
