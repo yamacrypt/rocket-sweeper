@@ -38,7 +38,7 @@ using VRC.Udon;
             return keys;
         }
 
-        const int bucketCount=3;
+        const int bucketCount=2;
         public void SetCapacity(int capacity)
         {
             int len=capacity/bucketCount;
@@ -120,7 +120,7 @@ using VRC.Udon;
                     }
                 }
             }
-            Debug.LogWarning("InkEyBoolDictionary Add: Dictionary is full");
+            //Debug.LogWarning("InkEyBoolDictionary Add: Dictionary is full");
             var preLen=hashKeys.Length;
             ExpandList(index);
             _keys[index][preLen]=key;

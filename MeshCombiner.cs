@@ -7,24 +7,11 @@ using VRC.Udon;
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class MeshCombiner : UdonSharpBehaviour
 {
-    [SerializeField]TilePoolItemOperator itemOperator;
-    [SerializeField]ChunkPoolItemOperator chunkOperator;
-    [SerializeField]MapGeneratorSetting mapGeneratorSettings;
+    [SerializeField,UnrollAttribute]TilePoolItemOperator itemOperator;
+    [SerializeField,UnrollAttribute]ChunkPoolItemOperator chunkOperator;
+    [SerializeField,UnrollAttribute]MapGeneratorSetting mapGeneratorSettings;
 
 
-    public  CombineInstance[] GetCombine(int count){
-        if(count>combineCache.Length){
-            Debug.LogError("CombineInstance cache is not enough "+count + " > " + combineCache.Length );
-            return null;
-        }
-        var target=combineCache[count-1];
-        if(target==null){
-            target=new CombineInstance[count];
-            combineCache[count-1]=target;
-        }
-        return target;
-
-    }
 
     /*public  GameObject[] GetAllParts(int count){
         var target=allPartsCache[count];
@@ -36,41 +23,42 @@ public class MeshCombiner : UdonSharpBehaviour
 
     }*/
 
-    CombineInstance[][] combineCache ;
+    //CombineInstance[][] combineCache ;
     //GameObject[][] allPartsCache;
 
     void Start()
     {
         var size=mapGeneratorSettings.chunkSize;
-        combineCache = new CombineInstance[size*size*size][];
+        //combineCache = new CombineInstance[size*size*size][];
         //allPartsCache = new GameObject[10][];
     }
 
-    public void SwitchCombineMesh(bool active, GameObject[] outlines,GameObject[] cells,bool[] brokenArr){
-        chunkOperator.SetActive(outlines[0],active);
+    public void SwitchCombineMesh(bool active, GameObject outline,int outlineId,GameObject[] cells,int[] cellIds,bool[] brokenArr){
+        chunkOperator.SetActive(outline,outlineId,active);
         /*for(int i=1;i<outlines.Length;i++){
             itemOperator.SetActive(outlines[i],!active);
         }*/
         if(active){
-            foreach(var o in cells){
-                itemOperator.SetActive(o,false);
+            for(int i=0;i<cells.Length;i++){
+                itemOperator.SetActive(cells[i],cellIds[i],false);
             }
         } else {
             for(int i=0;i<cells.Length;i++){
-                var o=cells[i];
-                itemOperator.SetActive(o,!brokenArr[i]);
+                itemOperator.SetActive(cells[i],cellIds[i],!brokenArr[i]);
             }
         }
         
     }
-
-    public GameObject[] CombineMesh(GameObject fieldParent,MeshFilter[] meshFilters,bool isInDetailRange,bool[] brokenArr)
+    CombineInstance[] combine;
+    MeshFilter parentMeshFilter;
+    MeshCollider meshCol;
+    public GameObject CombineMesh(GameObject fieldParent,MeshFilter[] meshFilters,int[] ids,bool isInDetailRange,bool[] brokenArr,bool hasItem)
     {
         // 親オブジェクトにMeshFilterがあるかどうか確認します。
-        MeshFilter parentMeshFilter = fieldParent.GetComponent<MeshFilter>();//CheckParentComponent<MeshFilter>(fieldParent.gameObject);
-        if(parentMeshFilter==null ){
+        parentMeshFilter = fieldParent.GetComponent<MeshFilter>();//CheckParentComponent<MeshFilter>(fieldParent.gameObject);
+        /*if(parentMeshFilter==null ){
             Debug.LogError("Parent object has no MeshFilter !");
-        }
+        }*/
         // 親オブジェクトにMeshRendererがあるかどうか確認します。
         //MeshRenderer parentMeshRenderer = fieldParent.GetComponent<MeshRenderer>();//(fieldParent.gameObject);
 
@@ -91,25 +79,25 @@ public class MeshCombiner : UdonSharpBehaviour
         }*/
         int combineCount=meshFilters.Length;
          // 結合するメッシュの配列を作成します。
-        CombineInstance[] combine = GetCombine(combineCount);//new CombineInstance[combineCount];//
+        if(combine==null)combine=new CombineInstance[combineCount];
+        //CombineInstance[] combine = GetCombine(combineCount);//new CombineInstance[combineCount];//
         //GameObject[] allParts = new GameObject[meshFilters.Length-combineCount+1];
-        GameObject[] allParts = new GameObject[1];
-        allParts[0]=fieldParent;
-        int restIndex=1;
+        //GameObject[] allParts = new GameObject[1];
+        //allParts[0]=fieldParent;
         // 結合するメッシュの情報をCombineInstanceに追加していきます。
-        int index=0;
         for(int i=0;i<meshFilters.Length;i++)
         {
             var mesh=meshFilters[i];
             //TODO: destory block dictionaryを参照する
-            combine[index].mesh = mesh.sharedMesh;
-            combine[index].transform = mesh.transform.localToWorldMatrix;
-            if(isInDetailRange){
-                if(brokenArr[i])itemOperator.SetActive(mesh.gameObject,false);// try to spawnでtrueは保証されている
-            } else{
-                itemOperator.SetActive(mesh.gameObject,false); // try to spawnでtrueは保証されている
+            if(!hasItem){
+                combine[i].mesh = mesh.sharedMesh;
+                combine[i].transform = mesh.transform.localToWorldMatrix;
             }
-            index++;
+            if(isInDetailRange){
+                itemOperator.SetActive(mesh.gameObject,ids[i],!brokenArr[i]);// try to spawnでtrueは保証されている
+            } else{
+                itemOperator.SetActive(mesh.gameObject,ids[i],false); // try to spawnでtrueは保証されている
+            }
             /*if(mesh.GetComponent<MeshRenderer>().material.name==combinedMat.name){
                 combine[index].mesh = mesh.sharedMesh;
                 combine[index].transform = mesh.transform.localToWorldMatrix;
@@ -122,23 +110,24 @@ public class MeshCombiner : UdonSharpBehaviour
                 Debug.LogWarning("MeshCombiner: MeshRenderer material is not same as parent material. ");
             }*/
         }
+        if(!hasItem){
+            // 結合したメッシュをセットします。
+            parentMeshFilter.mesh = new Mesh();
+            parentMeshFilter.mesh.CombineMeshes(combine);
 
-        // 結合したメッシュをセットします。
-        parentMeshFilter.mesh = new Mesh();
-        parentMeshFilter.mesh.CombineMeshes(combine);
+            // 結合したメッシュにマテリアルをセットします。
+            //parentMeshRenderer.material = combinedMat;
 
-        // 結合したメッシュにマテリアルをセットします。
-        //parentMeshRenderer.material = combinedMat;
-
-        MeshCollider meshCol = fieldParent.GetComponent<MeshCollider>();
-        meshCol.sharedMesh = parentMeshFilter.mesh;
+            meshCol = fieldParent.GetComponent<MeshCollider>();
+            meshCol.sharedMesh = parentMeshFilter.mesh;
+        }
 
         // 親オブジェクトを表示します。
         //fieldParent.gameObject.SetActive(true);
         chunkOperator.SetActive(fieldParent,!isInDetailRange);
 
 
-        return allParts;
+        return fieldParent;
     }
 
 }

@@ -6,20 +6,21 @@ using VRC.Udon;
 
 public class GameStart : UdonSharpBehaviour
 {
-    [SerializeField]MapGenerator mapGenerator;
-    [SerializeField]UnrolledMapGenerator unrolledMapGenerator;
+    [SerializeField]IMapGenerator mapGenerator;
     [SerializeField]EnemyGenerator enemyGenerator;
-    [SerializeField]bool unroll=true;
+    [SerializeField]ScoreManager scoreManager;
     void Start()
     {
-        mapGenerator.gameObject.SetActive(!unroll);
-        unrolledMapGenerator.gameObject.SetActive(unroll);
 
     }
+    bool isStart=false;
     public override void Interact(){
-
-        if(!unroll)mapGenerator.GenerateInit();
-        else unrolledMapGenerator.GenerateInit();
-        enemyGenerator.SpawnInterval();
+        scoreManager.StartMeasure();
+        if(!isStart){
+            mapGenerator.GenerateInit();
+            if(!Networking.LocalPlayer.IsOwner(gameObject))return;
+            if(enemyGenerator!=null)enemyGenerator.SpawnInterval();
+        }
+        isStart=true;
     }
 }

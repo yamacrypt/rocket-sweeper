@@ -18,12 +18,17 @@ public class EnemySetting : UdonSharpBehaviour
     public VRCPlayerApi[] gamePlayers;
     void Start()
     {
-        CheckParameter();
+        CheckParameterInterval();
     }
     public void CheckParameter(){
         playerCount=VRCPlayerApi.GetPlayerCount();
         gamePlayers=new VRCPlayerApi[playerCount];
         VRCPlayerApi.GetPlayers(gamePlayers);
+    }
+
+    public void CheckParameterInterval(){
+        CheckParameter();
+        SendCustomEventDelayedSeconds(nameof(CheckParameterInterval),2);
     }
 
 }

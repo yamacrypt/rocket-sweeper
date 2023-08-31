@@ -6,7 +6,7 @@ using VRC.Udon;
 
 public class PickAxe : UdonSharpBehaviour
 {
-    [SerializeField]MapGenerator mapGenerator;
+    [SerializeField]IMapGenerator mapGenerator;
     void Start()
     {
         

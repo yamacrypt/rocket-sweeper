@@ -178,7 +178,6 @@ public class Enemy : UdonSharpBehaviour
 
 
     byte MaxLife=>Life> byte.MaxValue ? byte.MaxValue : (byte)Life;
-
     public void _OnEnable()
     {
         //Debug.Log("Enemy OnEnable");
@@ -221,17 +220,6 @@ public class Enemy : UdonSharpBehaviour
     Vector3 targetDir=Vector3.zero;
 
     [SerializeField]float velocityModifier=1f;
-
-    public void CalcDir(){
-        if(!IsInPool){
-            target=Networking.LocalPlayer.GetPosition();
-            targetDir = (target-transform.position).normalized *velocityModifier* setting.SpeedMultiplier;// * slowMultiplier * setting.SpeedMultiplier * 0.95f;
-        }
-    }
-    public void CalcDirInterval(){
-        CalcDir();
-        SendCustomEventDelayedSeconds(nameof(CalcDirInterval),1f);
-    }
     /*void FixedUpdate()
     {
         if( IsInPool)return;

@@ -36,7 +36,12 @@ public class EnemyMoveController : UdonSharpBehaviour
     Vector3 currentPos;
     void _FixedUpdate()
     {
+        velocityY=rg.velocity.y;
         currentPos=transform.position;
+        if(velocityY==0&&preVel==0&&prePos.y-currentPos.y>=0&&prePos.y-currentPos.y<velocityGrounded&&!meshRenderer.enabled){
+            meshRenderer.enabled=true;
+            triggerCollider.enabled=true;
+        }
         if(isClimbing){
             rg.MovePosition(currentPos+Vector3.up*stepOffset);
             isClimbing=false;
@@ -45,26 +50,24 @@ public class EnemyMoveController : UdonSharpBehaviour
             //Debug.Log("Climb");
             return;
         }
-        xDiff=prePos.x-currentPos.x;
-        zDiff=prePos.z-currentPos.z;
         if(isGrounded&&SquaredDistance(prePos,currentPos)<stuckDistance*stuckDistance){
             isClimbing=true;
-            rg.useGravity=false;
+            //rg.useGravity=false;
             isGrounded=false;
             isClimbComplete=false;
             return;
         } else {
-            rg.useGravity=true;
-            velocityY=rg.velocity.y;
+            //rg.useGravity=true;
             isGrounded=(preVel-velocityY>-velocityGrounded&&preVel-velocityY<velocityGrounded)&&isClimbComplete;
-            preVel=velocityY;
-            prePos=currentPos;
+            
             //Debug.Log(velocityY);
             /*vel.x=targetDir.x;
             vel.y=velocityY;
             vel.z=targetDir.z;*/
             rg.velocity=new Vector3(targetDir.x,velocityY,targetDir.z);
         }
+        preVel=velocityY;
+        prePos=currentPos;
         
     }
 
@@ -78,48 +81,57 @@ public class EnemyMoveController : UdonSharpBehaviour
     bool isClimbComplete=true;
     Vector3 targetDir;
     public void CalcDir(){
+        if(Networking.LocalPlayer!=null){
         var playerPos=Networking.LocalPlayer.GetPosition();
         playerPos.y=transform.position.y;
         targetDir = (playerPos-transform.position).normalized*velocityMagnitude;// * slowMultiplier * setting.SpeedMultiplier * 0.95f;
         this.transform.LookAt(playerPos);
-    }
-    public void CalcDirInterval(){
-        CalcDir();
-        SendCustomEventDelayedSeconds(nameof(CalcDirInterval),1f);
-    }
-    public void CalcPhysicsInterval(){
-        if(canceled){
-            canceled=false;
-            return;
         }
-        if(isInPool)return;
-        CalcDir();
-        _FixedUpdate();
+    }
+
+    public void CalcPhysicsInterval(){
+        if(!isInPool){
+            CalcDir();
+            _FixedUpdate();
+        }else{
+            taskExists=false;
+            meshRenderer.enabled=false;
+            triggerCollider.enabled=false;
+        }
         SendCustomEventDelayedSeconds(nameof(CalcPhysicsInterval),physicsInterval);
     }
     bool isInPool=false;
     bool taskExists=false;
+    [SerializeField]SkinnedMeshRenderer meshRenderer;
+    [SerializeField]BoxCollider triggerCollider;
     public void _OnEnable(){
+        meshRenderer.enabled=false;
+        triggerCollider.enabled=false;
         isInPool=false;
         isClimbing=false;
         isClimbComplete=true;
         isGrounded=false;
-        if(!taskExists)CalcPhysicsInterval();
-        taskExists=true;
+        // gracityでvelocityの確保するために遅延実行
+        WaitCalcPhysicsInterval();
         //CalcDirInterval();
+    }
+    public void WaitCalcPhysicsInterval(){
+        if(!taskExists){
+            prePos=Vector3.zero;
+            SendCustomEventDelayedSeconds(nameof(CalcPhysicsInterval),0.2f);
+            taskExists=true;
+        }else{
+            SendCustomEventDelayedSeconds(nameof(WaitCalcPhysicsInterval),physicsInterval/2f);
+        }
     }
     [SerializeField]float physicsInterval=0.25f;
      public void _OnDisable()
     {
         isInPool=true;
-        if(taskExists)Cancel();
-        taskExists=false;
-        
+        meshRenderer.enabled=false;
+        triggerCollider.enabled=false;
     }
-    bool canceled=false;
-    void Cancel(){
-        canceled=true;
-    }
+
 
 
 }

@@ -1,9 +1,28 @@
 ﻿
+using System;
+using System.Text.RegularExpressions;
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
+[AttributeUsage(AttributeTargets.Field)]
+public class UnrollAttribute : Attribute
+{
 
+}
+[AttributeUsage(AttributeTargets.Field, Inherited = true)]
+public class InterfaceToClassAttribute : Attribute
+{
+   public string InterfaceName;
+   public string ClassName;
+    public InterfaceToClassAttribute(string interfaceName,string className)
+    {
+        this.InterfaceName=interfaceName;
+        this.ClassName=className;
+    }
+
+ 
+}
 public enum TestEnum{Test}
 public class CollenctionTest : UdonSharpBehaviour
 {
@@ -38,27 +57,54 @@ public class CollenctionTest : UdonSharpBehaviour
     Vector3 zero;
     Vector3 one=new Vector3(1,1,1);
     Quaternion identity;
+    GameObject[] objArr;
+    string strTest="test";
+    [SerializeField]UnrolledMapGenerator generator;
     void Update()
     {
         if(!startSpawn)return;
-        for(i=0;i<30;i++){
+        for(i=0;i<40;i++){
             // no alloc
-            float a1=one.x;
-            float a2=one.y;
-            float a3=one.z;
-            Vector3 a;
+            //float a1=one.x;
+            //float a2=one.y;
+            //float a3=one.z;
+            //Mathf.PerlinNoise(i,i);
+            //var ka2=ka.Contains(strTest);
+            /*foreach(var aa in str){
+                var k=aa;
+            }*/
+            //var c=obj;
+            var c=obj;
+            GameObject[] w=objArr;
+
             // alloc
+            //var ls="test_123".Split('_');
+            //var dd=int.Parse(ls[ls.Length-1]);
+            //Debug.Log(dd);
+            //var ka=empty.name;
             //zero=one;
             //zero.x=1;
             //a.x=1;
+            //var a=this.name;
+            //var b=_pool.name;
+            //var obj=Instantiate(empty/*,one,identity,transform*/);
+            //obj.GetInstanceID();
+            //obj.GetInstanceID();
+            //obj.GetComponent<MeshFilter>();
+            //objArr[0]=obj;
+            //var a=Vector4.one;
             
-            Instantiate(empty/*,one,identity,transform*/);
             //var a=TestEnum.Test;
             //_pool2[0].PeekIsInstantiated();
         }
     }
+
+    [SerializeField,UnrollAttribute]IntToMeshRendererDictionary iToMdic;
     void Start()
     {
+        objArr=new GameObject[10];
+        iToMdic.SetCapacity(10);
+        iToMdic.AddOrSetValue(0,GetComponent<MeshRenderer>());
         zero=new Vector3(0,0,0);
         identity=Quaternion.identity;
         poolArr=new UdonSavingObjectPool[]{_pool};

@@ -14,7 +14,7 @@ using VRC.Udon;
         int _size;
         public int Count => _size;
 
-        const int bucketCount=3;
+        const int bucketCount=2;
         public void SetCapacity(int capacity)
         {
             int len=capacity/bucketCount;
@@ -123,7 +123,7 @@ using VRC.Udon;
             }
             ExpandList(index);
             var preLen=hashKeys.Length;
-            Debug.LogWarning("InkEyGameObjectArrDictionary Add: Dictionary is full");
+            //Debug.LogWarning("InkEyGameObjectArrDictionary Add: Dictionary is full");
             _keys[index][preLen]=key;
             _values[index][preLen]=value;
             _size++;
@@ -186,7 +186,7 @@ using VRC.Udon;
             }
             var preLen=hashKeys.Length;
             ExpandList(index);
-            Debug.LogWarning("InkEyGameObjectArrDictionary AddOrSet: Dictionary is full");
+            //Debug.LogWarning("InkEyGameObjectArrDictionary AddOrSet: Dictionary is full");
             _keys[index][preLen]=key;
             _values[index][preLen]=value;
             _size++;

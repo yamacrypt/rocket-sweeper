@@ -48,6 +48,7 @@ public class Bullet : UdonSharpBehaviour
     }
 
     public void Return(){
+        Debug.Log("bulelt Return");
        bulletPool.Return(this.gameObject);
     }
 
@@ -57,19 +58,28 @@ public class Bullet : UdonSharpBehaviour
     string Stage="Stage";
     string BulletStage="BulletStage";
 
+    [SerializeField]IObjectPool explosionPool;
     private void OnTriggerEnter(Collider col)
     {
+        Debug.Log("Bullet Enter "+ col.name);
         _OnTriggerEnter(col);
     }
     protected virtual void _OnTriggerEnter(Collider col)
     {
         if(!isOwner)return;
         isOwner=false;
-        //mapGenerator.UnloadCell(col.gameObject);
+        var explosion=explosionPool.TryToSpawn();
+        if(explosion!=null){
+            explosion.transform.position = this.transform.position;
+            var expComp=explosion.GetComponent<RockerExplosion>();
+            expComp.Init(rg.velocity.normalized);
+        }else{
+            Debug.LogError("explosion is empty");
+        }
+
         Return();
     }
 
-    //[SerializeField]MapGenerator mapGenerator;
 
     bool TryAttack(Enemy enemy){
         if(enemy == null || !enemy.isAlive || enemy.IsInPool){

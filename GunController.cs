@@ -50,18 +50,18 @@ public class GunController : UdonSharpBehaviour
     void Update()
     {
         lineRenderer.SetPosition(0,bulletSource.position);
-        lineRenderer.SetPosition(1,bulletSource.position+getVel()*30);   
+        lineRenderer.SetPosition(1,bulletSource.position+getVelDir()*30);   
     }
     void FixedUpdate()
     {
+        deltaTime-=Time.deltaTime;
         if(isPickingUp && onTrigger){
-            deltaTime+=Time.deltaTime;
-            if(deltaTime>ThresholdFireTime){
-                deltaTime=0;
+            if(deltaTime<=0){
+                deltaTime=ThresholdFireTime;
                 if(player.IsEquipGun(this))Fire();
             }
         }
-        if(isStacking){
+        /*if(isStacking){
             isStuckingTime+=Time.deltaTime;
             if(isStuckingTime>5){
                 isStacking=false;
@@ -70,9 +70,14 @@ public class GunController : UdonSharpBehaviour
             }
         } else{
             isStuckingTime=0;
-        }
+        }*/
     }
+    [SerializeField]UnrolledMapGenerator mapGenerator;
 
+    public void RequestResearch(){
+        mapGenerator.RequestResearch();
+    }
+    [SerializeField]float recoilPower=4f;
     void Fire(){
         if(shootAudioSource!=null){
             shootAudioSource.Stop();
@@ -83,8 +88,11 @@ public class GunController : UdonSharpBehaviour
             var bc=syncedBullet.GetComponent<SyncedBullet>();
             if(bc!=null){
                 isStacking=false;
-                bc.Init(this,getVel(),bulletSource.position,bulletSyncedPool);
-                Ray ray = new Ray( bulletSource.position, getVel() );
+                bc.transform.localRotation=rotTarget.transform.rotation;
+                bc.Init(this,getVelDir()*velocityMag,bulletSource.position,bulletSyncedPool);
+                Networking.LocalPlayer.SetVelocity(getVelDir()*-1f*recoilPower+Networking.LocalPlayer.GetVelocity());
+                SendCustomEventDelayedSeconds(nameof(RequestResearch),1.5f);
+                /*Ray ray = new Ray( bulletSource.position, getVel() );
                 //Debug.DrawRay(ray.origin, ray.direction * 30, Color.red, 5.0f); 
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit,Mathf.Infinity,Physics.DefaultRaycastLayers,QueryTriggerInteraction.Ignore)) // もしRayを投射して何らかのコライダーに衝突したら
@@ -101,20 +109,22 @@ public class GunController : UdonSharpBehaviour
                         mapGenerator.BreakCell(hit.collider.gameObject);
                     }
                     //}
-                }
+                }*/
             }
+        } else{
+            Debug.LogError("bullet is empty");
         }
     }
-    [SerializeField]MapGenerator mapGenerator;
 
     [SerializeField]Transform rotStart;
 
     [SerializeField]Transform bulletDest;
     [SerializeField]float velocityMag=20f;
-    Vector3 getVel(){
-        return (bulletDest.position - bulletSource.position).normalized*velocityMag;
+    Vector3 getVelDir(){
+        return (bulletDest.position - bulletSource.position).normalized;
     }
 
+    [SerializeField]GameObject rotTarget;
     Quaternion getRot(){
         Vector3 from = rotStart.position - bulletSource.position;
         Vector3 to = bulletDest.position - bulletSource.position;
@@ -135,7 +145,7 @@ public class GunController : UdonSharpBehaviour
         if(!player.IsEquipGun(this)){
             return;
         }
-        deltaTime=0f;
+        //deltaTime=0f;
         onTrigger=!onTrigger;
         if(!Networking.LocalPlayer.IsOwner(this.gameObject)){
             Networking.SetOwner(Networking.LocalPlayer,this.gameObject);
@@ -153,6 +163,10 @@ public class GunController : UdonSharpBehaviour
     public override void OnPickup(){
         if(player.IsEquipGun(this)){
             return;
+        }
+        this.transform.SetParent(player.transform);
+        foreach(var holder in itemHolders){
+            holder.OnPickUpCallback();
         }
         Debug.Log("OnPickup");
         player.Equip(this);
@@ -192,7 +206,11 @@ public class GunController : UdonSharpBehaviour
         Debug.Log("OnDrop");
         isPickingUp=false;
         onTrigger=false;
+        foreach(var holder in itemHolders){
+            holder.OnDropCallback();
+        }
     }
+    [SerializeField]ItemHolder[] itemHolders;
     public override void OnPickupUseUp(){
         onTrigger=false;
         //deltaTime=0f;

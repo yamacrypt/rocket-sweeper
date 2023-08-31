@@ -8,6 +8,7 @@ using VRC.Udon;
 public class MapGeneratorSetting : UdonSharpBehaviour
 {
     public int chunkSize=3;
+    public int chunkSizeY=3;
     public int batchCount=1000;
 
     public int chunkWidth=100;

@@ -38,7 +38,7 @@ public class MapChunkOperatorGroup : UdonSharpBehaviour
             }
         }
         StartAnimationInstant(cell,dir);
-        generator.UnLoadChunk(xIndex,zIndex);
+        //generator.UnLoadChunk(xIndex,zIndex);
         Debug.LogWarning("No free chunk operator!");
     }
 

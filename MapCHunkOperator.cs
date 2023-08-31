@@ -137,7 +137,7 @@ public class MapCHunkOperator : UdonSharpBehaviour
             SetMatHeight(height);
             //mesh.enabled=false;
             if(generator!=null){
-                generator.UnLoadChunk(xIndex,zIndex);
+                //generator.UnLoadChunk(xIndex,zIndex);
             }
         } else {
             SetMatHeight(height);

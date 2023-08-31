@@ -38,7 +38,7 @@ using VRC.Udon;
             return keys;
         }
 
-        [SerializeField]int bucketCount=4;
+        const int bucketCount=2;
 
         public int KeyLength => _keys.Length;
 
@@ -103,6 +103,7 @@ using VRC.Udon;
                     }
                     if(hashKeys[i]==int.MaxValue){
                         _keys[index][i]=key;
+                        // gc alloc
                         _values[index][i]=value;
                         _size++;
                         return true;
@@ -115,13 +116,14 @@ using VRC.Udon;
                     }
                     if(hashKeys[i]==default){
                         _keys[index][i]=key;
+                        // gc alloc
                         _values[index][i]=value;
                         _size++;
                         return true;
                     }
                 }
             }
-            Debug.LogWarning("InkEyGameObjectDictionary Add: Dictionary is full "+index);
+            //Debug.LogWarning("InkEyGameObjectDictionary Add: Dictionary is full "+value.name);
             var preLen=hashKeys.Length;
             ExpandList(index);
             _keys[index][preLen]=key;
@@ -185,7 +187,7 @@ using VRC.Udon;
                     }
                 }
             }
-            Debug.LogWarning("InkEyGameObjectDictionary AddOrSet: Dictionary is full");
+            //Debug.LogWarning("InkEyGameObjectDictionary AddOrSet: Dictionary is full");
             var preLen=hashKeys.Length;
             ExpandList(index);
             _keys[index][preLen]=key;
@@ -242,6 +244,30 @@ using VRC.Udon;
             }
             Debug.LogError("Key not found");
             return default;
+        }
+
+         public GameObject TryGetValue(int key)
+        {
+            int index = Hash(key);
+            var hashKeys=_keys[index];
+            var hashValues=_values[index];
+            if(index==0){
+                if(key==int.MaxValue){
+                    Debug.LogError("not allowed key value");
+                }
+                for(int i=0;i<hashKeys.Length;i++){
+                    if(hashKeys[i]==key){
+                        return hashValues[i];
+                    }
+                }
+            } else {
+                for(int i=0;i<hashKeys.Length;i++){
+                    if(hashKeys[i]==key){
+                        return hashValues[i];
+                    }
+                }
+            }
+            return null;
         }
 
         public void Remove(int key)

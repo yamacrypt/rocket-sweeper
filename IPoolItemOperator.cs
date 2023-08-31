@@ -16,4 +16,9 @@ public class IPoolItemOperator : UdonSharpBehaviour
         Debug.LogWarning("IsActive is not implemented!");
         return false;
     }
+
+    public virtual bool SetActive(GameObject obj,int instanceID,bool active){
+        Debug.LogWarning("SetActive is not implemented!");
+        return false;
+    }
 }

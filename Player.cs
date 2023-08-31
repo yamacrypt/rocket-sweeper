@@ -60,11 +60,7 @@ public class Player : UdonSharpBehaviour
 
 
     public void Reset(){
-        currentLevel=0;
         killCount=0;
-        if(Networking.IsOwner(Networking.LocalPlayer, this.gameObject)){
-            ResetLevelSync();
-        }
     }
 
     int killCount=0;
@@ -80,56 +76,6 @@ public class Player : UdonSharpBehaviour
         if(killCount>0)killCount--;
     }
 
-    void ResetLevelSync(){
-        syncedLevel=0;
-        syncedExp=0;
-        RequestSerialization();
-    }
-
-    public void DebugReset(int level){
-        syncedLevel=level;
-        RequestSerialization();
-    }
-
-    [SerializeField]int maxLevel=10;
-    [SerializeField]int maxPlayerLevel=20;
-
-    [UdonSynced, FieldChangeCallback(nameof(syncedLevel))] private int _syncedLevel =0;
-    [UdonSynced, FieldChangeCallback(nameof(syncedExp))] private int _syncedExp = 0;
-    //  
-    public int syncedLevel{
-        get => _syncedLevel;
-        set
-        {
-            if(value > _syncedLevel){
-                //levelUpEffect.ShowTemp(value,maxPlayerLevel);
-            }
-            _syncedLevel = value;
-        }
-    }
-
-    public int syncedExp{
-        get => _syncedExp;
-        set
-        {
-            _syncedExp = value;
-        }
-    }
-    
-    int currentLevel=0;
-
-    public int RestLevelUp=>syncedLevel-currentLevel;
-   
-
-    public int requiredExp=>(int)(((syncedLevel+1)*(syncedLevel+1)/4.5f+(syncedLevel+1)/1.5f+3));
-    public void GetExperience(int exp){
-        syncedExp+=exp;
-        if(syncedExp>=requiredExp && maxPlayerLevel>syncedLevel){
-            syncedExp-=requiredExp;
-            syncedLevel+=1;
-        }
-        RequestSerialization();
-    }
 
     [SerializeField]Vector3 revisionPos=new Vector3(0.25f,-0.2f,-0.1f);
     [SerializeField]Vector3 itemRevisionPos=new Vector3(-0.25f,-0.2f,-0.1f);
@@ -147,4 +93,5 @@ public class Player : UdonSharpBehaviour
             }
         }
     }*/
+    
 }
