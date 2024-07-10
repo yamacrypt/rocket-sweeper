@@ -4,6 +4,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+
 public enum GenerateChunkMode{
     Init,
     Pass,
@@ -15,6 +16,8 @@ public enum Biome{
     Tundra,
     Desert,
     Rock,
+    OrangeRock,
+    RedRock,
     Sand,
     Water,
     Dirt,

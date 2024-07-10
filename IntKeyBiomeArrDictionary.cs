@@ -14,7 +14,7 @@ using VRC.Udon;
         int _size;
         public int Count => _size;
 
-        const int bucketCount=2;
+        const int bucketCount=1;
         public void SetCapacity(int capacity)
         {
             int len=capacity/bucketCount;
@@ -121,15 +121,15 @@ using VRC.Udon;
                     }
                 }
             }
-            ExpandList(index);
             var preLen=hashKeys.Length;
+            ExpandList(index);
             //Debug.LogWarning("InkEyBiomeArrDictionary Add: Dictionary is full");
             _keys[index][preLen]=key;
             _values[index][preLen]=value;
             _size++;
             return true;
         }
-        const int expand=10;
+        const int expand=5;
         void ExpandList(int index){
             var hashKeys=_keys[index];
             var hashValues=_values[index];

@@ -36,40 +36,8 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-using System;
 using UdonSharp;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using UdonSharp;
-using UnityEngine;
-using VRC.SDKBase;
-using VRC.Udon;
-using UdonSharp;
-using UnityEngine;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
 using VRC.SDKBase;
 using VRC.Udon;
 using System;
@@ -174,11 +142,20 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using VRC.SDKBase;
 using VRC.Udon;
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
 using System;
 using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using VRC.SDKBase;
+using VRC.Udon;
+using BuildSoft.UdonSharp.Collection;
+using UdonSharp;
+using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using System;
@@ -211,11 +188,20 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using VRC.SDKBase;
 using VRC.Udon;
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
 using System;
 using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using VRC.SDKBase;
+using VRC.Udon;
+using BuildSoft.UdonSharp.Collection;
+using UdonSharp;
+using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using System;
@@ -248,11 +234,20 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using VRC.SDKBase;
 using VRC.Udon;
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
 using System;
 using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using VRC.SDKBase;
+using VRC.Udon;
+using BuildSoft.UdonSharp.Collection;
+using UdonSharp;
+using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using System;
@@ -285,11 +280,20 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using VRC.SDKBase;
 using VRC.Udon;
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
 using System;
 using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using VRC.SDKBase;
+using VRC.Udon;
+using BuildSoft.UdonSharp.Collection;
+using UdonSharp;
+using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using System;
@@ -322,20 +326,6 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using VRC.SDKBase;
 using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -350,94 +340,6 @@ using VRC.Udon;
 using BuildSoft.UdonSharp.Collection;
 using UdonSharp;
 using UnityEngine;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using UdonSharp;
-using UnityEngine;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using BuildSoft.UdonSharp.Collection;
-using UdonSharp;
-using UnityEngine;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using UdonSharp;
-using UnityEngine;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using BuildSoft.UdonSharp.Collection;
-using UdonSharp;
-using UnityEngine;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
-using VRC.SDKBase;
-using VRC.Udon;
-using System;
-using UdonSharp;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Audio;
 using VRC.SDKBase;
 using VRC.Udon;
 using System;
@@ -476,6 +378,11 @@ public class UnrolledMapGenerator : IMapGenerator
 {
     [SerializeField]
     GameObject grassPool_prefab;
+    public void grassPool_SetPrefab(GameObject prefab)
+    {
+        this.grassPool_prefab = grassPool_prefab;
+    }
+
     int[][] grassPool_idToObjDict__keys;
     GameObject[][] grassPool_idToObjDict__values;
     int grassPool_idToObjDict__size;
@@ -515,7 +422,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int grassPool_idToObjDict_bucketCount = 2;
+    const int grassPool_idToObjDict_bucketCount = 1;
     public int grassPool_idToObjDict_KeyLength => grassPool_idToObjDict__keys.Length;
 
     public void grassPool_idToObjDict_SetCapacity(int capacity)
@@ -633,7 +540,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int grassPool_idToObjDict_expand = 10;
+    const int grassPool_idToObjDict_expand = 5;
     void grassPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = grassPool_idToObjDict__keys[index];
@@ -861,7 +768,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int grassPool_Capacity = 100000;
+    int grassPool_Capacity = 50021;
     public bool grassPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         BoxCollider col = obj.GetComponent<BoxCollider>();
@@ -872,738 +779,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int grassPool_itemOperator_capacity = 300000;
+    public bool grassPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        grassPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void grassPool_itemOperator_Start()
     {
-        grassPool_itemOperator_idToColDict_SetCapacity(grassPool_itemOperator_capacity);
-        grassPool_itemOperator_idToMeshDict_SetCapacity(grassPool_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] grassPool_itemOperator_idToColDict__keys;
-    BoxCollider[][] grassPool_itemOperator_idToColDict__values;
-    int grassPool_itemOperator_idToColDict__size;
-    public int grassPool_itemOperator_idToColDict_Count => grassPool_itemOperator_idToColDict__size;
-
-    public int[] grassPool_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[grassPool_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < grassPool_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = grassPool_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int grassPool_itemOperator_idToColDict_bucketCount = 2;
-    public int grassPool_itemOperator_idToColDict_KeyLength => grassPool_itemOperator_idToColDict__keys.Length;
-
-    public void grassPool_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = grassPool_itemOperator_capacity / grassPool_itemOperator_idToColDict_bucketCount;
-        grassPool_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            grassPool_itemOperator_idToColDict__keys[i] = new int[grassPool_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < grassPool_itemOperator_idToColDict_bucketCount; i++)
-        {
-            grassPool_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        grassPool_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            grassPool_itemOperator_idToColDict__values[i] = new BoxCollider[grassPool_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool grassPool_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = grassPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int grassPool_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = grassPool_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool grassPool_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = grassPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    grassPool_itemOperator_idToColDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToColDict__values[index][i] = value;
-                    grassPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    grassPool_itemOperator_idToColDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToColDict__values[index][i] = value;
-                    grassPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        grassPool_itemOperator_idToColDict_ExpandList(index);
-        grassPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        grassPool_itemOperator_idToColDict__values[index][preLen] = value;
-        grassPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int grassPool_itemOperator_idToColDict_expand = 10;
-    void grassPool_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = grassPool_itemOperator_idToColDict__keys[index];
-        var hashValues = grassPool_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + grassPool_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        grassPool_itemOperator_idToColDict__keys[index] = newKeys;
-        grassPool_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool grassPool_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = grassPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    grassPool_itemOperator_idToColDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    grassPool_itemOperator_idToColDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToColDict__values[index][i] = value;
-                    grassPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    grassPool_itemOperator_idToColDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    grassPool_itemOperator_idToColDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToColDict__values[index][i] = value;
-                    grassPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        grassPool_itemOperator_idToColDict_ExpandList(index);
-        grassPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        grassPool_itemOperator_idToColDict__values[index][preLen] = value;
-        grassPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void grassPool_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = grassPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    grassPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    grassPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider grassPool_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = grassPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToColDict__keys[index];
-        var hashValues = grassPool_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void grassPool_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = grassPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    grassPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    grassPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] grassPool_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] grassPool_itemOperator_idToMeshDict__values;
-    int grassPool_itemOperator_idToMeshDict__size;
-    public int grassPool_itemOperator_idToMeshDict_Count => grassPool_itemOperator_idToMeshDict__size;
-
-    public int[] grassPool_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[grassPool_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < grassPool_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = grassPool_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int grassPool_itemOperator_idToMeshDict_bucketCount = 2;
-    public int grassPool_itemOperator_idToMeshDict_KeyLength => grassPool_itemOperator_idToMeshDict__keys.Length;
-
-    public void grassPool_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = grassPool_itemOperator_capacity / grassPool_itemOperator_idToMeshDict_bucketCount;
-        grassPool_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            grassPool_itemOperator_idToMeshDict__keys[i] = new int[grassPool_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < grassPool_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            grassPool_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        grassPool_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            grassPool_itemOperator_idToMeshDict__values[i] = new MeshRenderer[grassPool_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool grassPool_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = grassPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int grassPool_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = grassPool_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool grassPool_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = grassPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    grassPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    grassPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    grassPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    grassPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        grassPool_itemOperator_idToMeshDict_ExpandList(index);
-        grassPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        grassPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        grassPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int grassPool_itemOperator_idToMeshDict_expand = 10;
-    void grassPool_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = grassPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = grassPool_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + grassPool_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        grassPool_itemOperator_idToMeshDict__keys[index] = newKeys;
-        grassPool_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool grassPool_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = grassPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    grassPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    grassPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    grassPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    grassPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    grassPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    grassPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    grassPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        grassPool_itemOperator_idToMeshDict_ExpandList(index);
-        grassPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        grassPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        grassPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void grassPool_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = grassPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    grassPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    grassPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer grassPool_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = grassPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = grassPool_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void grassPool_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = grassPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = grassPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    grassPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    grassPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider grassPool_itemOperator_col;
     MeshRenderer grassPool_itemOperator_mesh;
     public bool grassPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (grassPool_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            grassPool_itemOperator_col = grassPool_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            grassPool_itemOperator_col = obj.GetComponent<BoxCollider>();
-            grassPool_itemOperator_idToColDict_Add(instanceID, grassPool_itemOperator_col);
-        }
-
-        if (grassPool_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            grassPool_itemOperator_mesh = grassPool_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            grassPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            grassPool_itemOperator_idToMeshDict_Add(instanceID, grassPool_itemOperator_mesh);
-        }
-
+        grassPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        grassPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         grassPool_itemOperator_col.enabled = active;
         grassPool_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -1640,21 +838,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void grassPool_notActiveObjQueue_Clear()
     {
-        if (grassPool_notActiveObjQueue__size != 0)
-        {
-            if (grassPool_notActiveObjQueue__head < grassPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(grassPool_notActiveObjQueue__array, grassPool_notActiveObjQueue__head, grassPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(grassPool_notActiveObjQueue__array, grassPool_notActiveObjQueue__head, grassPool_notActiveObjQueue__array.Length - grassPool_notActiveObjQueue__head);
-                Array.Clear(grassPool_notActiveObjQueue__array, 0, grassPool_notActiveObjQueue__tail);
-            }
-
-            grassPool_notActiveObjQueue__size = 0;
-        }
-
+        grassPool_notActiveObjQueue__size = 0;
         grassPool_notActiveObjQueue__head = 0;
         grassPool_notActiveObjQueue__tail = 0;
         grassPool_notActiveObjQueue__version++;
@@ -1806,12 +990,10 @@ public class UnrolledMapGenerator : IMapGenerator
         grassPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform grassPool_parent;
+    //[SerializeField]Transform parent;
     void grassPool_Start()
     {
         grassPool_itemOperator_Start();
-        grassPool_prefabName = grassPool_prefab.name;
         grassPool_idToObjDict_SetCapacity(grassPool_Capacity);
         grassPool_notActiveObjQueue_SetCapacity(grassPool_Capacity);
     }
@@ -1841,7 +1023,6 @@ public class UnrolledMapGenerator : IMapGenerator
         grassPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string grassPool_prefabName;
     GameObject grassPool_instance;
     // falseで出してmeshcombinerで切り替える
     int grassPool_uniqueId = 0;
@@ -1941,6 +1122,11 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     GameObject tundraPool_prefab;
+    public void tundraPool_SetPrefab(GameObject prefab)
+    {
+        this.tundraPool_prefab = tundraPool_prefab;
+    }
+
     int[][] tundraPool_idToObjDict__keys;
     GameObject[][] tundraPool_idToObjDict__values;
     int tundraPool_idToObjDict__size;
@@ -1980,7 +1166,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int tundraPool_idToObjDict_bucketCount = 2;
+    const int tundraPool_idToObjDict_bucketCount = 1;
     public int tundraPool_idToObjDict_KeyLength => tundraPool_idToObjDict__keys.Length;
 
     public void tundraPool_idToObjDict_SetCapacity(int capacity)
@@ -2098,7 +1284,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int tundraPool_idToObjDict_expand = 10;
+    const int tundraPool_idToObjDict_expand = 5;
     void tundraPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = tundraPool_idToObjDict__keys[index];
@@ -2326,7 +1512,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int tundraPool_Capacity = 100000;
+    int tundraPool_Capacity = 50021;
     public bool tundraPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         BoxCollider col = obj.GetComponent<BoxCollider>();
@@ -2337,738 +1523,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int tundraPool_itemOperator_capacity = 300000;
+    public bool tundraPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        tundraPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void tundraPool_itemOperator_Start()
     {
-        tundraPool_itemOperator_idToColDict_SetCapacity(tundraPool_itemOperator_capacity);
-        tundraPool_itemOperator_idToMeshDict_SetCapacity(tundraPool_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] tundraPool_itemOperator_idToColDict__keys;
-    BoxCollider[][] tundraPool_itemOperator_idToColDict__values;
-    int tundraPool_itemOperator_idToColDict__size;
-    public int tundraPool_itemOperator_idToColDict_Count => tundraPool_itemOperator_idToColDict__size;
-
-    public int[] tundraPool_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[tundraPool_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < tundraPool_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = tundraPool_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int tundraPool_itemOperator_idToColDict_bucketCount = 2;
-    public int tundraPool_itemOperator_idToColDict_KeyLength => tundraPool_itemOperator_idToColDict__keys.Length;
-
-    public void tundraPool_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = tundraPool_itemOperator_capacity / tundraPool_itemOperator_idToColDict_bucketCount;
-        tundraPool_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            tundraPool_itemOperator_idToColDict__keys[i] = new int[tundraPool_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < tundraPool_itemOperator_idToColDict_bucketCount; i++)
-        {
-            tundraPool_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        tundraPool_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            tundraPool_itemOperator_idToColDict__values[i] = new BoxCollider[tundraPool_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool tundraPool_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = tundraPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int tundraPool_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = tundraPool_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool tundraPool_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = tundraPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    tundraPool_itemOperator_idToColDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToColDict__values[index][i] = value;
-                    tundraPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    tundraPool_itemOperator_idToColDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToColDict__values[index][i] = value;
-                    tundraPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        tundraPool_itemOperator_idToColDict_ExpandList(index);
-        tundraPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        tundraPool_itemOperator_idToColDict__values[index][preLen] = value;
-        tundraPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int tundraPool_itemOperator_idToColDict_expand = 10;
-    void tundraPool_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = tundraPool_itemOperator_idToColDict__keys[index];
-        var hashValues = tundraPool_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + tundraPool_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        tundraPool_itemOperator_idToColDict__keys[index] = newKeys;
-        tundraPool_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool tundraPool_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = tundraPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    tundraPool_itemOperator_idToColDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    tundraPool_itemOperator_idToColDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToColDict__values[index][i] = value;
-                    tundraPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    tundraPool_itemOperator_idToColDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    tundraPool_itemOperator_idToColDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToColDict__values[index][i] = value;
-                    tundraPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        tundraPool_itemOperator_idToColDict_ExpandList(index);
-        tundraPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        tundraPool_itemOperator_idToColDict__values[index][preLen] = value;
-        tundraPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void tundraPool_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = tundraPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    tundraPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    tundraPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider tundraPool_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = tundraPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToColDict__keys[index];
-        var hashValues = tundraPool_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void tundraPool_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = tundraPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    tundraPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    tundraPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] tundraPool_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] tundraPool_itemOperator_idToMeshDict__values;
-    int tundraPool_itemOperator_idToMeshDict__size;
-    public int tundraPool_itemOperator_idToMeshDict_Count => tundraPool_itemOperator_idToMeshDict__size;
-
-    public int[] tundraPool_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[tundraPool_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < tundraPool_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = tundraPool_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int tundraPool_itemOperator_idToMeshDict_bucketCount = 2;
-    public int tundraPool_itemOperator_idToMeshDict_KeyLength => tundraPool_itemOperator_idToMeshDict__keys.Length;
-
-    public void tundraPool_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = tundraPool_itemOperator_capacity / tundraPool_itemOperator_idToMeshDict_bucketCount;
-        tundraPool_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            tundraPool_itemOperator_idToMeshDict__keys[i] = new int[tundraPool_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < tundraPool_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            tundraPool_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        tundraPool_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            tundraPool_itemOperator_idToMeshDict__values[i] = new MeshRenderer[tundraPool_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool tundraPool_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = tundraPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int tundraPool_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = tundraPool_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool tundraPool_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = tundraPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    tundraPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    tundraPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    tundraPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    tundraPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        tundraPool_itemOperator_idToMeshDict_ExpandList(index);
-        tundraPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        tundraPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        tundraPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int tundraPool_itemOperator_idToMeshDict_expand = 10;
-    void tundraPool_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = tundraPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = tundraPool_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + tundraPool_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        tundraPool_itemOperator_idToMeshDict__keys[index] = newKeys;
-        tundraPool_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool tundraPool_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = tundraPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    tundraPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    tundraPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    tundraPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    tundraPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    tundraPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    tundraPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    tundraPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        tundraPool_itemOperator_idToMeshDict_ExpandList(index);
-        tundraPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        tundraPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        tundraPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void tundraPool_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = tundraPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    tundraPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    tundraPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer tundraPool_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = tundraPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = tundraPool_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void tundraPool_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = tundraPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = tundraPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    tundraPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    tundraPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider tundraPool_itemOperator_col;
     MeshRenderer tundraPool_itemOperator_mesh;
     public bool tundraPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (tundraPool_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            tundraPool_itemOperator_col = tundraPool_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            tundraPool_itemOperator_col = obj.GetComponent<BoxCollider>();
-            tundraPool_itemOperator_idToColDict_Add(instanceID, tundraPool_itemOperator_col);
-        }
-
-        if (tundraPool_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            tundraPool_itemOperator_mesh = tundraPool_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            tundraPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            tundraPool_itemOperator_idToMeshDict_Add(instanceID, tundraPool_itemOperator_mesh);
-        }
-
+        tundraPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        tundraPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         tundraPool_itemOperator_col.enabled = active;
         tundraPool_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -3105,21 +1582,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void tundraPool_notActiveObjQueue_Clear()
     {
-        if (tundraPool_notActiveObjQueue__size != 0)
-        {
-            if (tundraPool_notActiveObjQueue__head < tundraPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(tundraPool_notActiveObjQueue__array, tundraPool_notActiveObjQueue__head, tundraPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(tundraPool_notActiveObjQueue__array, tundraPool_notActiveObjQueue__head, tundraPool_notActiveObjQueue__array.Length - tundraPool_notActiveObjQueue__head);
-                Array.Clear(tundraPool_notActiveObjQueue__array, 0, tundraPool_notActiveObjQueue__tail);
-            }
-
-            tundraPool_notActiveObjQueue__size = 0;
-        }
-
+        tundraPool_notActiveObjQueue__size = 0;
         tundraPool_notActiveObjQueue__head = 0;
         tundraPool_notActiveObjQueue__tail = 0;
         tundraPool_notActiveObjQueue__version++;
@@ -3271,12 +1734,10 @@ public class UnrolledMapGenerator : IMapGenerator
         tundraPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform tundraPool_parent;
+    //[SerializeField]Transform parent;
     void tundraPool_Start()
     {
         tundraPool_itemOperator_Start();
-        tundraPool_prefabName = tundraPool_prefab.name;
         tundraPool_idToObjDict_SetCapacity(tundraPool_Capacity);
         tundraPool_notActiveObjQueue_SetCapacity(tundraPool_Capacity);
     }
@@ -3306,7 +1767,6 @@ public class UnrolledMapGenerator : IMapGenerator
         tundraPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string tundraPool_prefabName;
     GameObject tundraPool_instance;
     // falseで出してmeshcombinerで切り替える
     int tundraPool_uniqueId = 0;
@@ -3406,6 +1866,11 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     GameObject desertPool_prefab;
+    public void desertPool_SetPrefab(GameObject prefab)
+    {
+        this.desertPool_prefab = desertPool_prefab;
+    }
+
     int[][] desertPool_idToObjDict__keys;
     GameObject[][] desertPool_idToObjDict__values;
     int desertPool_idToObjDict__size;
@@ -3445,7 +1910,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int desertPool_idToObjDict_bucketCount = 2;
+    const int desertPool_idToObjDict_bucketCount = 1;
     public int desertPool_idToObjDict_KeyLength => desertPool_idToObjDict__keys.Length;
 
     public void desertPool_idToObjDict_SetCapacity(int capacity)
@@ -3563,7 +2028,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int desertPool_idToObjDict_expand = 10;
+    const int desertPool_idToObjDict_expand = 5;
     void desertPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = desertPool_idToObjDict__keys[index];
@@ -3791,7 +2256,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int desertPool_Capacity = 100000;
+    int desertPool_Capacity = 50021;
     public bool desertPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         BoxCollider col = obj.GetComponent<BoxCollider>();
@@ -3802,738 +2267,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int desertPool_itemOperator_capacity = 300000;
+    public bool desertPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        desertPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void desertPool_itemOperator_Start()
     {
-        desertPool_itemOperator_idToColDict_SetCapacity(desertPool_itemOperator_capacity);
-        desertPool_itemOperator_idToMeshDict_SetCapacity(desertPool_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] desertPool_itemOperator_idToColDict__keys;
-    BoxCollider[][] desertPool_itemOperator_idToColDict__values;
-    int desertPool_itemOperator_idToColDict__size;
-    public int desertPool_itemOperator_idToColDict_Count => desertPool_itemOperator_idToColDict__size;
-
-    public int[] desertPool_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[desertPool_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < desertPool_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = desertPool_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int desertPool_itemOperator_idToColDict_bucketCount = 2;
-    public int desertPool_itemOperator_idToColDict_KeyLength => desertPool_itemOperator_idToColDict__keys.Length;
-
-    public void desertPool_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = desertPool_itemOperator_capacity / desertPool_itemOperator_idToColDict_bucketCount;
-        desertPool_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            desertPool_itemOperator_idToColDict__keys[i] = new int[desertPool_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < desertPool_itemOperator_idToColDict_bucketCount; i++)
-        {
-            desertPool_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        desertPool_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            desertPool_itemOperator_idToColDict__values[i] = new BoxCollider[desertPool_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool desertPool_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = desertPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int desertPool_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = desertPool_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool desertPool_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = desertPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    desertPool_itemOperator_idToColDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToColDict__values[index][i] = value;
-                    desertPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    desertPool_itemOperator_idToColDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToColDict__values[index][i] = value;
-                    desertPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        desertPool_itemOperator_idToColDict_ExpandList(index);
-        desertPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        desertPool_itemOperator_idToColDict__values[index][preLen] = value;
-        desertPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int desertPool_itemOperator_idToColDict_expand = 10;
-    void desertPool_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = desertPool_itemOperator_idToColDict__keys[index];
-        var hashValues = desertPool_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + desertPool_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        desertPool_itemOperator_idToColDict__keys[index] = newKeys;
-        desertPool_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool desertPool_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = desertPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    desertPool_itemOperator_idToColDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    desertPool_itemOperator_idToColDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToColDict__values[index][i] = value;
-                    desertPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    desertPool_itemOperator_idToColDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    desertPool_itemOperator_idToColDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToColDict__values[index][i] = value;
-                    desertPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        desertPool_itemOperator_idToColDict_ExpandList(index);
-        desertPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        desertPool_itemOperator_idToColDict__values[index][preLen] = value;
-        desertPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void desertPool_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = desertPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    desertPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    desertPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider desertPool_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = desertPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToColDict__keys[index];
-        var hashValues = desertPool_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void desertPool_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = desertPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    desertPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    desertPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] desertPool_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] desertPool_itemOperator_idToMeshDict__values;
-    int desertPool_itemOperator_idToMeshDict__size;
-    public int desertPool_itemOperator_idToMeshDict_Count => desertPool_itemOperator_idToMeshDict__size;
-
-    public int[] desertPool_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[desertPool_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < desertPool_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = desertPool_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int desertPool_itemOperator_idToMeshDict_bucketCount = 2;
-    public int desertPool_itemOperator_idToMeshDict_KeyLength => desertPool_itemOperator_idToMeshDict__keys.Length;
-
-    public void desertPool_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = desertPool_itemOperator_capacity / desertPool_itemOperator_idToMeshDict_bucketCount;
-        desertPool_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            desertPool_itemOperator_idToMeshDict__keys[i] = new int[desertPool_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < desertPool_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            desertPool_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        desertPool_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            desertPool_itemOperator_idToMeshDict__values[i] = new MeshRenderer[desertPool_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool desertPool_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = desertPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int desertPool_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = desertPool_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool desertPool_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = desertPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    desertPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    desertPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    desertPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    desertPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        desertPool_itemOperator_idToMeshDict_ExpandList(index);
-        desertPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        desertPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        desertPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int desertPool_itemOperator_idToMeshDict_expand = 10;
-    void desertPool_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = desertPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = desertPool_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + desertPool_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        desertPool_itemOperator_idToMeshDict__keys[index] = newKeys;
-        desertPool_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool desertPool_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = desertPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    desertPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    desertPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    desertPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    desertPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    desertPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    desertPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    desertPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        desertPool_itemOperator_idToMeshDict_ExpandList(index);
-        desertPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        desertPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        desertPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void desertPool_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = desertPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    desertPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    desertPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer desertPool_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = desertPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = desertPool_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void desertPool_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = desertPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = desertPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    desertPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    desertPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider desertPool_itemOperator_col;
     MeshRenderer desertPool_itemOperator_mesh;
     public bool desertPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (desertPool_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            desertPool_itemOperator_col = desertPool_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            desertPool_itemOperator_col = obj.GetComponent<BoxCollider>();
-            desertPool_itemOperator_idToColDict_Add(instanceID, desertPool_itemOperator_col);
-        }
-
-        if (desertPool_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            desertPool_itemOperator_mesh = desertPool_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            desertPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            desertPool_itemOperator_idToMeshDict_Add(instanceID, desertPool_itemOperator_mesh);
-        }
-
+        desertPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        desertPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         desertPool_itemOperator_col.enabled = active;
         desertPool_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -4570,21 +2326,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void desertPool_notActiveObjQueue_Clear()
     {
-        if (desertPool_notActiveObjQueue__size != 0)
-        {
-            if (desertPool_notActiveObjQueue__head < desertPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(desertPool_notActiveObjQueue__array, desertPool_notActiveObjQueue__head, desertPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(desertPool_notActiveObjQueue__array, desertPool_notActiveObjQueue__head, desertPool_notActiveObjQueue__array.Length - desertPool_notActiveObjQueue__head);
-                Array.Clear(desertPool_notActiveObjQueue__array, 0, desertPool_notActiveObjQueue__tail);
-            }
-
-            desertPool_notActiveObjQueue__size = 0;
-        }
-
+        desertPool_notActiveObjQueue__size = 0;
         desertPool_notActiveObjQueue__head = 0;
         desertPool_notActiveObjQueue__tail = 0;
         desertPool_notActiveObjQueue__version++;
@@ -4736,12 +2478,10 @@ public class UnrolledMapGenerator : IMapGenerator
         desertPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform desertPool_parent;
+    //[SerializeField]Transform parent;
     void desertPool_Start()
     {
         desertPool_itemOperator_Start();
-        desertPool_prefabName = desertPool_prefab.name;
         desertPool_idToObjDict_SetCapacity(desertPool_Capacity);
         desertPool_notActiveObjQueue_SetCapacity(desertPool_Capacity);
     }
@@ -4771,7 +2511,6 @@ public class UnrolledMapGenerator : IMapGenerator
         desertPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string desertPool_prefabName;
     GameObject desertPool_instance;
     // falseで出してmeshcombinerで切り替える
     int desertPool_uniqueId = 0;
@@ -4871,6 +2610,11 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     GameObject dirtPool_prefab;
+    public void dirtPool_SetPrefab(GameObject prefab)
+    {
+        this.dirtPool_prefab = dirtPool_prefab;
+    }
+
     int[][] dirtPool_idToObjDict__keys;
     GameObject[][] dirtPool_idToObjDict__values;
     int dirtPool_idToObjDict__size;
@@ -4910,7 +2654,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int dirtPool_idToObjDict_bucketCount = 2;
+    const int dirtPool_idToObjDict_bucketCount = 1;
     public int dirtPool_idToObjDict_KeyLength => dirtPool_idToObjDict__keys.Length;
 
     public void dirtPool_idToObjDict_SetCapacity(int capacity)
@@ -5028,7 +2772,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int dirtPool_idToObjDict_expand = 10;
+    const int dirtPool_idToObjDict_expand = 5;
     void dirtPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = dirtPool_idToObjDict__keys[index];
@@ -5256,7 +3000,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int dirtPool_Capacity = 100000;
+    int dirtPool_Capacity = 50021;
     public bool dirtPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         BoxCollider col = obj.GetComponent<BoxCollider>();
@@ -5267,738 +3011,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int dirtPool_itemOperator_capacity = 300000;
+    public bool dirtPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        dirtPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void dirtPool_itemOperator_Start()
     {
-        dirtPool_itemOperator_idToColDict_SetCapacity(dirtPool_itemOperator_capacity);
-        dirtPool_itemOperator_idToMeshDict_SetCapacity(dirtPool_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] dirtPool_itemOperator_idToColDict__keys;
-    BoxCollider[][] dirtPool_itemOperator_idToColDict__values;
-    int dirtPool_itemOperator_idToColDict__size;
-    public int dirtPool_itemOperator_idToColDict_Count => dirtPool_itemOperator_idToColDict__size;
-
-    public int[] dirtPool_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[dirtPool_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < dirtPool_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = dirtPool_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int dirtPool_itemOperator_idToColDict_bucketCount = 2;
-    public int dirtPool_itemOperator_idToColDict_KeyLength => dirtPool_itemOperator_idToColDict__keys.Length;
-
-    public void dirtPool_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = dirtPool_itemOperator_capacity / dirtPool_itemOperator_idToColDict_bucketCount;
-        dirtPool_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            dirtPool_itemOperator_idToColDict__keys[i] = new int[dirtPool_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < dirtPool_itemOperator_idToColDict_bucketCount; i++)
-        {
-            dirtPool_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        dirtPool_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            dirtPool_itemOperator_idToColDict__values[i] = new BoxCollider[dirtPool_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool dirtPool_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = dirtPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int dirtPool_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = dirtPool_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool dirtPool_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = dirtPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    dirtPool_itemOperator_idToColDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToColDict__values[index][i] = value;
-                    dirtPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    dirtPool_itemOperator_idToColDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToColDict__values[index][i] = value;
-                    dirtPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        dirtPool_itemOperator_idToColDict_ExpandList(index);
-        dirtPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        dirtPool_itemOperator_idToColDict__values[index][preLen] = value;
-        dirtPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int dirtPool_itemOperator_idToColDict_expand = 10;
-    void dirtPool_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = dirtPool_itemOperator_idToColDict__keys[index];
-        var hashValues = dirtPool_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + dirtPool_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        dirtPool_itemOperator_idToColDict__keys[index] = newKeys;
-        dirtPool_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool dirtPool_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = dirtPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    dirtPool_itemOperator_idToColDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    dirtPool_itemOperator_idToColDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToColDict__values[index][i] = value;
-                    dirtPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    dirtPool_itemOperator_idToColDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    dirtPool_itemOperator_idToColDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToColDict__values[index][i] = value;
-                    dirtPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        dirtPool_itemOperator_idToColDict_ExpandList(index);
-        dirtPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        dirtPool_itemOperator_idToColDict__values[index][preLen] = value;
-        dirtPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void dirtPool_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = dirtPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    dirtPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    dirtPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider dirtPool_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = dirtPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToColDict__keys[index];
-        var hashValues = dirtPool_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void dirtPool_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = dirtPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    dirtPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    dirtPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] dirtPool_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] dirtPool_itemOperator_idToMeshDict__values;
-    int dirtPool_itemOperator_idToMeshDict__size;
-    public int dirtPool_itemOperator_idToMeshDict_Count => dirtPool_itemOperator_idToMeshDict__size;
-
-    public int[] dirtPool_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[dirtPool_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < dirtPool_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = dirtPool_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int dirtPool_itemOperator_idToMeshDict_bucketCount = 2;
-    public int dirtPool_itemOperator_idToMeshDict_KeyLength => dirtPool_itemOperator_idToMeshDict__keys.Length;
-
-    public void dirtPool_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = dirtPool_itemOperator_capacity / dirtPool_itemOperator_idToMeshDict_bucketCount;
-        dirtPool_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            dirtPool_itemOperator_idToMeshDict__keys[i] = new int[dirtPool_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < dirtPool_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            dirtPool_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        dirtPool_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            dirtPool_itemOperator_idToMeshDict__values[i] = new MeshRenderer[dirtPool_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool dirtPool_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = dirtPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int dirtPool_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = dirtPool_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool dirtPool_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = dirtPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    dirtPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    dirtPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    dirtPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    dirtPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        dirtPool_itemOperator_idToMeshDict_ExpandList(index);
-        dirtPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        dirtPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        dirtPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int dirtPool_itemOperator_idToMeshDict_expand = 10;
-    void dirtPool_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = dirtPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = dirtPool_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + dirtPool_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        dirtPool_itemOperator_idToMeshDict__keys[index] = newKeys;
-        dirtPool_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool dirtPool_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = dirtPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    dirtPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    dirtPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    dirtPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    dirtPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    dirtPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    dirtPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    dirtPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        dirtPool_itemOperator_idToMeshDict_ExpandList(index);
-        dirtPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        dirtPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        dirtPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void dirtPool_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = dirtPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    dirtPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    dirtPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer dirtPool_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = dirtPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = dirtPool_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void dirtPool_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = dirtPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = dirtPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    dirtPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    dirtPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider dirtPool_itemOperator_col;
     MeshRenderer dirtPool_itemOperator_mesh;
     public bool dirtPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (dirtPool_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            dirtPool_itemOperator_col = dirtPool_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            dirtPool_itemOperator_col = obj.GetComponent<BoxCollider>();
-            dirtPool_itemOperator_idToColDict_Add(instanceID, dirtPool_itemOperator_col);
-        }
-
-        if (dirtPool_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            dirtPool_itemOperator_mesh = dirtPool_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            dirtPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            dirtPool_itemOperator_idToMeshDict_Add(instanceID, dirtPool_itemOperator_mesh);
-        }
-
+        dirtPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        dirtPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         dirtPool_itemOperator_col.enabled = active;
         dirtPool_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -6035,21 +3070,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void dirtPool_notActiveObjQueue_Clear()
     {
-        if (dirtPool_notActiveObjQueue__size != 0)
-        {
-            if (dirtPool_notActiveObjQueue__head < dirtPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(dirtPool_notActiveObjQueue__array, dirtPool_notActiveObjQueue__head, dirtPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(dirtPool_notActiveObjQueue__array, dirtPool_notActiveObjQueue__head, dirtPool_notActiveObjQueue__array.Length - dirtPool_notActiveObjQueue__head);
-                Array.Clear(dirtPool_notActiveObjQueue__array, 0, dirtPool_notActiveObjQueue__tail);
-            }
-
-            dirtPool_notActiveObjQueue__size = 0;
-        }
-
+        dirtPool_notActiveObjQueue__size = 0;
         dirtPool_notActiveObjQueue__head = 0;
         dirtPool_notActiveObjQueue__tail = 0;
         dirtPool_notActiveObjQueue__version++;
@@ -6201,12 +3222,10 @@ public class UnrolledMapGenerator : IMapGenerator
         dirtPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform dirtPool_parent;
+    //[SerializeField]Transform parent;
     void dirtPool_Start()
     {
         dirtPool_itemOperator_Start();
-        dirtPool_prefabName = dirtPool_prefab.name;
         dirtPool_idToObjDict_SetCapacity(dirtPool_Capacity);
         dirtPool_notActiveObjQueue_SetCapacity(dirtPool_Capacity);
     }
@@ -6236,7 +3255,6 @@ public class UnrolledMapGenerator : IMapGenerator
         dirtPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string dirtPool_prefabName;
     GameObject dirtPool_instance;
     // falseで出してmeshcombinerで切り替える
     int dirtPool_uniqueId = 0;
@@ -6336,6 +3354,11 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     GameObject rockPool_prefab;
+    public void rockPool_SetPrefab(GameObject prefab)
+    {
+        this.rockPool_prefab = rockPool_prefab;
+    }
+
     int[][] rockPool_idToObjDict__keys;
     GameObject[][] rockPool_idToObjDict__values;
     int rockPool_idToObjDict__size;
@@ -6375,7 +3398,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int rockPool_idToObjDict_bucketCount = 2;
+    const int rockPool_idToObjDict_bucketCount = 1;
     public int rockPool_idToObjDict_KeyLength => rockPool_idToObjDict__keys.Length;
 
     public void rockPool_idToObjDict_SetCapacity(int capacity)
@@ -6493,7 +3516,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int rockPool_idToObjDict_expand = 10;
+    const int rockPool_idToObjDict_expand = 5;
     void rockPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = rockPool_idToObjDict__keys[index];
@@ -6721,7 +3744,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int rockPool_Capacity = 100000;
+    int rockPool_Capacity = 50021;
     public bool rockPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         BoxCollider col = obj.GetComponent<BoxCollider>();
@@ -6732,738 +3755,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int rockPool_itemOperator_capacity = 300000;
+    public bool rockPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        rockPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void rockPool_itemOperator_Start()
     {
-        rockPool_itemOperator_idToColDict_SetCapacity(rockPool_itemOperator_capacity);
-        rockPool_itemOperator_idToMeshDict_SetCapacity(rockPool_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] rockPool_itemOperator_idToColDict__keys;
-    BoxCollider[][] rockPool_itemOperator_idToColDict__values;
-    int rockPool_itemOperator_idToColDict__size;
-    public int rockPool_itemOperator_idToColDict_Count => rockPool_itemOperator_idToColDict__size;
-
-    public int[] rockPool_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[rockPool_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < rockPool_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = rockPool_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int rockPool_itemOperator_idToColDict_bucketCount = 2;
-    public int rockPool_itemOperator_idToColDict_KeyLength => rockPool_itemOperator_idToColDict__keys.Length;
-
-    public void rockPool_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = rockPool_itemOperator_capacity / rockPool_itemOperator_idToColDict_bucketCount;
-        rockPool_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            rockPool_itemOperator_idToColDict__keys[i] = new int[rockPool_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < rockPool_itemOperator_idToColDict_bucketCount; i++)
-        {
-            rockPool_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        rockPool_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            rockPool_itemOperator_idToColDict__values[i] = new BoxCollider[rockPool_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool rockPool_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = rockPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int rockPool_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = rockPool_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool rockPool_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = rockPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    rockPool_itemOperator_idToColDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToColDict__values[index][i] = value;
-                    rockPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    rockPool_itemOperator_idToColDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToColDict__values[index][i] = value;
-                    rockPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        rockPool_itemOperator_idToColDict_ExpandList(index);
-        rockPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        rockPool_itemOperator_idToColDict__values[index][preLen] = value;
-        rockPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int rockPool_itemOperator_idToColDict_expand = 10;
-    void rockPool_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = rockPool_itemOperator_idToColDict__keys[index];
-        var hashValues = rockPool_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + rockPool_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        rockPool_itemOperator_idToColDict__keys[index] = newKeys;
-        rockPool_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool rockPool_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = rockPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    rockPool_itemOperator_idToColDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    rockPool_itemOperator_idToColDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToColDict__values[index][i] = value;
-                    rockPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    rockPool_itemOperator_idToColDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    rockPool_itemOperator_idToColDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToColDict__values[index][i] = value;
-                    rockPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        rockPool_itemOperator_idToColDict_ExpandList(index);
-        rockPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        rockPool_itemOperator_idToColDict__values[index][preLen] = value;
-        rockPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void rockPool_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = rockPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    rockPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    rockPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider rockPool_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = rockPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToColDict__keys[index];
-        var hashValues = rockPool_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void rockPool_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = rockPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    rockPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    rockPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] rockPool_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] rockPool_itemOperator_idToMeshDict__values;
-    int rockPool_itemOperator_idToMeshDict__size;
-    public int rockPool_itemOperator_idToMeshDict_Count => rockPool_itemOperator_idToMeshDict__size;
-
-    public int[] rockPool_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[rockPool_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < rockPool_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = rockPool_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int rockPool_itemOperator_idToMeshDict_bucketCount = 2;
-    public int rockPool_itemOperator_idToMeshDict_KeyLength => rockPool_itemOperator_idToMeshDict__keys.Length;
-
-    public void rockPool_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = rockPool_itemOperator_capacity / rockPool_itemOperator_idToMeshDict_bucketCount;
-        rockPool_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            rockPool_itemOperator_idToMeshDict__keys[i] = new int[rockPool_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < rockPool_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            rockPool_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        rockPool_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            rockPool_itemOperator_idToMeshDict__values[i] = new MeshRenderer[rockPool_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool rockPool_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = rockPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int rockPool_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = rockPool_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool rockPool_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = rockPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    rockPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    rockPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    rockPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    rockPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        rockPool_itemOperator_idToMeshDict_ExpandList(index);
-        rockPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        rockPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        rockPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int rockPool_itemOperator_idToMeshDict_expand = 10;
-    void rockPool_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = rockPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = rockPool_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + rockPool_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        rockPool_itemOperator_idToMeshDict__keys[index] = newKeys;
-        rockPool_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool rockPool_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = rockPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    rockPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    rockPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    rockPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    rockPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    rockPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    rockPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    rockPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        rockPool_itemOperator_idToMeshDict_ExpandList(index);
-        rockPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        rockPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        rockPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void rockPool_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = rockPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    rockPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    rockPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer rockPool_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = rockPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = rockPool_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void rockPool_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = rockPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = rockPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    rockPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    rockPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider rockPool_itemOperator_col;
     MeshRenderer rockPool_itemOperator_mesh;
     public bool rockPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (rockPool_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            rockPool_itemOperator_col = rockPool_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            rockPool_itemOperator_col = obj.GetComponent<BoxCollider>();
-            rockPool_itemOperator_idToColDict_Add(instanceID, rockPool_itemOperator_col);
-        }
-
-        if (rockPool_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            rockPool_itemOperator_mesh = rockPool_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            rockPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            rockPool_itemOperator_idToMeshDict_Add(instanceID, rockPool_itemOperator_mesh);
-        }
-
+        rockPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        rockPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         rockPool_itemOperator_col.enabled = active;
         rockPool_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -7500,21 +3814,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void rockPool_notActiveObjQueue_Clear()
     {
-        if (rockPool_notActiveObjQueue__size != 0)
-        {
-            if (rockPool_notActiveObjQueue__head < rockPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(rockPool_notActiveObjQueue__array, rockPool_notActiveObjQueue__head, rockPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(rockPool_notActiveObjQueue__array, rockPool_notActiveObjQueue__head, rockPool_notActiveObjQueue__array.Length - rockPool_notActiveObjQueue__head);
-                Array.Clear(rockPool_notActiveObjQueue__array, 0, rockPool_notActiveObjQueue__tail);
-            }
-
-            rockPool_notActiveObjQueue__size = 0;
-        }
-
+        rockPool_notActiveObjQueue__size = 0;
         rockPool_notActiveObjQueue__head = 0;
         rockPool_notActiveObjQueue__tail = 0;
         rockPool_notActiveObjQueue__version++;
@@ -7666,12 +3966,10 @@ public class UnrolledMapGenerator : IMapGenerator
         rockPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform rockPool_parent;
+    //[SerializeField]Transform parent;
     void rockPool_Start()
     {
         rockPool_itemOperator_Start();
-        rockPool_prefabName = rockPool_prefab.name;
         rockPool_idToObjDict_SetCapacity(rockPool_Capacity);
         rockPool_notActiveObjQueue_SetCapacity(rockPool_Capacity);
     }
@@ -7701,7 +3999,6 @@ public class UnrolledMapGenerator : IMapGenerator
         rockPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string rockPool_prefabName;
     GameObject rockPool_instance;
     // falseで出してmeshcombinerで切り替える
     int rockPool_uniqueId = 0;
@@ -7801,6 +4098,11 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     GameObject sandPool_prefab;
+    public void sandPool_SetPrefab(GameObject prefab)
+    {
+        this.sandPool_prefab = sandPool_prefab;
+    }
+
     int[][] sandPool_idToObjDict__keys;
     GameObject[][] sandPool_idToObjDict__values;
     int sandPool_idToObjDict__size;
@@ -7840,7 +4142,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int sandPool_idToObjDict_bucketCount = 2;
+    const int sandPool_idToObjDict_bucketCount = 1;
     public int sandPool_idToObjDict_KeyLength => sandPool_idToObjDict__keys.Length;
 
     public void sandPool_idToObjDict_SetCapacity(int capacity)
@@ -7958,7 +4260,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int sandPool_idToObjDict_expand = 10;
+    const int sandPool_idToObjDict_expand = 5;
     void sandPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = sandPool_idToObjDict__keys[index];
@@ -8186,7 +4488,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int sandPool_Capacity = 100000;
+    int sandPool_Capacity = 50021;
     public bool sandPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         BoxCollider col = obj.GetComponent<BoxCollider>();
@@ -8197,738 +4499,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int sandPool_itemOperator_capacity = 300000;
+    public bool sandPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        sandPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void sandPool_itemOperator_Start()
     {
-        sandPool_itemOperator_idToColDict_SetCapacity(sandPool_itemOperator_capacity);
-        sandPool_itemOperator_idToMeshDict_SetCapacity(sandPool_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] sandPool_itemOperator_idToColDict__keys;
-    BoxCollider[][] sandPool_itemOperator_idToColDict__values;
-    int sandPool_itemOperator_idToColDict__size;
-    public int sandPool_itemOperator_idToColDict_Count => sandPool_itemOperator_idToColDict__size;
-
-    public int[] sandPool_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[sandPool_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < sandPool_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = sandPool_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int sandPool_itemOperator_idToColDict_bucketCount = 2;
-    public int sandPool_itemOperator_idToColDict_KeyLength => sandPool_itemOperator_idToColDict__keys.Length;
-
-    public void sandPool_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = sandPool_itemOperator_capacity / sandPool_itemOperator_idToColDict_bucketCount;
-        sandPool_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            sandPool_itemOperator_idToColDict__keys[i] = new int[sandPool_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < sandPool_itemOperator_idToColDict_bucketCount; i++)
-        {
-            sandPool_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        sandPool_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            sandPool_itemOperator_idToColDict__values[i] = new BoxCollider[sandPool_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool sandPool_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = sandPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int sandPool_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = sandPool_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool sandPool_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = sandPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    sandPool_itemOperator_idToColDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToColDict__values[index][i] = value;
-                    sandPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    sandPool_itemOperator_idToColDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToColDict__values[index][i] = value;
-                    sandPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        sandPool_itemOperator_idToColDict_ExpandList(index);
-        sandPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        sandPool_itemOperator_idToColDict__values[index][preLen] = value;
-        sandPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int sandPool_itemOperator_idToColDict_expand = 10;
-    void sandPool_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = sandPool_itemOperator_idToColDict__keys[index];
-        var hashValues = sandPool_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + sandPool_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        sandPool_itemOperator_idToColDict__keys[index] = newKeys;
-        sandPool_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool sandPool_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = sandPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    sandPool_itemOperator_idToColDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    sandPool_itemOperator_idToColDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToColDict__values[index][i] = value;
-                    sandPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    sandPool_itemOperator_idToColDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    sandPool_itemOperator_idToColDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToColDict__values[index][i] = value;
-                    sandPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        sandPool_itemOperator_idToColDict_ExpandList(index);
-        sandPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        sandPool_itemOperator_idToColDict__values[index][preLen] = value;
-        sandPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void sandPool_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = sandPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    sandPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    sandPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider sandPool_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = sandPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToColDict__keys[index];
-        var hashValues = sandPool_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void sandPool_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = sandPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    sandPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    sandPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] sandPool_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] sandPool_itemOperator_idToMeshDict__values;
-    int sandPool_itemOperator_idToMeshDict__size;
-    public int sandPool_itemOperator_idToMeshDict_Count => sandPool_itemOperator_idToMeshDict__size;
-
-    public int[] sandPool_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[sandPool_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < sandPool_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = sandPool_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int sandPool_itemOperator_idToMeshDict_bucketCount = 2;
-    public int sandPool_itemOperator_idToMeshDict_KeyLength => sandPool_itemOperator_idToMeshDict__keys.Length;
-
-    public void sandPool_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = sandPool_itemOperator_capacity / sandPool_itemOperator_idToMeshDict_bucketCount;
-        sandPool_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            sandPool_itemOperator_idToMeshDict__keys[i] = new int[sandPool_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < sandPool_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            sandPool_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        sandPool_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            sandPool_itemOperator_idToMeshDict__values[i] = new MeshRenderer[sandPool_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool sandPool_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = sandPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int sandPool_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = sandPool_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool sandPool_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = sandPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    sandPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    sandPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    sandPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    sandPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        sandPool_itemOperator_idToMeshDict_ExpandList(index);
-        sandPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        sandPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        sandPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int sandPool_itemOperator_idToMeshDict_expand = 10;
-    void sandPool_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = sandPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = sandPool_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + sandPool_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        sandPool_itemOperator_idToMeshDict__keys[index] = newKeys;
-        sandPool_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool sandPool_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = sandPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    sandPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    sandPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    sandPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    sandPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    sandPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    sandPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    sandPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        sandPool_itemOperator_idToMeshDict_ExpandList(index);
-        sandPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        sandPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        sandPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void sandPool_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = sandPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    sandPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    sandPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer sandPool_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = sandPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = sandPool_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void sandPool_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = sandPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = sandPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    sandPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    sandPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider sandPool_itemOperator_col;
     MeshRenderer sandPool_itemOperator_mesh;
     public bool sandPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (sandPool_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            sandPool_itemOperator_col = sandPool_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            sandPool_itemOperator_col = obj.GetComponent<BoxCollider>();
-            sandPool_itemOperator_idToColDict_Add(instanceID, sandPool_itemOperator_col);
-        }
-
-        if (sandPool_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            sandPool_itemOperator_mesh = sandPool_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            sandPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            sandPool_itemOperator_idToMeshDict_Add(instanceID, sandPool_itemOperator_mesh);
-        }
-
+        sandPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        sandPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         sandPool_itemOperator_col.enabled = active;
         sandPool_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -8965,21 +4558,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void sandPool_notActiveObjQueue_Clear()
     {
-        if (sandPool_notActiveObjQueue__size != 0)
-        {
-            if (sandPool_notActiveObjQueue__head < sandPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(sandPool_notActiveObjQueue__array, sandPool_notActiveObjQueue__head, sandPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(sandPool_notActiveObjQueue__array, sandPool_notActiveObjQueue__head, sandPool_notActiveObjQueue__array.Length - sandPool_notActiveObjQueue__head);
-                Array.Clear(sandPool_notActiveObjQueue__array, 0, sandPool_notActiveObjQueue__tail);
-            }
-
-            sandPool_notActiveObjQueue__size = 0;
-        }
-
+        sandPool_notActiveObjQueue__size = 0;
         sandPool_notActiveObjQueue__head = 0;
         sandPool_notActiveObjQueue__tail = 0;
         sandPool_notActiveObjQueue__version++;
@@ -9131,12 +4710,10 @@ public class UnrolledMapGenerator : IMapGenerator
         sandPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform sandPool_parent;
+    //[SerializeField]Transform parent;
     void sandPool_Start()
     {
         sandPool_itemOperator_Start();
-        sandPool_prefabName = sandPool_prefab.name;
         sandPool_idToObjDict_SetCapacity(sandPool_Capacity);
         sandPool_notActiveObjQueue_SetCapacity(sandPool_Capacity);
     }
@@ -9166,7 +4743,6 @@ public class UnrolledMapGenerator : IMapGenerator
         sandPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string sandPool_prefabName;
     GameObject sandPool_instance;
     // falseで出してmeshcombinerで切り替える
     int sandPool_uniqueId = 0;
@@ -9266,6 +4842,11 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     GameObject waterPool_prefab;
+    public void waterPool_SetPrefab(GameObject prefab)
+    {
+        this.waterPool_prefab = waterPool_prefab;
+    }
+
     int[][] waterPool_idToObjDict__keys;
     GameObject[][] waterPool_idToObjDict__values;
     int waterPool_idToObjDict__size;
@@ -9305,7 +4886,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int waterPool_idToObjDict_bucketCount = 2;
+    const int waterPool_idToObjDict_bucketCount = 1;
     public int waterPool_idToObjDict_KeyLength => waterPool_idToObjDict__keys.Length;
 
     public void waterPool_idToObjDict_SetCapacity(int capacity)
@@ -9423,7 +5004,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int waterPool_idToObjDict_expand = 10;
+    const int waterPool_idToObjDict_expand = 5;
     void waterPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = waterPool_idToObjDict__keys[index];
@@ -9651,7 +5232,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int waterPool_Capacity = 100000;
+    int waterPool_Capacity = 50021;
     public bool waterPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         BoxCollider col = obj.GetComponent<BoxCollider>();
@@ -9662,738 +5243,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int waterPool_itemOperator_capacity = 300000;
+    public bool waterPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        waterPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void waterPool_itemOperator_Start()
     {
-        waterPool_itemOperator_idToColDict_SetCapacity(waterPool_itemOperator_capacity);
-        waterPool_itemOperator_idToMeshDict_SetCapacity(waterPool_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] waterPool_itemOperator_idToColDict__keys;
-    BoxCollider[][] waterPool_itemOperator_idToColDict__values;
-    int waterPool_itemOperator_idToColDict__size;
-    public int waterPool_itemOperator_idToColDict_Count => waterPool_itemOperator_idToColDict__size;
-
-    public int[] waterPool_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[waterPool_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < waterPool_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = waterPool_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int waterPool_itemOperator_idToColDict_bucketCount = 2;
-    public int waterPool_itemOperator_idToColDict_KeyLength => waterPool_itemOperator_idToColDict__keys.Length;
-
-    public void waterPool_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = waterPool_itemOperator_capacity / waterPool_itemOperator_idToColDict_bucketCount;
-        waterPool_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            waterPool_itemOperator_idToColDict__keys[i] = new int[waterPool_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < waterPool_itemOperator_idToColDict_bucketCount; i++)
-        {
-            waterPool_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        waterPool_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            waterPool_itemOperator_idToColDict__values[i] = new BoxCollider[waterPool_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool waterPool_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = waterPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int waterPool_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = waterPool_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool waterPool_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = waterPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    waterPool_itemOperator_idToColDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToColDict__values[index][i] = value;
-                    waterPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    waterPool_itemOperator_idToColDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToColDict__values[index][i] = value;
-                    waterPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        waterPool_itemOperator_idToColDict_ExpandList(index);
-        waterPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        waterPool_itemOperator_idToColDict__values[index][preLen] = value;
-        waterPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int waterPool_itemOperator_idToColDict_expand = 10;
-    void waterPool_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = waterPool_itemOperator_idToColDict__keys[index];
-        var hashValues = waterPool_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + waterPool_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        waterPool_itemOperator_idToColDict__keys[index] = newKeys;
-        waterPool_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool waterPool_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = waterPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    waterPool_itemOperator_idToColDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    waterPool_itemOperator_idToColDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToColDict__values[index][i] = value;
-                    waterPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    waterPool_itemOperator_idToColDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    waterPool_itemOperator_idToColDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToColDict__values[index][i] = value;
-                    waterPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        waterPool_itemOperator_idToColDict_ExpandList(index);
-        waterPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        waterPool_itemOperator_idToColDict__values[index][preLen] = value;
-        waterPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void waterPool_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = waterPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    waterPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    waterPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider waterPool_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = waterPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToColDict__keys[index];
-        var hashValues = waterPool_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void waterPool_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = waterPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    waterPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    waterPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] waterPool_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] waterPool_itemOperator_idToMeshDict__values;
-    int waterPool_itemOperator_idToMeshDict__size;
-    public int waterPool_itemOperator_idToMeshDict_Count => waterPool_itemOperator_idToMeshDict__size;
-
-    public int[] waterPool_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[waterPool_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < waterPool_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = waterPool_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int waterPool_itemOperator_idToMeshDict_bucketCount = 2;
-    public int waterPool_itemOperator_idToMeshDict_KeyLength => waterPool_itemOperator_idToMeshDict__keys.Length;
-
-    public void waterPool_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = waterPool_itemOperator_capacity / waterPool_itemOperator_idToMeshDict_bucketCount;
-        waterPool_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            waterPool_itemOperator_idToMeshDict__keys[i] = new int[waterPool_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < waterPool_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            waterPool_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        waterPool_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            waterPool_itemOperator_idToMeshDict__values[i] = new MeshRenderer[waterPool_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool waterPool_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = waterPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int waterPool_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = waterPool_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool waterPool_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = waterPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    waterPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    waterPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    waterPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    waterPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        waterPool_itemOperator_idToMeshDict_ExpandList(index);
-        waterPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        waterPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        waterPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int waterPool_itemOperator_idToMeshDict_expand = 10;
-    void waterPool_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = waterPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = waterPool_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + waterPool_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        waterPool_itemOperator_idToMeshDict__keys[index] = newKeys;
-        waterPool_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool waterPool_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = waterPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    waterPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    waterPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    waterPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    waterPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    waterPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    waterPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    waterPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        waterPool_itemOperator_idToMeshDict_ExpandList(index);
-        waterPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        waterPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        waterPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void waterPool_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = waterPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    waterPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    waterPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer waterPool_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = waterPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = waterPool_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void waterPool_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = waterPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = waterPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    waterPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    waterPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider waterPool_itemOperator_col;
     MeshRenderer waterPool_itemOperator_mesh;
     public bool waterPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (waterPool_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            waterPool_itemOperator_col = waterPool_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            waterPool_itemOperator_col = obj.GetComponent<BoxCollider>();
-            waterPool_itemOperator_idToColDict_Add(instanceID, waterPool_itemOperator_col);
-        }
-
-        if (waterPool_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            waterPool_itemOperator_mesh = waterPool_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            waterPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            waterPool_itemOperator_idToMeshDict_Add(instanceID, waterPool_itemOperator_mesh);
-        }
-
+        waterPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        waterPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         waterPool_itemOperator_col.enabled = active;
         waterPool_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -10430,21 +5302,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void waterPool_notActiveObjQueue_Clear()
     {
-        if (waterPool_notActiveObjQueue__size != 0)
-        {
-            if (waterPool_notActiveObjQueue__head < waterPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(waterPool_notActiveObjQueue__array, waterPool_notActiveObjQueue__head, waterPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(waterPool_notActiveObjQueue__array, waterPool_notActiveObjQueue__head, waterPool_notActiveObjQueue__array.Length - waterPool_notActiveObjQueue__head);
-                Array.Clear(waterPool_notActiveObjQueue__array, 0, waterPool_notActiveObjQueue__tail);
-            }
-
-            waterPool_notActiveObjQueue__size = 0;
-        }
-
+        waterPool_notActiveObjQueue__size = 0;
         waterPool_notActiveObjQueue__head = 0;
         waterPool_notActiveObjQueue__tail = 0;
         waterPool_notActiveObjQueue__version++;
@@ -10596,12 +5454,10 @@ public class UnrolledMapGenerator : IMapGenerator
         waterPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform waterPool_parent;
+    //[SerializeField]Transform parent;
     void waterPool_Start()
     {
         waterPool_itemOperator_Start();
-        waterPool_prefabName = waterPool_prefab.name;
         waterPool_idToObjDict_SetCapacity(waterPool_Capacity);
         waterPool_notActiveObjQueue_SetCapacity(waterPool_Capacity);
     }
@@ -10631,7 +5487,6 @@ public class UnrolledMapGenerator : IMapGenerator
         waterPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string waterPool_prefabName;
     GameObject waterPool_instance;
     // falseで出してmeshcombinerで切り替える
     int waterPool_uniqueId = 0;
@@ -10731,6 +5586,11 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     GameObject darkPool_prefab;
+    public void darkPool_SetPrefab(GameObject prefab)
+    {
+        this.darkPool_prefab = darkPool_prefab;
+    }
+
     int[][] darkPool_idToObjDict__keys;
     GameObject[][] darkPool_idToObjDict__values;
     int darkPool_idToObjDict__size;
@@ -10770,7 +5630,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int darkPool_idToObjDict_bucketCount = 2;
+    const int darkPool_idToObjDict_bucketCount = 1;
     public int darkPool_idToObjDict_KeyLength => darkPool_idToObjDict__keys.Length;
 
     public void darkPool_idToObjDict_SetCapacity(int capacity)
@@ -10888,7 +5748,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int darkPool_idToObjDict_expand = 10;
+    const int darkPool_idToObjDict_expand = 5;
     void darkPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = darkPool_idToObjDict__keys[index];
@@ -11116,7 +5976,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int darkPool_Capacity = 100000;
+    int darkPool_Capacity = 50021;
     public bool darkPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         BoxCollider col = obj.GetComponent<BoxCollider>();
@@ -11127,738 +5987,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int darkPool_itemOperator_capacity = 300000;
+    public bool darkPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        darkPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void darkPool_itemOperator_Start()
     {
-        darkPool_itemOperator_idToColDict_SetCapacity(darkPool_itemOperator_capacity);
-        darkPool_itemOperator_idToMeshDict_SetCapacity(darkPool_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] darkPool_itemOperator_idToColDict__keys;
-    BoxCollider[][] darkPool_itemOperator_idToColDict__values;
-    int darkPool_itemOperator_idToColDict__size;
-    public int darkPool_itemOperator_idToColDict_Count => darkPool_itemOperator_idToColDict__size;
-
-    public int[] darkPool_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[darkPool_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < darkPool_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = darkPool_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int darkPool_itemOperator_idToColDict_bucketCount = 2;
-    public int darkPool_itemOperator_idToColDict_KeyLength => darkPool_itemOperator_idToColDict__keys.Length;
-
-    public void darkPool_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = darkPool_itemOperator_capacity / darkPool_itemOperator_idToColDict_bucketCount;
-        darkPool_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            darkPool_itemOperator_idToColDict__keys[i] = new int[darkPool_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < darkPool_itemOperator_idToColDict_bucketCount; i++)
-        {
-            darkPool_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        darkPool_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            darkPool_itemOperator_idToColDict__values[i] = new BoxCollider[darkPool_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool darkPool_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = darkPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int darkPool_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = darkPool_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool darkPool_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = darkPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    darkPool_itemOperator_idToColDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToColDict__values[index][i] = value;
-                    darkPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    darkPool_itemOperator_idToColDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToColDict__values[index][i] = value;
-                    darkPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        darkPool_itemOperator_idToColDict_ExpandList(index);
-        darkPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        darkPool_itemOperator_idToColDict__values[index][preLen] = value;
-        darkPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int darkPool_itemOperator_idToColDict_expand = 10;
-    void darkPool_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = darkPool_itemOperator_idToColDict__keys[index];
-        var hashValues = darkPool_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + darkPool_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        darkPool_itemOperator_idToColDict__keys[index] = newKeys;
-        darkPool_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool darkPool_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = darkPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    darkPool_itemOperator_idToColDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    darkPool_itemOperator_idToColDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToColDict__values[index][i] = value;
-                    darkPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    darkPool_itemOperator_idToColDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    darkPool_itemOperator_idToColDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToColDict__values[index][i] = value;
-                    darkPool_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        darkPool_itemOperator_idToColDict_ExpandList(index);
-        darkPool_itemOperator_idToColDict__keys[index][preLen] = key;
-        darkPool_itemOperator_idToColDict__values[index][preLen] = value;
-        darkPool_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void darkPool_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = darkPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    darkPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    darkPool_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider darkPool_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = darkPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToColDict__keys[index];
-        var hashValues = darkPool_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void darkPool_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = darkPool_itemOperator_idToColDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    darkPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    darkPool_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] darkPool_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] darkPool_itemOperator_idToMeshDict__values;
-    int darkPool_itemOperator_idToMeshDict__size;
-    public int darkPool_itemOperator_idToMeshDict_Count => darkPool_itemOperator_idToMeshDict__size;
-
-    public int[] darkPool_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[darkPool_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < darkPool_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = darkPool_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int darkPool_itemOperator_idToMeshDict_bucketCount = 2;
-    public int darkPool_itemOperator_idToMeshDict_KeyLength => darkPool_itemOperator_idToMeshDict__keys.Length;
-
-    public void darkPool_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = darkPool_itemOperator_capacity / darkPool_itemOperator_idToMeshDict_bucketCount;
-        darkPool_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            darkPool_itemOperator_idToMeshDict__keys[i] = new int[darkPool_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < darkPool_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            darkPool_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        darkPool_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            darkPool_itemOperator_idToMeshDict__values[i] = new MeshRenderer[darkPool_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool darkPool_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = darkPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int darkPool_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = darkPool_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool darkPool_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = darkPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    darkPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    darkPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    darkPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    darkPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        darkPool_itemOperator_idToMeshDict_ExpandList(index);
-        darkPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        darkPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        darkPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int darkPool_itemOperator_idToMeshDict_expand = 10;
-    void darkPool_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = darkPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = darkPool_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + darkPool_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        darkPool_itemOperator_idToMeshDict__keys[index] = newKeys;
-        darkPool_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool darkPool_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = darkPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    darkPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    darkPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    darkPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    darkPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    darkPool_itemOperator_idToMeshDict__keys[index][i] = key;
-                    darkPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    darkPool_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        darkPool_itemOperator_idToMeshDict_ExpandList(index);
-        darkPool_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        darkPool_itemOperator_idToMeshDict__values[index][preLen] = value;
-        darkPool_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void darkPool_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = darkPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    darkPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    darkPool_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer darkPool_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = darkPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToMeshDict__keys[index];
-        var hashValues = darkPool_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void darkPool_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = darkPool_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = darkPool_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    darkPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    darkPool_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider darkPool_itemOperator_col;
     MeshRenderer darkPool_itemOperator_mesh;
     public bool darkPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (darkPool_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            darkPool_itemOperator_col = darkPool_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            darkPool_itemOperator_col = obj.GetComponent<BoxCollider>();
-            darkPool_itemOperator_idToColDict_Add(instanceID, darkPool_itemOperator_col);
-        }
-
-        if (darkPool_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            darkPool_itemOperator_mesh = darkPool_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            darkPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            darkPool_itemOperator_idToMeshDict_Add(instanceID, darkPool_itemOperator_mesh);
-        }
-
+        darkPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        darkPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         darkPool_itemOperator_col.enabled = active;
         darkPool_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -11895,21 +6046,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void darkPool_notActiveObjQueue_Clear()
     {
-        if (darkPool_notActiveObjQueue__size != 0)
-        {
-            if (darkPool_notActiveObjQueue__head < darkPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(darkPool_notActiveObjQueue__array, darkPool_notActiveObjQueue__head, darkPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(darkPool_notActiveObjQueue__array, darkPool_notActiveObjQueue__head, darkPool_notActiveObjQueue__array.Length - darkPool_notActiveObjQueue__head);
-                Array.Clear(darkPool_notActiveObjQueue__array, 0, darkPool_notActiveObjQueue__tail);
-            }
-
-            darkPool_notActiveObjQueue__size = 0;
-        }
-
+        darkPool_notActiveObjQueue__size = 0;
         darkPool_notActiveObjQueue__head = 0;
         darkPool_notActiveObjQueue__tail = 0;
         darkPool_notActiveObjQueue__version++;
@@ -12061,12 +6198,10 @@ public class UnrolledMapGenerator : IMapGenerator
         darkPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform darkPool_parent;
+    //[SerializeField]Transform parent;
     void darkPool_Start()
     {
         darkPool_itemOperator_Start();
-        darkPool_prefabName = darkPool_prefab.name;
         darkPool_idToObjDict_SetCapacity(darkPool_Capacity);
         darkPool_notActiveObjQueue_SetCapacity(darkPool_Capacity);
     }
@@ -12096,7 +6231,6 @@ public class UnrolledMapGenerator : IMapGenerator
         darkPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string darkPool_prefabName;
     GameObject darkPool_instance;
     // falseで出してmeshcombinerで切り替える
     int darkPool_uniqueId = 0;
@@ -12194,6 +6328,1494 @@ public class UnrolledMapGenerator : IMapGenerator
         }
     }
 
+    [SerializeField]
+    GameObject orangeRockPool_prefab;
+    public void orangeRockPool_SetPrefab(GameObject prefab)
+    {
+        this.orangeRockPool_prefab = orangeRockPool_prefab;
+    }
+
+    int[][] orangeRockPool_idToObjDict__keys;
+    GameObject[][] orangeRockPool_idToObjDict__values;
+    int orangeRockPool_idToObjDict__size;
+    public int orangeRockPool_idToObjDict_Count => orangeRockPool_idToObjDict__size;
+
+    public int[] orangeRockPool_idToObjDict_GenerateKeysArray()
+    {
+        int[] keys = new int[orangeRockPool_idToObjDict__size];
+        int index = 0;
+        for (int i = 0; i < orangeRockPool_idToObjDict__keys.Length; i++)
+        {
+            var hashKeys = orangeRockPool_idToObjDict__keys[i];
+            if (i == 0)
+            {
+                for (int j = 0; j < hashKeys.Length; j++)
+                {
+                    if (hashKeys[j] != int.MaxValue)
+                    {
+                        keys[index] = hashKeys[j];
+                        index++;
+                    }
+                }
+            }
+            else
+            {
+                for (int j = 0; j < hashKeys.Length; j++)
+                {
+                    if (hashKeys[j] != default)
+                    {
+                        keys[index] = hashKeys[j];
+                        index++;
+                    }
+                }
+            }
+        }
+
+        return keys;
+    }
+
+    const int orangeRockPool_idToObjDict_bucketCount = 1;
+    public int orangeRockPool_idToObjDict_KeyLength => orangeRockPool_idToObjDict__keys.Length;
+
+    public void orangeRockPool_idToObjDict_SetCapacity(int capacity)
+    {
+        int len = capacity / orangeRockPool_idToObjDict_bucketCount;
+        orangeRockPool_idToObjDict__keys = new int[len][];
+        for (int i = 0; i < len; i++)
+        {
+            orangeRockPool_idToObjDict__keys[i] = new int[orangeRockPool_idToObjDict_bucketCount];
+        }
+
+        // 0-value-key 対策
+        for (int i = 0; i < orangeRockPool_idToObjDict_bucketCount; i++)
+        {
+            orangeRockPool_idToObjDict__keys[0][i] = int.MaxValue;
+        }
+
+        orangeRockPool_idToObjDict__values = new GameObject[len][];
+        for (int i = 0; i < len; i++)
+        {
+            orangeRockPool_idToObjDict__values[i] = new GameObject[orangeRockPool_idToObjDict_bucketCount];
+        }
+    }
+
+    public bool orangeRockPool_idToObjDict_HasItem(int key)
+    {
+        var index = orangeRockPool_idToObjDict_Hash(key);
+        var hashKeys = orangeRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+        }
+
+        for (int i = 0; i < hashKeys.Length; i++)
+        {
+            if (hashKeys[i] == key)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private int orangeRockPool_idToObjDict_Hash(int key)
+    {
+        var len = orangeRockPool_idToObjDict__keys.Length;
+        var mod = key % len;
+        if (mod >= 0)
+        {
+            return mod;
+        }
+        else
+        {
+            return mod + len;
+        }
+    // return 0 to len-1;
+    }
+
+    public bool orangeRockPool_idToObjDict_Add(int key, GameObject value)
+    {
+        int index = orangeRockPool_idToObjDict_Hash(key);
+        var hashKeys = orangeRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    Debug.LogError("IntKeyGameObjectDictionary: Key already exists " + key.ToString());
+                }
+
+                if (hashKeys[i] == int.MaxValue)
+                {
+                    orangeRockPool_idToObjDict__keys[index][i] = key;
+                    orangeRockPool_idToObjDict__values[index][i] = value;
+                    orangeRockPool_idToObjDict__size++;
+                    return true;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    Debug.LogError("IntKeyGameObjectDictionary: Key already exists " + key.ToString());
+                }
+
+                if (hashKeys[i] == default)
+                {
+                    orangeRockPool_idToObjDict__keys[index][i] = key;
+                    orangeRockPool_idToObjDict__values[index][i] = value;
+                    orangeRockPool_idToObjDict__size++;
+                    return true;
+                }
+            }
+        }
+
+        //Debug.LogWarning("InkEyGameObjectDictionary Add: Dictionary is full "+value.name);
+        var preLen = hashKeys.Length;
+        orangeRockPool_idToObjDict_ExpandList(index);
+        orangeRockPool_idToObjDict__keys[index][preLen] = key;
+        orangeRockPool_idToObjDict__values[index][preLen] = value;
+        orangeRockPool_idToObjDict__size++;
+        return true;
+    }
+
+    const int orangeRockPool_idToObjDict_expand = 5;
+    void orangeRockPool_idToObjDict_ExpandList(int index)
+    {
+        var hashKeys = orangeRockPool_idToObjDict__keys[index];
+        var hashValues = orangeRockPool_idToObjDict__values[index];
+        var preLen = hashKeys.Length;
+        var len = preLen + orangeRockPool_idToObjDict_expand;
+        var newKeys = new int[len];
+        var newValues = new GameObject[len];
+        for (int i = 0; i < preLen; i++)
+        {
+            newKeys[i] = hashKeys[i];
+            newValues[i] = hashValues[i];
+        }
+
+        if (index == 0)
+        {
+            for (int i = preLen; i < len; i++)
+            {
+                newKeys[i] = int.MaxValue;
+            }
+        }
+
+        orangeRockPool_idToObjDict__keys[index] = newKeys;
+        orangeRockPool_idToObjDict__values[index] = newValues;
+    }
+
+    public bool orangeRockPool_idToObjDict_AddOrSetValue(int key, GameObject value)
+    {
+        int index = orangeRockPool_idToObjDict_Hash(key);
+        var hashKeys = orangeRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    orangeRockPool_idToObjDict__keys[index][i] = key;
+                    orangeRockPool_idToObjDict__values[index][i] = value;
+                    return true;
+                }
+
+                if (hashKeys[i] == int.MaxValue)
+                {
+                    orangeRockPool_idToObjDict__keys[index][i] = key;
+                    orangeRockPool_idToObjDict__values[index][i] = value;
+                    orangeRockPool_idToObjDict__size++;
+                    return true;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    orangeRockPool_idToObjDict__keys[index][i] = key;
+                    orangeRockPool_idToObjDict__values[index][i] = value;
+                    return true;
+                }
+
+                if (hashKeys[i] == default)
+                {
+                    orangeRockPool_idToObjDict__keys[index][i] = key;
+                    orangeRockPool_idToObjDict__values[index][i] = value;
+                    orangeRockPool_idToObjDict__size++;
+                    return true;
+                }
+            }
+        }
+
+        //Debug.LogWarning("InkEyGameObjectDictionary AddOrSet: Dictionary is full");
+        var preLen = hashKeys.Length;
+        orangeRockPool_idToObjDict_ExpandList(index);
+        orangeRockPool_idToObjDict__keys[index][preLen] = key;
+        orangeRockPool_idToObjDict__values[index][preLen] = value;
+        orangeRockPool_idToObjDict__size++;
+        return true;
+    }
+
+    public void orangeRockPool_idToObjDict_SetValue(int key, GameObject value)
+    {
+        int index = orangeRockPool_idToObjDict_Hash(key);
+        var hashKeys = orangeRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    orangeRockPool_idToObjDict__values[index][i] = value;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    orangeRockPool_idToObjDict__values[index][i] = value;
+                    return;
+                }
+            }
+        }
+
+        Debug.LogError("Key not found");
+    }
+
+    public GameObject orangeRockPool_idToObjDict_GetValue(int key)
+    {
+        int index = orangeRockPool_idToObjDict_Hash(key);
+        var hashKeys = orangeRockPool_idToObjDict__keys[index];
+        var hashValues = orangeRockPool_idToObjDict__values[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+
+        Debug.LogError("Key not found");
+        return default;
+    }
+
+    public GameObject orangeRockPool_idToObjDict_TryGetValue(int key)
+    {
+        int index = orangeRockPool_idToObjDict_Hash(key);
+        var hashKeys = orangeRockPool_idToObjDict__keys[index];
+        var hashValues = orangeRockPool_idToObjDict__values[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+
+        return null;
+    }
+
+    public void orangeRockPool_idToObjDict_Remove(int key)
+    {
+        int index = orangeRockPool_idToObjDict_Hash(key);
+        var hashKeys = orangeRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    hashKeys[i] = int.MaxValue;
+                    orangeRockPool_idToObjDict__size--;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    hashKeys[i] = default;
+                    orangeRockPool_idToObjDict__size--;
+                    return;
+                }
+            }
+        }
+
+        Debug.LogError("Key not found");
+    }
+
+    [SerializeField]
+    int orangeRockPool_Capacity = 50021;
+    public bool orangeRockPool_itemOperator_SetActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        MeshRenderer mesh = obj.GetComponent<MeshRenderer>();
+        orangeRockPool_itemOperator_col.enabled = active;
+        orangeRockPool_itemOperator_mesh.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    public bool orangeRockPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        orangeRockPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
+    void orangeRockPool_itemOperator_Start()
+    {
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
+    }
+
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
+    BoxCollider orangeRockPool_itemOperator_col;
+    MeshRenderer orangeRockPool_itemOperator_mesh;
+    public bool orangeRockPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
+    {
+        orangeRockPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        orangeRockPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
+        orangeRockPool_itemOperator_col.enabled = active;
+        orangeRockPool_itemOperator_mesh.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    public bool orangeRockPool_itemOperator_IsActive(GameObject obj)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        MeshRenderer mesh = obj.GetComponent<MeshRenderer>();
+        if (orangeRockPool_itemOperator_col == null || orangeRockPool_itemOperator_mesh == null)
+        {
+            Debug.LogError("TilePoolItemOperator: BoxCollider or MeshRenderer is null!");
+            return false;
+        }
+
+        return orangeRockPool_itemOperator_col.enabled && orangeRockPool_itemOperator_mesh.enabled;
+    }
+
+    int orangeRockPool_poolSize;
+    private int[] orangeRockPool_notActiveObjQueue__array;
+    private int orangeRockPool_notActiveObjQueue__head; // First valid element in the queue.
+    private int orangeRockPool_notActiveObjQueue__tail; // Last valid element in the queue.
+    private int orangeRockPool_notActiveObjQueue__size; // Number of elements.
+    private int orangeRockPool_notActiveObjQueue__version;
+    private const int orangeRockPool_notActiveObjQueue_MinimumGrow = 100000;
+    public int orangeRockPool_notActiveObjQueue_Count => orangeRockPool_notActiveObjQueue__size;
+    public int orangeRockPool_notActiveObjQueue_Version => orangeRockPool_notActiveObjQueue__version;
+
+    [Obsolete("Use Count Property.")]
+    public int orangeRockPool_notActiveObjQueue_GetCount() => orangeRockPool_notActiveObjQueue__size;
+    [Obsolete("Use Version Property.")]
+    public int orangeRockPool_notActiveObjQueue_GetVersion() => orangeRockPool_notActiveObjQueue__version;
+    // Removes all Objects from the queue.
+    public void orangeRockPool_notActiveObjQueue_Clear()
+    {
+        orangeRockPool_notActiveObjQueue__size = 0;
+        orangeRockPool_notActiveObjQueue__head = 0;
+        orangeRockPool_notActiveObjQueue__tail = 0;
+        orangeRockPool_notActiveObjQueue__version++;
+    }
+
+    // CopyTo copies a collection into an Array, starting at a particular
+    // index into the array.
+    public void orangeRockPool_notActiveObjQueue_CopyTo(Array array, int index)
+    {
+        if (array == null)
+        {
+            //throw new ArgumentNullException(nameof(array));
+            return;
+        }
+
+        if (array.Rank != 1)
+        {
+            //throw new ArgumentException(nameof(array));
+            return;
+        }
+
+        if (index < 0)
+        {
+            //throw new ArgumentOutOfRangeException(nameof(index));
+            return;
+        }
+
+        if (array.Length - index < orangeRockPool_notActiveObjQueue__size)
+        {
+            //throw new ArgumentException();
+            return;
+        }
+
+        int size = orangeRockPool_notActiveObjQueue__size;
+        if (size == 0)
+        {
+            return;
+        }
+
+        int toHead = orangeRockPool_notActiveObjQueue__array.Length - orangeRockPool_notActiveObjQueue__head;
+        int firstPart = toHead < size ? toHead : size;
+        Array.Copy(orangeRockPool_notActiveObjQueue__array, orangeRockPool_notActiveObjQueue__head, array, index, firstPart);
+        size -= firstPart;
+        if (size > 0)
+        {
+            Array.Copy(orangeRockPool_notActiveObjQueue__array, 0, array, index + toHead, size);
+        }
+    }
+
+    // Adds obj to the tail of the queue.
+    public void orangeRockPool_notActiveObjQueue_Enqueue(int obj)
+    {
+        if (obj == int.MaxValue)
+        {
+            Debug.LogError("Enqueue: obj is int.MaxValue!");
+            return;
+        }
+
+        if (orangeRockPool_notActiveObjQueue__array == null)
+        {
+            orangeRockPool_notActiveObjQueue_SetCapacity(orangeRockPool_notActiveObjQueue_MinimumGrow);
+        }
+        else if (orangeRockPool_notActiveObjQueue__size == orangeRockPool_notActiveObjQueue__array.Length)
+        {
+            orangeRockPool_notActiveObjQueue_SetCapacity(orangeRockPool_notActiveObjQueue__array.Length + orangeRockPool_notActiveObjQueue_MinimumGrow);
+        }
+
+        orangeRockPool_notActiveObjQueue__array[orangeRockPool_notActiveObjQueue__tail] = obj;
+        orangeRockPool_notActiveObjQueue__tail = (orangeRockPool_notActiveObjQueue__tail + 1) % orangeRockPool_notActiveObjQueue__array.Length;
+        orangeRockPool_notActiveObjQueue__size++;
+        orangeRockPool_notActiveObjQueue__version++;
+    }
+
+    // Removes the int at the head of the queue and returns it. If the queue
+    // is empty, this method returns null.
+    public int orangeRockPool_notActiveObjQueue_Dequeue()
+    {
+        if (orangeRockPool_notActiveObjQueue__size == 0)
+            Debug.LogError("Queue is empty!");
+        int removed = orangeRockPool_notActiveObjQueue__array[orangeRockPool_notActiveObjQueue__head];
+        orangeRockPool_notActiveObjQueue__array[orangeRockPool_notActiveObjQueue__head] = int.MaxValue;
+        orangeRockPool_notActiveObjQueue__head = (orangeRockPool_notActiveObjQueue__head + 1) % orangeRockPool_notActiveObjQueue__array.Length;
+        orangeRockPool_notActiveObjQueue__size--;
+        orangeRockPool_notActiveObjQueue__version++;
+        return removed;
+    }
+
+    // Returns the int at the head of the queue. The int remains in the
+    // queue. If the queue is empty, this method returns null.
+    public int orangeRockPool_notActiveObjQueue_Peek()
+    {
+        if (orangeRockPool_notActiveObjQueue__size == 0)
+        {
+            //throw new InvalidOperationException();
+            return int.MaxValue;
+        }
+
+        return orangeRockPool_notActiveObjQueue__array[orangeRockPool_notActiveObjQueue__head];
+    }
+
+    // Iterates over the ints in the queue, returning an array of the
+    // ints in the Queue, or an empty array if the queue is empty.
+    // The order of elements in the array is first in to last in, the same
+    // order produced by successive calls to Dequeue.
+    public int[] orangeRockPool_notActiveObjQueue_ToArray()
+    {
+        int[] arr = new int[orangeRockPool_notActiveObjQueue__size];
+        if (orangeRockPool_notActiveObjQueue__size == 0)
+        {
+        }
+        else if (orangeRockPool_notActiveObjQueue__head < orangeRockPool_notActiveObjQueue__tail)
+        {
+            Array.Copy(orangeRockPool_notActiveObjQueue__array, orangeRockPool_notActiveObjQueue__head, arr, 0, orangeRockPool_notActiveObjQueue__size);
+        }
+        else
+        {
+            int toHead = orangeRockPool_notActiveObjQueue__array.Length - orangeRockPool_notActiveObjQueue__head;
+            Array.Copy(orangeRockPool_notActiveObjQueue__array, orangeRockPool_notActiveObjQueue__head, arr, 0, toHead);
+            Array.Copy(orangeRockPool_notActiveObjQueue__array, 0, arr, toHead, orangeRockPool_notActiveObjQueue__tail);
+        }
+
+        return arr;
+    }
+
+    // PRIVATE Grows or shrinks the buffer to hold capacity ints. Capacity
+    // must be >= _size.
+    public void orangeRockPool_notActiveObjQueue_SetCapacity(int capacity)
+    {
+        int[] newArray = new int[capacity];
+        if (orangeRockPool_notActiveObjQueue__size == 0)
+        {
+        }
+        else if (orangeRockPool_notActiveObjQueue__head < orangeRockPool_notActiveObjQueue__tail)
+        {
+            Debug.LogWarning("SetCapacity: _head < _tail");
+            Array.Copy(orangeRockPool_notActiveObjQueue__array, orangeRockPool_notActiveObjQueue__head, newArray, 0, orangeRockPool_notActiveObjQueue__size);
+        }
+        else
+        {
+            Debug.LogWarning("SetCapacity: _head >= _tail");
+            int toHead = orangeRockPool_notActiveObjQueue__array.Length - orangeRockPool_notActiveObjQueue__head;
+            Array.Copy(orangeRockPool_notActiveObjQueue__array, orangeRockPool_notActiveObjQueue__head, newArray, 0, toHead);
+            Array.Copy(orangeRockPool_notActiveObjQueue__array, 0, newArray, toHead, orangeRockPool_notActiveObjQueue__tail);
+        }
+
+        orangeRockPool_notActiveObjQueue__array = newArray;
+        orangeRockPool_notActiveObjQueue__head = 0;
+        orangeRockPool_notActiveObjQueue__tail = orangeRockPool_notActiveObjQueue__size == capacity ? 0 : orangeRockPool_notActiveObjQueue__size;
+        orangeRockPool_notActiveObjQueue__version++;
+    }
+
+    //[SerializeField]Transform parent;
+    void orangeRockPool_Start()
+    {
+        orangeRockPool_itemOperator_Start();
+        orangeRockPool_idToObjDict_SetCapacity(orangeRockPool_Capacity);
+        orangeRockPool_notActiveObjQueue_SetCapacity(orangeRockPool_Capacity);
+    }
+
+    public bool orangeRockPool_PeekIsInstantiated()
+    {
+        return orangeRockPool_isInstantiated;
+    }
+
+    bool orangeRockPool_isInstantiated = false;
+    public void orangeRockPool_Store(Transform p = null)
+    {
+        if (orangeRockPool_idToObjDict_Count > orangeRockPool_idToObjDict_KeyLength)
+            return;
+        orangeRockPool_isInstantiated = true;
+        GameObject instance;
+        int id;
+        orangeRockPool_instance = GameObject.Instantiate(orangeRockPool_prefab);
+        //gc alloc debug only
+        /*if(instance==null){
+            Debug.LogError("UdonObjectPool Setting Error: Prefab is null");
+        }*/
+        //id = GetInstanceID(instance);/*instance.GetInstanceID();*///.GetHashCode();
+        id = orangeRockPool_instance.GetInstanceID();
+        orangeRockPool_itemOperator_SetActive(orangeRockPool_instance, id, false);
+        orangeRockPool_idToObjDict_Add(id, orangeRockPool_instance);
+        orangeRockPool_notActiveObjQueue_Enqueue(id);
+    }
+
+    GameObject orangeRockPool_instance;
+    // falseで出してmeshcombinerで切り替える
+    int orangeRockPool_uniqueId = 0;
+    public GameObject orangeRockPool_TryToSpawn()
+    {
+        int id;
+        orangeRockPool_isInstantiated = true;
+        if (orangeRockPool_notActiveObjQueue_Count > 0)
+        {
+            orangeRockPool_isInstantiated = false;
+            id = orangeRockPool_notActiveObjQueue_Dequeue();
+            if (orangeRockPool_idToObjDict_HasItem(id))
+            {
+                var obj = orangeRockPool_idToObjDict_GetValue(id);
+                //itemOperator.SetActive(obj,id,true);
+                return obj;
+            }
+            else
+            {
+                Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
+            }
+        }
+
+        orangeRockPool_instance = GameObject.Instantiate(orangeRockPool_prefab);
+        //gc alloc
+        /*if(instance==null){
+            Debug.LogError("UdonObjectPool Setting Error: Prefab is null");
+        }*/
+        id = orangeRockPool_instance.GetInstanceID();
+        orangeRockPool_idToObjDict_Add(id, orangeRockPool_instance); // gc alloc
+        //itemOperator.SetActive(instance,id,true);
+        //}while(!idToObjDict.Add(id,instance));
+        //if(idToObjDict.HasItem(id))Debug.LogError("UdonObjectPool Error: InstanceID is duplicated!");
+        return orangeRockPool_instance;
+    }
+
+    public GameObject orangeRockPool_TryToSpawn(int id)
+    {
+        orangeRockPool_isInstantiated = false;
+        if (orangeRockPool_idToObjDict_HasItem(id))
+        {
+            var obj = orangeRockPool_idToObjDict_GetValue(id);
+            orangeRockPool_itemOperator_SetActive(obj, id, false);
+            return obj;
+        }
+        else
+        {
+            Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
+            return null;
+        }
+    }
+
+    public void orangeRockPool_Return(GameObject obj, bool force = false, bool enqueue = true)
+    {
+        // gc alloc debug only
+        //if(obj==null)return; // gc alloc debug only
+        int id = obj.GetInstanceID(); //obj.GetInstanceID();
+        if (!orangeRockPool_idToObjDict_HasItem(id))
+        {
+            Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
+            return;
+        }
+
+        orangeRockPool_itemOperator_SetActive(obj, id, false);
+        if (enqueue)
+            orangeRockPool_notActiveObjQueue_Enqueue(id);
+    }
+
+    public void orangeRockPool_Return(GameObject obj, int id, bool force = false, bool enqueue = true)
+    {
+        //if(obj==null)return; // gc alloc debug only
+        if (!orangeRockPool_idToObjDict_HasItem(id))
+        {
+            Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
+            return;
+        }
+
+        orangeRockPool_itemOperator_SetActive(obj, id, false);
+        if (enqueue)
+            orangeRockPool_notActiveObjQueue_Enqueue(id);
+    }
+
+    public bool orangeRockPool_IsMine(GameObject obj)
+    {
+        return obj.name.Contains(orangeRockPool_prefab.name);
+    }
+
+    public void orangeRockPool_Clear()
+    {
+        orangeRockPool_notActiveObjQueue_Clear();
+        foreach (var obj in orangeRockPool_idToObjDict_GenerateKeysArray())
+        {
+            orangeRockPool_itemOperator_SetActive(orangeRockPool_idToObjDict_GetValue(obj), false);
+            orangeRockPool_notActiveObjQueue_Enqueue(obj);
+        }
+    }
+
+    [SerializeField]
+    GameObject redRockPool_prefab;
+    public void redRockPool_SetPrefab(GameObject prefab)
+    {
+        this.redRockPool_prefab = redRockPool_prefab;
+    }
+
+    int[][] redRockPool_idToObjDict__keys;
+    GameObject[][] redRockPool_idToObjDict__values;
+    int redRockPool_idToObjDict__size;
+    public int redRockPool_idToObjDict_Count => redRockPool_idToObjDict__size;
+
+    public int[] redRockPool_idToObjDict_GenerateKeysArray()
+    {
+        int[] keys = new int[redRockPool_idToObjDict__size];
+        int index = 0;
+        for (int i = 0; i < redRockPool_idToObjDict__keys.Length; i++)
+        {
+            var hashKeys = redRockPool_idToObjDict__keys[i];
+            if (i == 0)
+            {
+                for (int j = 0; j < hashKeys.Length; j++)
+                {
+                    if (hashKeys[j] != int.MaxValue)
+                    {
+                        keys[index] = hashKeys[j];
+                        index++;
+                    }
+                }
+            }
+            else
+            {
+                for (int j = 0; j < hashKeys.Length; j++)
+                {
+                    if (hashKeys[j] != default)
+                    {
+                        keys[index] = hashKeys[j];
+                        index++;
+                    }
+                }
+            }
+        }
+
+        return keys;
+    }
+
+    const int redRockPool_idToObjDict_bucketCount = 1;
+    public int redRockPool_idToObjDict_KeyLength => redRockPool_idToObjDict__keys.Length;
+
+    public void redRockPool_idToObjDict_SetCapacity(int capacity)
+    {
+        int len = capacity / redRockPool_idToObjDict_bucketCount;
+        redRockPool_idToObjDict__keys = new int[len][];
+        for (int i = 0; i < len; i++)
+        {
+            redRockPool_idToObjDict__keys[i] = new int[redRockPool_idToObjDict_bucketCount];
+        }
+
+        // 0-value-key 対策
+        for (int i = 0; i < redRockPool_idToObjDict_bucketCount; i++)
+        {
+            redRockPool_idToObjDict__keys[0][i] = int.MaxValue;
+        }
+
+        redRockPool_idToObjDict__values = new GameObject[len][];
+        for (int i = 0; i < len; i++)
+        {
+            redRockPool_idToObjDict__values[i] = new GameObject[redRockPool_idToObjDict_bucketCount];
+        }
+    }
+
+    public bool redRockPool_idToObjDict_HasItem(int key)
+    {
+        var index = redRockPool_idToObjDict_Hash(key);
+        var hashKeys = redRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+        }
+
+        for (int i = 0; i < hashKeys.Length; i++)
+        {
+            if (hashKeys[i] == key)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private int redRockPool_idToObjDict_Hash(int key)
+    {
+        var len = redRockPool_idToObjDict__keys.Length;
+        var mod = key % len;
+        if (mod >= 0)
+        {
+            return mod;
+        }
+        else
+        {
+            return mod + len;
+        }
+    // return 0 to len-1;
+    }
+
+    public bool redRockPool_idToObjDict_Add(int key, GameObject value)
+    {
+        int index = redRockPool_idToObjDict_Hash(key);
+        var hashKeys = redRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    Debug.LogError("IntKeyGameObjectDictionary: Key already exists " + key.ToString());
+                }
+
+                if (hashKeys[i] == int.MaxValue)
+                {
+                    redRockPool_idToObjDict__keys[index][i] = key;
+                    redRockPool_idToObjDict__values[index][i] = value;
+                    redRockPool_idToObjDict__size++;
+                    return true;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    Debug.LogError("IntKeyGameObjectDictionary: Key already exists " + key.ToString());
+                }
+
+                if (hashKeys[i] == default)
+                {
+                    redRockPool_idToObjDict__keys[index][i] = key;
+                    redRockPool_idToObjDict__values[index][i] = value;
+                    redRockPool_idToObjDict__size++;
+                    return true;
+                }
+            }
+        }
+
+        //Debug.LogWarning("InkEyGameObjectDictionary Add: Dictionary is full "+value.name);
+        var preLen = hashKeys.Length;
+        redRockPool_idToObjDict_ExpandList(index);
+        redRockPool_idToObjDict__keys[index][preLen] = key;
+        redRockPool_idToObjDict__values[index][preLen] = value;
+        redRockPool_idToObjDict__size++;
+        return true;
+    }
+
+    const int redRockPool_idToObjDict_expand = 5;
+    void redRockPool_idToObjDict_ExpandList(int index)
+    {
+        var hashKeys = redRockPool_idToObjDict__keys[index];
+        var hashValues = redRockPool_idToObjDict__values[index];
+        var preLen = hashKeys.Length;
+        var len = preLen + redRockPool_idToObjDict_expand;
+        var newKeys = new int[len];
+        var newValues = new GameObject[len];
+        for (int i = 0; i < preLen; i++)
+        {
+            newKeys[i] = hashKeys[i];
+            newValues[i] = hashValues[i];
+        }
+
+        if (index == 0)
+        {
+            for (int i = preLen; i < len; i++)
+            {
+                newKeys[i] = int.MaxValue;
+            }
+        }
+
+        redRockPool_idToObjDict__keys[index] = newKeys;
+        redRockPool_idToObjDict__values[index] = newValues;
+    }
+
+    public bool redRockPool_idToObjDict_AddOrSetValue(int key, GameObject value)
+    {
+        int index = redRockPool_idToObjDict_Hash(key);
+        var hashKeys = redRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    redRockPool_idToObjDict__keys[index][i] = key;
+                    redRockPool_idToObjDict__values[index][i] = value;
+                    return true;
+                }
+
+                if (hashKeys[i] == int.MaxValue)
+                {
+                    redRockPool_idToObjDict__keys[index][i] = key;
+                    redRockPool_idToObjDict__values[index][i] = value;
+                    redRockPool_idToObjDict__size++;
+                    return true;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    redRockPool_idToObjDict__keys[index][i] = key;
+                    redRockPool_idToObjDict__values[index][i] = value;
+                    return true;
+                }
+
+                if (hashKeys[i] == default)
+                {
+                    redRockPool_idToObjDict__keys[index][i] = key;
+                    redRockPool_idToObjDict__values[index][i] = value;
+                    redRockPool_idToObjDict__size++;
+                    return true;
+                }
+            }
+        }
+
+        //Debug.LogWarning("InkEyGameObjectDictionary AddOrSet: Dictionary is full");
+        var preLen = hashKeys.Length;
+        redRockPool_idToObjDict_ExpandList(index);
+        redRockPool_idToObjDict__keys[index][preLen] = key;
+        redRockPool_idToObjDict__values[index][preLen] = value;
+        redRockPool_idToObjDict__size++;
+        return true;
+    }
+
+    public void redRockPool_idToObjDict_SetValue(int key, GameObject value)
+    {
+        int index = redRockPool_idToObjDict_Hash(key);
+        var hashKeys = redRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    redRockPool_idToObjDict__values[index][i] = value;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    redRockPool_idToObjDict__values[index][i] = value;
+                    return;
+                }
+            }
+        }
+
+        Debug.LogError("Key not found");
+    }
+
+    public GameObject redRockPool_idToObjDict_GetValue(int key)
+    {
+        int index = redRockPool_idToObjDict_Hash(key);
+        var hashKeys = redRockPool_idToObjDict__keys[index];
+        var hashValues = redRockPool_idToObjDict__values[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+
+        Debug.LogError("Key not found");
+        return default;
+    }
+
+    public GameObject redRockPool_idToObjDict_TryGetValue(int key)
+    {
+        int index = redRockPool_idToObjDict_Hash(key);
+        var hashKeys = redRockPool_idToObjDict__keys[index];
+        var hashValues = redRockPool_idToObjDict__values[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+
+        return null;
+    }
+
+    public void redRockPool_idToObjDict_Remove(int key)
+    {
+        int index = redRockPool_idToObjDict_Hash(key);
+        var hashKeys = redRockPool_idToObjDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    hashKeys[i] = int.MaxValue;
+                    redRockPool_idToObjDict__size--;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    hashKeys[i] = default;
+                    redRockPool_idToObjDict__size--;
+                    return;
+                }
+            }
+        }
+
+        Debug.LogError("Key not found");
+    }
+
+    [SerializeField]
+    int redRockPool_Capacity = 50021;
+    public bool redRockPool_itemOperator_SetActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        MeshRenderer mesh = obj.GetComponent<MeshRenderer>();
+        redRockPool_itemOperator_col.enabled = active;
+        redRockPool_itemOperator_mesh.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    public bool redRockPool_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        redRockPool_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
+    void redRockPool_itemOperator_Start()
+    {
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
+    }
+
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
+    BoxCollider redRockPool_itemOperator_col;
+    MeshRenderer redRockPool_itemOperator_mesh;
+    public bool redRockPool_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
+    {
+        redRockPool_itemOperator_col = obj.GetComponent<BoxCollider>();
+        redRockPool_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
+        redRockPool_itemOperator_col.enabled = active;
+        redRockPool_itemOperator_mesh.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    public bool redRockPool_itemOperator_IsActive(GameObject obj)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        MeshRenderer mesh = obj.GetComponent<MeshRenderer>();
+        if (redRockPool_itemOperator_col == null || redRockPool_itemOperator_mesh == null)
+        {
+            Debug.LogError("TilePoolItemOperator: BoxCollider or MeshRenderer is null!");
+            return false;
+        }
+
+        return redRockPool_itemOperator_col.enabled && redRockPool_itemOperator_mesh.enabled;
+    }
+
+    int redRockPool_poolSize;
+    private int[] redRockPool_notActiveObjQueue__array;
+    private int redRockPool_notActiveObjQueue__head; // First valid element in the queue.
+    private int redRockPool_notActiveObjQueue__tail; // Last valid element in the queue.
+    private int redRockPool_notActiveObjQueue__size; // Number of elements.
+    private int redRockPool_notActiveObjQueue__version;
+    private const int redRockPool_notActiveObjQueue_MinimumGrow = 100000;
+    public int redRockPool_notActiveObjQueue_Count => redRockPool_notActiveObjQueue__size;
+    public int redRockPool_notActiveObjQueue_Version => redRockPool_notActiveObjQueue__version;
+
+    [Obsolete("Use Count Property.")]
+    public int redRockPool_notActiveObjQueue_GetCount() => redRockPool_notActiveObjQueue__size;
+    [Obsolete("Use Version Property.")]
+    public int redRockPool_notActiveObjQueue_GetVersion() => redRockPool_notActiveObjQueue__version;
+    // Removes all Objects from the queue.
+    public void redRockPool_notActiveObjQueue_Clear()
+    {
+        redRockPool_notActiveObjQueue__size = 0;
+        redRockPool_notActiveObjQueue__head = 0;
+        redRockPool_notActiveObjQueue__tail = 0;
+        redRockPool_notActiveObjQueue__version++;
+    }
+
+    // CopyTo copies a collection into an Array, starting at a particular
+    // index into the array.
+    public void redRockPool_notActiveObjQueue_CopyTo(Array array, int index)
+    {
+        if (array == null)
+        {
+            //throw new ArgumentNullException(nameof(array));
+            return;
+        }
+
+        if (array.Rank != 1)
+        {
+            //throw new ArgumentException(nameof(array));
+            return;
+        }
+
+        if (index < 0)
+        {
+            //throw new ArgumentOutOfRangeException(nameof(index));
+            return;
+        }
+
+        if (array.Length - index < redRockPool_notActiveObjQueue__size)
+        {
+            //throw new ArgumentException();
+            return;
+        }
+
+        int size = redRockPool_notActiveObjQueue__size;
+        if (size == 0)
+        {
+            return;
+        }
+
+        int toHead = redRockPool_notActiveObjQueue__array.Length - redRockPool_notActiveObjQueue__head;
+        int firstPart = toHead < size ? toHead : size;
+        Array.Copy(redRockPool_notActiveObjQueue__array, redRockPool_notActiveObjQueue__head, array, index, firstPart);
+        size -= firstPart;
+        if (size > 0)
+        {
+            Array.Copy(redRockPool_notActiveObjQueue__array, 0, array, index + toHead, size);
+        }
+    }
+
+    // Adds obj to the tail of the queue.
+    public void redRockPool_notActiveObjQueue_Enqueue(int obj)
+    {
+        if (obj == int.MaxValue)
+        {
+            Debug.LogError("Enqueue: obj is int.MaxValue!");
+            return;
+        }
+
+        if (redRockPool_notActiveObjQueue__array == null)
+        {
+            redRockPool_notActiveObjQueue_SetCapacity(redRockPool_notActiveObjQueue_MinimumGrow);
+        }
+        else if (redRockPool_notActiveObjQueue__size == redRockPool_notActiveObjQueue__array.Length)
+        {
+            redRockPool_notActiveObjQueue_SetCapacity(redRockPool_notActiveObjQueue__array.Length + redRockPool_notActiveObjQueue_MinimumGrow);
+        }
+
+        redRockPool_notActiveObjQueue__array[redRockPool_notActiveObjQueue__tail] = obj;
+        redRockPool_notActiveObjQueue__tail = (redRockPool_notActiveObjQueue__tail + 1) % redRockPool_notActiveObjQueue__array.Length;
+        redRockPool_notActiveObjQueue__size++;
+        redRockPool_notActiveObjQueue__version++;
+    }
+
+    // Removes the int at the head of the queue and returns it. If the queue
+    // is empty, this method returns null.
+    public int redRockPool_notActiveObjQueue_Dequeue()
+    {
+        if (redRockPool_notActiveObjQueue__size == 0)
+            Debug.LogError("Queue is empty!");
+        int removed = redRockPool_notActiveObjQueue__array[redRockPool_notActiveObjQueue__head];
+        redRockPool_notActiveObjQueue__array[redRockPool_notActiveObjQueue__head] = int.MaxValue;
+        redRockPool_notActiveObjQueue__head = (redRockPool_notActiveObjQueue__head + 1) % redRockPool_notActiveObjQueue__array.Length;
+        redRockPool_notActiveObjQueue__size--;
+        redRockPool_notActiveObjQueue__version++;
+        return removed;
+    }
+
+    // Returns the int at the head of the queue. The int remains in the
+    // queue. If the queue is empty, this method returns null.
+    public int redRockPool_notActiveObjQueue_Peek()
+    {
+        if (redRockPool_notActiveObjQueue__size == 0)
+        {
+            //throw new InvalidOperationException();
+            return int.MaxValue;
+        }
+
+        return redRockPool_notActiveObjQueue__array[redRockPool_notActiveObjQueue__head];
+    }
+
+    // Iterates over the ints in the queue, returning an array of the
+    // ints in the Queue, or an empty array if the queue is empty.
+    // The order of elements in the array is first in to last in, the same
+    // order produced by successive calls to Dequeue.
+    public int[] redRockPool_notActiveObjQueue_ToArray()
+    {
+        int[] arr = new int[redRockPool_notActiveObjQueue__size];
+        if (redRockPool_notActiveObjQueue__size == 0)
+        {
+        }
+        else if (redRockPool_notActiveObjQueue__head < redRockPool_notActiveObjQueue__tail)
+        {
+            Array.Copy(redRockPool_notActiveObjQueue__array, redRockPool_notActiveObjQueue__head, arr, 0, redRockPool_notActiveObjQueue__size);
+        }
+        else
+        {
+            int toHead = redRockPool_notActiveObjQueue__array.Length - redRockPool_notActiveObjQueue__head;
+            Array.Copy(redRockPool_notActiveObjQueue__array, redRockPool_notActiveObjQueue__head, arr, 0, toHead);
+            Array.Copy(redRockPool_notActiveObjQueue__array, 0, arr, toHead, redRockPool_notActiveObjQueue__tail);
+        }
+
+        return arr;
+    }
+
+    // PRIVATE Grows or shrinks the buffer to hold capacity ints. Capacity
+    // must be >= _size.
+    public void redRockPool_notActiveObjQueue_SetCapacity(int capacity)
+    {
+        int[] newArray = new int[capacity];
+        if (redRockPool_notActiveObjQueue__size == 0)
+        {
+        }
+        else if (redRockPool_notActiveObjQueue__head < redRockPool_notActiveObjQueue__tail)
+        {
+            Debug.LogWarning("SetCapacity: _head < _tail");
+            Array.Copy(redRockPool_notActiveObjQueue__array, redRockPool_notActiveObjQueue__head, newArray, 0, redRockPool_notActiveObjQueue__size);
+        }
+        else
+        {
+            Debug.LogWarning("SetCapacity: _head >= _tail");
+            int toHead = redRockPool_notActiveObjQueue__array.Length - redRockPool_notActiveObjQueue__head;
+            Array.Copy(redRockPool_notActiveObjQueue__array, redRockPool_notActiveObjQueue__head, newArray, 0, toHead);
+            Array.Copy(redRockPool_notActiveObjQueue__array, 0, newArray, toHead, redRockPool_notActiveObjQueue__tail);
+        }
+
+        redRockPool_notActiveObjQueue__array = newArray;
+        redRockPool_notActiveObjQueue__head = 0;
+        redRockPool_notActiveObjQueue__tail = redRockPool_notActiveObjQueue__size == capacity ? 0 : redRockPool_notActiveObjQueue__size;
+        redRockPool_notActiveObjQueue__version++;
+    }
+
+    //[SerializeField]Transform parent;
+    void redRockPool_Start()
+    {
+        redRockPool_itemOperator_Start();
+        redRockPool_idToObjDict_SetCapacity(redRockPool_Capacity);
+        redRockPool_notActiveObjQueue_SetCapacity(redRockPool_Capacity);
+    }
+
+    public bool redRockPool_PeekIsInstantiated()
+    {
+        return redRockPool_isInstantiated;
+    }
+
+    bool redRockPool_isInstantiated = false;
+    public void redRockPool_Store(Transform p = null)
+    {
+        if (redRockPool_idToObjDict_Count > redRockPool_idToObjDict_KeyLength)
+            return;
+        redRockPool_isInstantiated = true;
+        GameObject instance;
+        int id;
+        redRockPool_instance = GameObject.Instantiate(redRockPool_prefab);
+        //gc alloc debug only
+        /*if(instance==null){
+            Debug.LogError("UdonObjectPool Setting Error: Prefab is null");
+        }*/
+        //id = GetInstanceID(instance);/*instance.GetInstanceID();*///.GetHashCode();
+        id = redRockPool_instance.GetInstanceID();
+        redRockPool_itemOperator_SetActive(redRockPool_instance, id, false);
+        redRockPool_idToObjDict_Add(id, redRockPool_instance);
+        redRockPool_notActiveObjQueue_Enqueue(id);
+    }
+
+    GameObject redRockPool_instance;
+    // falseで出してmeshcombinerで切り替える
+    int redRockPool_uniqueId = 0;
+    public GameObject redRockPool_TryToSpawn()
+    {
+        int id;
+        redRockPool_isInstantiated = true;
+        if (redRockPool_notActiveObjQueue_Count > 0)
+        {
+            redRockPool_isInstantiated = false;
+            id = redRockPool_notActiveObjQueue_Dequeue();
+            if (redRockPool_idToObjDict_HasItem(id))
+            {
+                var obj = redRockPool_idToObjDict_GetValue(id);
+                //itemOperator.SetActive(obj,id,true);
+                return obj;
+            }
+            else
+            {
+                Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
+            }
+        }
+
+        redRockPool_instance = GameObject.Instantiate(redRockPool_prefab);
+        //gc alloc
+        /*if(instance==null){
+            Debug.LogError("UdonObjectPool Setting Error: Prefab is null");
+        }*/
+        id = redRockPool_instance.GetInstanceID();
+        redRockPool_idToObjDict_Add(id, redRockPool_instance); // gc alloc
+        //itemOperator.SetActive(instance,id,true);
+        //}while(!idToObjDict.Add(id,instance));
+        //if(idToObjDict.HasItem(id))Debug.LogError("UdonObjectPool Error: InstanceID is duplicated!");
+        return redRockPool_instance;
+    }
+
+    public GameObject redRockPool_TryToSpawn(int id)
+    {
+        redRockPool_isInstantiated = false;
+        if (redRockPool_idToObjDict_HasItem(id))
+        {
+            var obj = redRockPool_idToObjDict_GetValue(id);
+            redRockPool_itemOperator_SetActive(obj, id, false);
+            return obj;
+        }
+        else
+        {
+            Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
+            return null;
+        }
+    }
+
+    public void redRockPool_Return(GameObject obj, bool force = false, bool enqueue = true)
+    {
+        // gc alloc debug only
+        //if(obj==null)return; // gc alloc debug only
+        int id = obj.GetInstanceID(); //obj.GetInstanceID();
+        if (!redRockPool_idToObjDict_HasItem(id))
+        {
+            Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
+            return;
+        }
+
+        redRockPool_itemOperator_SetActive(obj, id, false);
+        if (enqueue)
+            redRockPool_notActiveObjQueue_Enqueue(id);
+    }
+
+    public void redRockPool_Return(GameObject obj, int id, bool force = false, bool enqueue = true)
+    {
+        //if(obj==null)return; // gc alloc debug only
+        if (!redRockPool_idToObjDict_HasItem(id))
+        {
+            Debug.LogWarning("UdonObjectPool Error: InstanceID is not found!");
+            return;
+        }
+
+        redRockPool_itemOperator_SetActive(obj, id, false);
+        if (enqueue)
+            redRockPool_notActiveObjQueue_Enqueue(id);
+    }
+
+    public bool redRockPool_IsMine(GameObject obj)
+    {
+        return obj.name.Contains(redRockPool_prefab.name);
+    }
+
+    public void redRockPool_Clear()
+    {
+        redRockPool_notActiveObjQueue_Clear();
+        foreach (var obj in redRockPool_idToObjDict_GenerateKeysArray())
+        {
+            redRockPool_itemOperator_SetActive(redRockPool_idToObjDict_GetValue(obj), false);
+            redRockPool_notActiveObjQueue_Enqueue(obj);
+        }
+    }
+
     public int settings_chunkSize = 3;
     public int settings_chunkSizeY = 3;
     public int settings_batchCount = 1000;
@@ -12217,7 +7839,7 @@ public class UnrolledMapGenerator : IMapGenerator
     public int settings_searchBatchCount = 30;
     public bool settings_removeOn = true;
     public bool settings_searchOn = true;
-    Biome[][] biomeMap = new Biome[][]
+    Biome[][] biomeEarthMap = new Biome[][]
     {
         new Biome[]
         {
@@ -12260,6 +7882,92 @@ public class UnrolledMapGenerator : IMapGenerator
             Biome.Sand
         },
     };
+    Biome[][] biomeMoonMap = new Biome[][]
+    {
+        new Biome[]
+        {
+            Biome.Dark,
+            Biome.Dark,
+            Biome.Dark,
+            Biome.Dark,
+            Biome.Rock
+        },
+        new Biome[]
+        {
+            Biome.Dark,
+            Biome.Rock,
+            Biome.Rock,
+            Biome.Rock,
+            Biome.OrangeRock
+        },
+        new Biome[]
+        {
+            Biome.Rock,
+            Biome.OrangeRock,
+            Biome.OrangeRock,
+            Biome.OrangeRock,
+            Biome.Rock
+        },
+        new Biome[]
+        {
+            Biome.OrangeRock,
+            Biome.Rock,
+            Biome.Rock,
+            Biome.Rock,
+            Biome.Sand
+        },
+        new Biome[]
+        {
+            Biome.Rock,
+            Biome.Sand,
+            Biome.Sand,
+            Biome.Sand,
+            Biome.Sand
+        },
+    };
+    Biome[][] biomeMarsMap = new Biome[][]
+    {
+        new Biome[]
+        {
+            Biome.Rock,
+            Biome.Rock,
+            Biome.Rock,
+            Biome.RedRock,
+            Biome.RedRock
+        },
+        new Biome[]
+        {
+            Biome.Rock,
+            Biome.RedRock,
+            Biome.RedRock,
+            Biome.RedRock,
+            Biome.OrangeRock
+        },
+        new Biome[]
+        {
+            Biome.RedRock,
+            Biome.RedRock,
+            Biome.RedRock,
+            Biome.OrangeRock,
+            Biome.OrangeRock
+        },
+        new Biome[]
+        {
+            Biome.RedRock,
+            Biome.RedRock,
+            Biome.OrangeRock,
+            Biome.OrangeRock,
+            Biome.Sand
+        },
+        new Biome[]
+        {
+            Biome.OrangeRock,
+            Biome.OrangeRock,
+            Biome.Sand,
+            Biome.Sand,
+            Biome.Sand
+        },
+    };
     bool BiomePeekIsInstantiated(Biome biome)
     {
         switch (biome)
@@ -12280,6 +7988,10 @@ public class UnrolledMapGenerator : IMapGenerator
                 return dirtPool_PeekIsInstantiated();
             case Biome.Dark:
                 return darkPool_PeekIsInstantiated();
+            case Biome.OrangeRock:
+                return orangeRockPool_PeekIsInstantiated();
+            case Biome.RedRock:
+                return redRockPool_PeekIsInstantiated();
             default:
                 Debug.LogError("Invalid biome: " + biome);
                 return false;
@@ -12306,6 +8018,10 @@ public class UnrolledMapGenerator : IMapGenerator
                 return dirtPool_TryToSpawn();
             case Biome.Dark:
                 return darkPool_TryToSpawn();
+            case Biome.OrangeRock:
+                return orangeRockPool_TryToSpawn();
+            case Biome.RedRock:
+                return redRockPool_TryToSpawn();
             default:
                 Debug.LogError("Invalid biome: " + biome);
                 return null;
@@ -12339,6 +8055,12 @@ public class UnrolledMapGenerator : IMapGenerator
                 return;
             case Biome.Dark:
                 darkPool_Return(cell, id);
+                return;
+            case Biome.OrangeRock:
+                orangeRockPool_Return(cell, id);
+                return;
+            case Biome.RedRock:
+                redRockPool_Return(cell, id);
                 return;
             default:
                 Debug.LogError("Invalid biome: " + biome);
@@ -12374,6 +8096,12 @@ public class UnrolledMapGenerator : IMapGenerator
             case (int)Biome.Dark:
                 darkPool_Store();
                 return;
+            case (int)Biome.OrangeRock:
+                orangeRockPool_Store();
+                return;
+            case (int)Biome.RedRock:
+                redRockPool_Store();
+                return;
             default:
                 Debug.LogError("Invalid biome: " + biomeIndex);
                 return;
@@ -12400,6 +8128,10 @@ public class UnrolledMapGenerator : IMapGenerator
                 return dirtPool_PeekIsInstantiated();
             case (int)Biome.Dark:
                 return darkPool_PeekIsInstantiated();
+            case (int)Biome.OrangeRock:
+                return orangeRockPool_PeekIsInstantiated();
+            case (int)Biome.RedRock:
+                return redRockPool_PeekIsInstantiated();
             default:
                 Debug.LogError("Invalid biome: " + biomeIndex);
                 return false;
@@ -12434,8 +8166,7 @@ public class UnrolledMapGenerator : IMapGenerator
 
     float removeInterval => settings_removeInterval;
 
-    float waterPercentage => settings_waterPercentage;
-
+    float waterPercentage;
     float chunkUnLoadRange => settings_chunkUnLoadRange;
 
     float chunkDetailRange => settings_chunkDetailRange;
@@ -12446,9 +8177,12 @@ public class UnrolledMapGenerator : IMapGenerator
     int chunkCapacity = 15000;
     public override void OnDeserialization()
     {
-        isSynced = true;
+        Debug.Log("OnDeserialization: MapGenerator");
+        isSyncedLocal = true;
     }
 
+    bool isSyncedLocal = false;
+    [UdonSynced]
     bool isSynced = false;
     void Assert(bool b)
     {
@@ -12459,18 +8193,79 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     int[] detailChunkCellInstanceIds;
-    int[][] detailOperationDictionary__keys;
-    bool[][] detailOperationDictionary__values;
-    int detailOperationDictionary__size;
-    public int detailOperationDictionary_Count => detailOperationDictionary__size;
+    int[][] chunkOperationDictionary__keys;
+    ChunkOperation[][] chunkOperationDictionary__values;
+    int chunkOperationDictionary__size;
+    public int chunkOperationDictionary_Count => chunkOperationDictionary__size;
 
-    public int[] detailOperationDictionary_GenerateKeysArray()
+    const int chunkOperationDictionary_bucketCount = 1;
+    public void chunkOperationDictionary_SetCapacity(int capacity)
     {
-        int[] keys = new int[detailOperationDictionary__size];
-        int index = 0;
-        for (int i = 0; i < detailOperationDictionary__keys.Length; i++)
+        int len = capacity / chunkOperationDictionary_bucketCount;
+        chunkOperationDictionary__keys = new int[len][];
+        for (int i = 0; i < chunkOperationDictionary__keys.Length; i++)
         {
-            var hashKeys = detailOperationDictionary__keys[i];
+            chunkOperationDictionary__keys[i] = new int[chunkOperationDictionary_bucketCount];
+        }
+
+        // 0-value-key 対策
+        for (int i = 0; i < chunkOperationDictionary_bucketCount; i++)
+        {
+            chunkOperationDictionary__keys[0][i] = int.MaxValue;
+        }
+
+        chunkOperationDictionary__values = new ChunkOperation[len][];
+        for (int i = 0; i < chunkOperationDictionary__values.Length; i++)
+        {
+            chunkOperationDictionary__values[i] = new ChunkOperation[chunkOperationDictionary_bucketCount];
+        }
+    }
+
+    public bool chunkOperationDictionary_HasItem(int key)
+    {
+        var index = chunkOperationDictionary_Hash(key);
+        var hashKeys = chunkOperationDictionary__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+        }
+
+        for (int i = 0; i < hashKeys.Length; i++)
+        {
+            if (hashKeys[i] == key)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private int chunkOperationDictionary_Hash(int key)
+    {
+        var len = chunkOperationDictionary__keys.Length;
+        var mod = key % len;
+        if (mod >= 0)
+        {
+            return mod;
+        }
+        else
+        {
+            return mod + len;
+        }
+    // return 0 to len-1;
+    }
+
+    public int[] chunkOperationDictionary_GenerateKeysArray()
+    {
+        int[] keys = new int[chunkOperationDictionary__size];
+        int index = 0;
+        for (int i = 0; i < chunkOperationDictionary__keys.Length; i++)
+        {
+            var hashKeys = chunkOperationDictionary__keys[i];
             if (i == 0)
             {
                 for (int j = 0; j < hashKeys.Length; j++)
@@ -12498,90 +8293,30 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int detailOperationDictionary_bucketCount = 2;
-    public void detailOperationDictionary_SetCapacity(int capacity)
+    public bool chunkOperationDictionary_Add(int key, ChunkOperation value)
     {
-        int len = capacity / detailOperationDictionary_bucketCount;
-        detailOperationDictionary__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            detailOperationDictionary__keys[i] = new int[detailOperationDictionary_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < detailOperationDictionary_bucketCount; i++)
-        {
-            detailOperationDictionary__keys[0][i] = int.MaxValue;
-        }
-
-        detailOperationDictionary__values = new bool[len][];
-        for (int i = 0; i < len; i++)
-        {
-            detailOperationDictionary__values[i] = new bool[detailOperationDictionary_bucketCount];
-        }
-    }
-
-    public bool detailOperationDictionary_HasItem(int key)
-    {
-        var index = detailOperationDictionary_Hash(key);
-        var hashKeys = detailOperationDictionary__keys[index];
+        int index = chunkOperationDictionary_Hash(key);
+        var hashKeys = chunkOperationDictionary__keys[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
             {
                 Debug.LogError("not allowed key value");
             }
-        }
 
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int detailOperationDictionary_Hash(int key)
-    {
-        var len = detailOperationDictionary__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool detailOperationDictionary_Add(int key, bool value)
-    {
-        int index = detailOperationDictionary_Hash(key);
-        var hashKeys = detailOperationDictionary__keys[index];
-        if (key == int.MaxValue)
-        {
-            Debug.LogError("not allowed key value");
-        }
-
-        if (index == 0)
-        {
             for (int i = 0; i < hashKeys.Length; i++)
             {
                 if (hashKeys[i] == key)
                 {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
+                    Debug.LogError("IntKeyChunkOperationArrDictionary: Key already exists " + key.ToString());
+                    return true;
                 }
 
                 if (hashKeys[i] == int.MaxValue)
                 {
-                    detailOperationDictionary__keys[index][i] = key;
-                    detailOperationDictionary__values[index][i] = value;
-                    detailOperationDictionary__size++;
+                    chunkOperationDictionary__keys[index][i] = key;
+                    chunkOperationDictionary__values[index][i] = value;
+                    chunkOperationDictionary__size++;
                     return true;
                 }
             }
@@ -12592,37 +8327,37 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
+                    Debug.LogError("IntKeyChunkOperationArrDictionary: Key already exists " + key.ToString());
+                    return true;
                 }
 
                 if (hashKeys[i] == default)
                 {
-                    detailOperationDictionary__keys[index][i] = key;
-                    detailOperationDictionary__values[index][i] = value;
-                    detailOperationDictionary__size++;
+                    chunkOperationDictionary__keys[index][i] = key;
+                    chunkOperationDictionary__values[index][i] = value;
+                    chunkOperationDictionary__size++;
                     return true;
                 }
             }
         }
 
-        //Debug.LogWarning("InkEyBoolDictionary Add: Dictionary is full");
         var preLen = hashKeys.Length;
-        detailOperationDictionary_ExpandList(index);
-        detailOperationDictionary__keys[index][preLen] = key;
-        detailOperationDictionary__values[index][preLen] = value;
-        detailOperationDictionary__size++;
+        chunkOperationDictionary_ExpandList(index);
+        chunkOperationDictionary__keys[index][preLen] = key;
+        chunkOperationDictionary__values[index][preLen] = value;
+        chunkOperationDictionary__size++;
         return true;
     }
 
-    const int detailOperationDictionary_expand = 10;
-    void detailOperationDictionary_ExpandList(int index)
+    const int chunkOperationDictionary_expand = 5;
+    void chunkOperationDictionary_ExpandList(int index)
     {
-        var hashKeys = detailOperationDictionary__keys[index];
-        var hashValues = detailOperationDictionary__values[index];
-        var len = detailOperationDictionary__keys[index].Length + detailOperationDictionary_expand;
+        var hashKeys = chunkOperationDictionary__keys[index];
+        var hashValues = chunkOperationDictionary__values[index];
+        var len = chunkOperationDictionary__keys[index].Length + chunkOperationDictionary_expand;
         var newKeys = new int[len];
-        var newValues = new bool[len];
-        for (int i = 0; i < detailOperationDictionary__keys[index].Length; i++)
+        var newValues = new ChunkOperation[len];
+        for (int i = 0; i < chunkOperationDictionary__keys[index].Length; i++)
         {
             newKeys[i] = hashKeys[i];
             newValues[i] = hashValues[i];
@@ -12630,20 +8365,20 @@ public class UnrolledMapGenerator : IMapGenerator
 
         if (index == 0)
         {
-            for (int i = detailOperationDictionary__keys[index].Length; i < len; i++)
+            for (int i = chunkOperationDictionary__keys[index].Length; i < len; i++)
             {
                 newKeys[i] = int.MaxValue;
             }
         }
 
-        detailOperationDictionary__keys[index] = newKeys;
-        detailOperationDictionary__values[index] = newValues;
+        chunkOperationDictionary__keys[index] = newKeys;
+        chunkOperationDictionary__values[index] = newValues;
     }
 
-    public bool detailOperationDictionary_AddOrSetValue(int key, bool value)
+    public void chunkOperationDictionary_AddOrSetValue(int key, ChunkOperation value)
     {
-        int index = detailOperationDictionary_Hash(key);
-        var hashKeys = detailOperationDictionary__keys[index];
+        int index = chunkOperationDictionary_Hash(key);
+        var hashKeys = chunkOperationDictionary__keys[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
@@ -12655,67 +8390,16 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    detailOperationDictionary__keys[index][i] = key;
-                    detailOperationDictionary__values[index][i] = value;
-                    return true;
+                    chunkOperationDictionary__keys[index][i] = key;
+                    chunkOperationDictionary__values[index][i] = value;
+                    return;
                 }
 
                 if (hashKeys[i] == int.MaxValue)
                 {
-                    detailOperationDictionary__keys[index][i] = key;
-                    detailOperationDictionary__values[index][i] = value;
-                    detailOperationDictionary__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    detailOperationDictionary__keys[index][i] = key;
-                    detailOperationDictionary__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    detailOperationDictionary__keys[index][i] = key;
-                    detailOperationDictionary__values[index][i] = value;
-                    detailOperationDictionary__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogError("InkEyBoolDictionary AddOrSetValue: Dictionary is full");
-        //return false;
-        var preLen = hashKeys.Length;
-        detailOperationDictionary_ExpandList(index);
-        detailOperationDictionary__keys[index][preLen] = key;
-        detailOperationDictionary__values[index][preLen] = value;
-        detailOperationDictionary__size++;
-        return true;
-    }
-
-    public void detailOperationDictionary_SetValue(int key, bool value)
-    {
-        int index = detailOperationDictionary_Hash(key);
-        var hashKeys = detailOperationDictionary__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    detailOperationDictionary__values[index][i] = value;
+                    chunkOperationDictionary__keys[index][i] = key;
+                    chunkOperationDictionary__values[index][i] = value;
+                    chunkOperationDictionary__size++;
                     return;
                 }
             }
@@ -12726,7 +8410,55 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    detailOperationDictionary__values[index][i] = value;
+                    chunkOperationDictionary__keys[index][i] = key;
+                    chunkOperationDictionary__values[index][i] = value;
+                    return;
+                }
+
+                if (hashKeys[i] == default)
+                {
+                    chunkOperationDictionary__keys[index][i] = key;
+                    chunkOperationDictionary__values[index][i] = value;
+                    chunkOperationDictionary__size++;
+                    return;
+                }
+            }
+        }
+
+        var preLen = hashKeys.Length;
+        chunkOperationDictionary_ExpandList(index);
+        chunkOperationDictionary__keys[index][preLen] = key;
+        chunkOperationDictionary__values[index][preLen] = value;
+        chunkOperationDictionary__size++;
+    }
+
+    public void chunkOperationDictionary_SetValue(int key, ChunkOperation value)
+    {
+        int index = chunkOperationDictionary_Hash(key);
+        var hashKeys = chunkOperationDictionary__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    chunkOperationDictionary__values[index][i] = value;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    chunkOperationDictionary__values[index][i] = value;
                     return;
                 }
             }
@@ -12735,11 +8467,11 @@ public class UnrolledMapGenerator : IMapGenerator
         Debug.LogError("Key not found");
     }
 
-    public bool detailOperationDictionary_GetValueOrDefault(int key, bool defaultValue)
+    public ChunkOperation chunkOperationDictionary_GetValueOrDefault(int key, ChunkOperation defaultValue)
     {
-        int index = detailOperationDictionary_Hash(key);
-        var hashKeys = detailOperationDictionary__keys[index];
-        var hashValues = detailOperationDictionary__values[index];
+        int index = chunkOperationDictionary_Hash(key);
+        var hashKeys = chunkOperationDictionary__keys[index];
+        var hashValues = chunkOperationDictionary__values[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
@@ -12769,11 +8501,11 @@ public class UnrolledMapGenerator : IMapGenerator
         return defaultValue;
     }
 
-    public bool detailOperationDictionary_GetValue(int key)
+    public ChunkOperation chunkOperationDictionary_GetValue(int key)
     {
-        int index = detailOperationDictionary_Hash(key);
-        var hashKeys = detailOperationDictionary__keys[index];
-        var hashValues = detailOperationDictionary__values[index];
+        int index = chunkOperationDictionary_Hash(key);
+        var hashKeys = chunkOperationDictionary__keys[index];
+        var hashValues = chunkOperationDictionary__values[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
@@ -12804,18 +8536,10 @@ public class UnrolledMapGenerator : IMapGenerator
         return default;
     }
 
-    public void detailOperationDictionary_TryRemoveBatch(int[] keys, bool[] result)
+    public void chunkOperationDictionary_Remove(int key)
     {
-        for (int i = 0; i < keys.Length; i++)
-        {
-            result[i] = detailOperationDictionary_TryRemove(keys[i]);
-        }
-    }
-
-    public bool detailOperationDictionary_TryRemove(int key)
-    {
-        int index = detailOperationDictionary_Hash(key);
-        var hashKeys = detailOperationDictionary__keys[index];
+        int index = chunkOperationDictionary_Hash(key);
+        var hashKeys = chunkOperationDictionary__keys[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
@@ -12828,290 +8552,7 @@ public class UnrolledMapGenerator : IMapGenerator
                 if (hashKeys[i] == key)
                 {
                     hashKeys[i] = int.MaxValue;
-                    detailOperationDictionary__size--;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    detailOperationDictionary__size--;
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    public void detailOperationDictionary_Remove(int key)
-    {
-        if (!detailOperationDictionary_TryRemove(key))
-            Debug.LogError("Key not found");
-    }
-
-    int[][] unloadOperationDictionary__keys;
-    bool[][] unloadOperationDictionary__values;
-    int unloadOperationDictionary__size;
-    public int unloadOperationDictionary_Count => unloadOperationDictionary__size;
-
-    public int[] unloadOperationDictionary_GenerateKeysArray()
-    {
-        int[] keys = new int[unloadOperationDictionary__size];
-        int index = 0;
-        for (int i = 0; i < unloadOperationDictionary__keys.Length; i++)
-        {
-            var hashKeys = unloadOperationDictionary__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int unloadOperationDictionary_bucketCount = 2;
-    public void unloadOperationDictionary_SetCapacity(int capacity)
-    {
-        int len = capacity / unloadOperationDictionary_bucketCount;
-        unloadOperationDictionary__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            unloadOperationDictionary__keys[i] = new int[unloadOperationDictionary_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < unloadOperationDictionary_bucketCount; i++)
-        {
-            unloadOperationDictionary__keys[0][i] = int.MaxValue;
-        }
-
-        unloadOperationDictionary__values = new bool[len][];
-        for (int i = 0; i < len; i++)
-        {
-            unloadOperationDictionary__values[i] = new bool[unloadOperationDictionary_bucketCount];
-        }
-    }
-
-    public bool unloadOperationDictionary_HasItem(int key)
-    {
-        var index = unloadOperationDictionary_Hash(key);
-        var hashKeys = unloadOperationDictionary__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int unloadOperationDictionary_Hash(int key)
-    {
-        var len = unloadOperationDictionary__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool unloadOperationDictionary_Add(int key, bool value)
-    {
-        int index = unloadOperationDictionary_Hash(key);
-        var hashKeys = unloadOperationDictionary__keys[index];
-        if (key == int.MaxValue)
-        {
-            Debug.LogError("not allowed key value");
-        }
-
-        if (index == 0)
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    unloadOperationDictionary__keys[index][i] = key;
-                    unloadOperationDictionary__values[index][i] = value;
-                    unloadOperationDictionary__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    unloadOperationDictionary__keys[index][i] = key;
-                    unloadOperationDictionary__values[index][i] = value;
-                    unloadOperationDictionary__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoolDictionary Add: Dictionary is full");
-        var preLen = hashKeys.Length;
-        unloadOperationDictionary_ExpandList(index);
-        unloadOperationDictionary__keys[index][preLen] = key;
-        unloadOperationDictionary__values[index][preLen] = value;
-        unloadOperationDictionary__size++;
-        return true;
-    }
-
-    const int unloadOperationDictionary_expand = 10;
-    void unloadOperationDictionary_ExpandList(int index)
-    {
-        var hashKeys = unloadOperationDictionary__keys[index];
-        var hashValues = unloadOperationDictionary__values[index];
-        var len = unloadOperationDictionary__keys[index].Length + unloadOperationDictionary_expand;
-        var newKeys = new int[len];
-        var newValues = new bool[len];
-        for (int i = 0; i < unloadOperationDictionary__keys[index].Length; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = unloadOperationDictionary__keys[index].Length; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        unloadOperationDictionary__keys[index] = newKeys;
-        unloadOperationDictionary__values[index] = newValues;
-    }
-
-    public bool unloadOperationDictionary_AddOrSetValue(int key, bool value)
-    {
-        int index = unloadOperationDictionary_Hash(key);
-        var hashKeys = unloadOperationDictionary__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    unloadOperationDictionary__keys[index][i] = key;
-                    unloadOperationDictionary__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    unloadOperationDictionary__keys[index][i] = key;
-                    unloadOperationDictionary__values[index][i] = value;
-                    unloadOperationDictionary__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    unloadOperationDictionary__keys[index][i] = key;
-                    unloadOperationDictionary__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    unloadOperationDictionary__keys[index][i] = key;
-                    unloadOperationDictionary__values[index][i] = value;
-                    unloadOperationDictionary__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogError("InkEyBoolDictionary AddOrSetValue: Dictionary is full");
-        //return false;
-        var preLen = hashKeys.Length;
-        unloadOperationDictionary_ExpandList(index);
-        unloadOperationDictionary__keys[index][preLen] = key;
-        unloadOperationDictionary__values[index][preLen] = value;
-        unloadOperationDictionary__size++;
-        return true;
-    }
-
-    public void unloadOperationDictionary_SetValue(int key, bool value)
-    {
-        int index = unloadOperationDictionary_Hash(key);
-        var hashKeys = unloadOperationDictionary__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    unloadOperationDictionary__values[index][i] = value;
+                    chunkOperationDictionary__size--;
                     return;
                 }
             }
@@ -13122,133 +8563,14 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    unloadOperationDictionary__values[index][i] = value;
+                    hashKeys[i] = default;
+                    chunkOperationDictionary__size--;
                     return;
                 }
             }
         }
 
         Debug.LogError("Key not found");
-    }
-
-    public bool unloadOperationDictionary_GetValueOrDefault(int key, bool defaultValue)
-    {
-        int index = unloadOperationDictionary_Hash(key);
-        var hashKeys = unloadOperationDictionary__keys[index];
-        var hashValues = unloadOperationDictionary__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        return defaultValue;
-    }
-
-    public bool unloadOperationDictionary_GetValue(int key)
-    {
-        int index = unloadOperationDictionary_Hash(key);
-        var hashKeys = unloadOperationDictionary__keys[index];
-        var hashValues = unloadOperationDictionary__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void unloadOperationDictionary_TryRemoveBatch(int[] keys, bool[] result)
-    {
-        for (int i = 0; i < keys.Length; i++)
-        {
-            result[i] = unloadOperationDictionary_TryRemove(keys[i]);
-        }
-    }
-
-    public bool unloadOperationDictionary_TryRemove(int key)
-    {
-        int index = unloadOperationDictionary_Hash(key);
-        var hashKeys = unloadOperationDictionary__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    unloadOperationDictionary__size--;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    unloadOperationDictionary__size--;
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    public void unloadOperationDictionary_Remove(int key)
-    {
-        if (!unloadOperationDictionary_TryRemove(key))
-            Debug.LogError("Key not found");
     }
 
     int[][] chunkIndexToInstanceIdDictionary__keys;
@@ -13256,7 +8578,7 @@ public class UnrolledMapGenerator : IMapGenerator
     int chunkIndexToInstanceIdDictionary__size;
     public int chunkIndexToInstanceIdDictionary_Count => chunkIndexToInstanceIdDictionary__size;
 
-    const int chunkIndexToInstanceIdDictionary_bucketCount = 2;
+    const int chunkIndexToInstanceIdDictionary_bucketCount = 1;
     public void chunkIndexToInstanceIdDictionary_SetCapacity(int capacity)
     {
         int len = capacity / chunkIndexToInstanceIdDictionary_bucketCount;
@@ -13366,7 +8688,7 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    Debug.LogError("IntKeyintArrDictionary: Key already exists " + key.ToString());
+                    Debug.LogError("IntKeyintDictionary: Key already exists " + key.ToString());
                     return true;
                 }
 
@@ -13385,7 +8707,7 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    Debug.LogError("IntKeyintArrDictionary: Key already exists " + key.ToString());
+                    Debug.LogError("IntKeyintDictionary: Key already exists " + key.ToString());
                     return true;
                 }
 
@@ -13399,15 +8721,15 @@ public class UnrolledMapGenerator : IMapGenerator
             }
         }
 
-        chunkIndexToInstanceIdDictionary_ExpandList(index);
         var preLen = hashKeys.Length;
+        chunkIndexToInstanceIdDictionary_ExpandList(index);
         chunkIndexToInstanceIdDictionary__keys[index][preLen] = key;
         chunkIndexToInstanceIdDictionary__values[index][preLen] = value;
         chunkIndexToInstanceIdDictionary__size++;
         return true;
     }
 
-    const int chunkIndexToInstanceIdDictionary_expand = 10;
+    const int chunkIndexToInstanceIdDictionary_expand = 5;
     void chunkIndexToInstanceIdDictionary_ExpandList(int index)
     {
         var hashKeys = chunkIndexToInstanceIdDictionary__keys[index];
@@ -13596,6 +8918,13 @@ public class UnrolledMapGenerator : IMapGenerator
 
     public void chunkIndexToInstanceIdDictionary_Remove(int key)
     {
+        if (chunkIndexToInstanceIdDictionary_TryRemove(key))
+            return;
+        Debug.LogError("Key not found");
+    }
+
+    public bool chunkIndexToInstanceIdDictionary_TryRemove(int key)
+    {
         int index = chunkIndexToInstanceIdDictionary_Hash(key);
         var hashKeys = chunkIndexToInstanceIdDictionary__keys[index];
         if (index == 0)
@@ -13611,7 +8940,7 @@ public class UnrolledMapGenerator : IMapGenerator
                 {
                     hashKeys[i] = int.MaxValue;
                     chunkIndexToInstanceIdDictionary__size--;
-                    return;
+                    return true;
                 }
             }
         }
@@ -13623,18 +8952,21 @@ public class UnrolledMapGenerator : IMapGenerator
                 {
                     hashKeys[i] = default;
                     chunkIndexToInstanceIdDictionary__size--;
-                    return;
+                    return true;
                 }
             }
         }
 
-        Debug.LogError("Key not found");
+        return false;
     }
 
+    int[] permanentBreakCellArr;
     void Start()
     {
         chunkPool_Start();
         meshCombiner_Start();
+        redRockPool_Start();
+        orangeRockPool_Start();
         darkPool_Start();
         waterPool_Start();
         sandPool_Start();
@@ -13643,31 +8975,27 @@ public class UnrolledMapGenerator : IMapGenerator
         desertPool_Start();
         tundraPool_Start();
         grassPool_Start();
+        waterPercentage = settings_waterPercentage;
         outlineDict_SetCapacity(chunkCapacity);
-        removedChunkIndexDict_SetCapacity(chunkCapacity);
-        loadedChunkIndexDict_SetCapacity(chunkCapacity);
         chunkToCellsDict_SetCapacity(chunkCapacity);
-        detailChunkIndexDict_SetCapacity(chunkCapacity);
-        instanceIDToGlobalCellIndexDictionary_SetCapacity(100000);
+        chunkStateDict_SetCapacity(chunkCapacity);
+        instanceIDToGlobalCellIndexDictionary_SetCapacity(20011);
         undetailQueue_SetCapacity(chunkCapacity);
         detailQueue_SetCapacity(chunkCapacity);
         priorityDetailQueue_SetCapacity(chunkCapacity);
         unloadQueue_SetCapacity(chunkCapacity);
-        detailOperationDictionary_SetCapacity(100000);
-        unloadOperationDictionary_SetCapacity(100000);
         chunkIndexToCellBiomesDictionary_SetCapacity(chunkCapacity);
         chunkToCellInstanceIdsDictionary_SetCapacity(chunkCapacity);
         permanentBreakCellDictionary_SetCapacity(chunkCapacity);
+        permanentBreakCellArr = new int[20011];
         chunkIndexToInstanceIdDictionary_SetCapacity(chunkCapacity);
+        chunkOperationDictionary_SetCapacity(chunkCapacity);
+        instanceIDToBiomeDictionary_SetCapacity(20011);
         brokenArr = new bool[chunkSize * chunkSize * chunkSizeY];
-        _seedX = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedZ = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedTX = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedTZ = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedHX = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedHZ = UnityEngine.Random.value * (float)Int16.MaxValue;
-        isSynced = true;
-        RequestSerialization();
+        colOnlyArr = new bool[chunkSize * chunkSize * chunkSizeY];
+        MapSync();
+        SendCustomEventDelayedSeconds(nameof(ReqSync), 5f);
+        SendCustomEventDelayedSeconds(nameof(ReqSync), 10f);
         /*chunkWidth=settings.chunkWidth;
         chunkDepth=settings.chunkDepth;
         chunkSize=settings.chunkSize;
@@ -13682,6 +9010,19 @@ public class UnrolledMapGenerator : IMapGenerator
         XENDINDEX = chunkWidth - 1 - chunkWidth / 2;
         ZSTARTINDEX = 0;
         ZENDINDEX = chunkDepth;
+        QuickSearchInterval();
+    }
+
+    [SerializeField]
+    float quickSearchInterval = 0.5f;
+    public void QuickSearchInterval()
+    {
+        if (IsStart)
+        {
+            QuickSearch();
+        }
+
+        SendCustomEventDelayedSeconds(nameof(QuickSearchInterval), quickSearchInterval);
     }
 
     int[][] chunkToCellInstanceIdsDictionary__keys;
@@ -13689,7 +9030,7 @@ public class UnrolledMapGenerator : IMapGenerator
     int chunkToCellInstanceIdsDictionary__size;
     public int chunkToCellInstanceIdsDictionary_Count => chunkToCellInstanceIdsDictionary__size;
 
-    const int chunkToCellInstanceIdsDictionary_bucketCount = 2;
+    const int chunkToCellInstanceIdsDictionary_bucketCount = 1;
     public void chunkToCellInstanceIdsDictionary_SetCapacity(int capacity)
     {
         int len = capacity / chunkToCellInstanceIdsDictionary_bucketCount;
@@ -13832,15 +9173,15 @@ public class UnrolledMapGenerator : IMapGenerator
             }
         }
 
-        chunkToCellInstanceIdsDictionary_ExpandList(index);
         var preLen = hashKeys.Length;
+        chunkToCellInstanceIdsDictionary_ExpandList(index);
         chunkToCellInstanceIdsDictionary__keys[index][preLen] = key;
         chunkToCellInstanceIdsDictionary__values[index][preLen] = value;
         chunkToCellInstanceIdsDictionary__size++;
         return true;
     }
 
-    const int chunkToCellInstanceIdsDictionary_expand = 10;
+    const int chunkToCellInstanceIdsDictionary_expand = 5;
     void chunkToCellInstanceIdsDictionary_ExpandList(int index)
     {
         var hashKeys = chunkToCellInstanceIdsDictionary__keys[index];
@@ -14031,23 +9372,79 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     int XSTARTINDEX, XENDINDEX, ZSTARTINDEX, ZENDINDEX;
-    public override void GenerateInit()
+    public void MapSync()
     {
-        if (!isSynced)
-            return;
-        if (isGenerating)
-            return;
-        isGenerating = true;
-        playerPos = Networking.LocalPlayer.GetPosition() / (chunkSize * TileScale);
-        CalcPosCorrection();
-        zStartChunkIndex = GetInRangeStartZChunkIndex(playerPos + posCorrection, chunkLoadRange);
-        zEndChunkIndex = GetInRangeEndZChunkIndex(playerPos + posCorrection, chunkLoadRange);
-        xStartChunkIndex = GetInRangeStartXChunkIndex(playerPos + posCorrection, zStartChunkIndex, chunkLoadRange);
-        xEndChunkIndex = GetInRangeEndXChunkIndex(playerPos + posCorrection, zStartChunkIndex, chunkLoadRange);
+        if (Networking.LocalPlayer.IsOwner(this.gameObject))
+        {
+            isSyncedLocal=true;
+            isSynced = true;
+            _seedX = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedZ = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedTX = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedTZ = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedHX = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedHZ = UnityEngine.Random.value * (float)Int16.MaxValue;
+            RequestSerialization();
+        } else {
+            SendCustomEventDelayedSeconds(nameof(MakeSynced), 10);
+        }
+    }
+    public void MakeSynced(){
+        isSyncedLocal=true;
+    }
+
+    public void MakeNotSynced(){
+        isSyncedLocal=false;
+    }
+
+    public void ReqSync(){
+        RequestSerialization();
+    }
+
+    int[] unloadIndexes;
+    int unloadIndexStart;
+    public override void GameOver()
+    {
+        base.GameOver();
+        gameOverPos = GetPlayerPosition();
+        zClearStartChunkIndex = GetInRangeStartZChunkIndex(gameOverPos, chunkUnLoadRange + clearMargin);
+        zClearEndChunkIndex = GetInRangeEndZChunkIndex(gameOverPos, chunkUnLoadRange + clearMargin);
+        xClearStartChunkIndex = GetInRangeStartXChunkIndex(gameOverPos, zClearStartChunkIndex, chunkUnLoadRange + clearMargin);
+        xClearEndChunkIndex = GetInRangeEndXChunkIndex(gameOverPos, zClearStartChunkIndex, chunkUnLoadRange + clearMargin);
+        unloadIndexes = chunkIndexToInstanceIdDictionary_GenerateKeysArray();
+        unloadIndexStart = 0;
+        isClearing = true;
+        isPermanentCellsClearing = false;
+        unloadQueue_Clear();
+        detailQueue_Clear();
+        undetailQueue_Clear();
+        priorityDetailQueue_Clear();
+        isGenerating = false;
+        isSearching = false;
+        SetGravity(9.8f);
+        MapSync();
+    }
+
+    public override bool IsReadyToGameStart()
+    {
+        //Debug.Log("IsReadyToGameStart: "+base.IsReadyToGameStart() + " isSyncedLocal: "+isSyncedLocal+" isSynced: "+isSynced+" isSearching: "+isSearching+"_seedX: "+_seedX);
+        return base.IsReadyToGameStart() && !isClearing && !isPermanentCellsClearing && !isGenerating && isSyncedLocal && !isSearching;
+        ;
+    }
+
+    Vector3 gameOverPos;
+    bool isClearing = false;
+    Mission mission;
+    public override void GameStart(Mission mission)
+    {
+        base.GameStart(mission);
+        this.mission = mission;
+        isSyncedLocal=false;
+        SendCustomEventDelayedSeconds(nameof(MakeNotSynced), 20);
+        waterPercentage = mission.WaterPercentage;
+        SetGravity(mission.Gravity);
         //GenerateInitCellInterval();
-        chunkXIndex = 0;
-        chunkZIndex = 0;
-        chunkYIndex = 0;
+        GenerateAdditional();
         SearchAdditional();
     //RemoveChunkInterval();
     }
@@ -14058,6 +9455,15 @@ public class UnrolledMapGenerator : IMapGenerator
     Vector3 GetPlayerPosition()
     {
         return Networking.LocalPlayer.GetPosition() / (chunkSize * TileScale);
+    }
+
+    float baseGravity;
+    public override float Gravity => baseGravity;
+
+    public override void SetGravity(float gravity)
+    {
+        Physics.gravity = Vector3.down * gravity;
+        baseGravity = gravity;
     }
 
     void CalcPosCorrection()
@@ -14073,11 +9479,14 @@ public class UnrolledMapGenerator : IMapGenerator
 
     void GenerateAdditional()
     {
-        if (isGenerating)
+        if (isGenerating || !IsStart)
             return;
         prePlayerPos = playerPos;
         playerPos = GetPlayerPosition(); //Networking.LocalPlayer.GetPosition() / (chunkSize*TileScale);
         CalcPosCorrection();
+        chunkXIndex = 0;
+        chunkZIndex = 0;
+        chunkYIndex = 0;
         //Debug.Log("GenerateAdditional");
         //Debug.Log("player pos: "+playerPos);
         zStartChunkIndex = GetInRangeStartZChunkIndex(playerPos + posCorrection, chunkLoadRange);
@@ -14090,13 +9499,37 @@ public class UnrolledMapGenerator : IMapGenerator
     //GenerateCellInterval();
     }
 
+    public override void GenerateOnSpawn()
+    {
+        if (!IsStart)
+            return;
+        prePlayerPos = playerPos;
+        playerPos = playerSpawnPos.position / (chunkSize * TileScale); //Networking.LocalPlayer.GetPosition() / (chunkSize*TileScale);
+        CalcPosCorrection();
+        chunkXIndex = 0;
+        chunkZIndex = 0;
+        chunkYIndex = 0;
+        //Debug.Log("GenerateAdditional");
+        //Debug.Log("player pos: "+playerPos);
+        zStartChunkIndex = GetInRangeStartZChunkIndex(playerPos + posCorrection, chunkLoadRange);
+        zEndChunkIndex = GetInRangeEndZChunkIndex(playerPos + posCorrection, chunkLoadRange);
+        xStartChunkIndex = GetInRangeStartXChunkIndex(playerPos + posCorrection, zStartChunkIndex, chunkLoadRange); //-1;
+        xEndChunkIndex = GetInRangeEndXChunkIndex(playerPos + posCorrection, zStartChunkIndex, chunkLoadRange); //-1;
+        //exceptXStartChunkIndex=GetInRangeStartXChunkIndex(prePlayerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+        //exceptXEndChunkIndex=GetInRangeEndXChunkIndex(prePlayerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+        isGenerating = true;
+    }
+
     void SearchAdditional()
     {
         if (searchOn)
         {
+            if (!IsStart)
+                return;
             if (isSearching)
             {
                 Debug.LogWarning("already searching");
+                return;
             }
 
             zSearchStartChunkIndex = GetInRangeStartZChunkIndex(playerPos, chunkUnLoadRange + searchMargin);
@@ -14188,7 +9621,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int outlineDict_bucketCount = 2;
+    const int outlineDict_bucketCount = 1;
     public int outlineDict_KeyLength => outlineDict__keys.Length;
 
     public void outlineDict_SetCapacity(int capacity)
@@ -14306,7 +9739,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int outlineDict_expand = 10;
+    const int outlineDict_expand = 5;
     void outlineDict_ExpandList(int index)
     {
         var hashKeys = outlineDict__keys[index];
@@ -14533,798 +9966,6 @@ public class UnrolledMapGenerator : IMapGenerator
         Debug.LogError("Key not found");
     }
 
-    int[][] removedChunkIndexDict__keys;
-    bool[][] removedChunkIndexDict__values;
-    int removedChunkIndexDict__size;
-    public int removedChunkIndexDict_Count => removedChunkIndexDict__size;
-
-    public int[] removedChunkIndexDict_GenerateKeysArray()
-    {
-        int[] keys = new int[removedChunkIndexDict__size];
-        int index = 0;
-        for (int i = 0; i < removedChunkIndexDict__keys.Length; i++)
-        {
-            var hashKeys = removedChunkIndexDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int removedChunkIndexDict_bucketCount = 2;
-    public void removedChunkIndexDict_SetCapacity(int capacity)
-    {
-        int len = capacity / removedChunkIndexDict_bucketCount;
-        removedChunkIndexDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            removedChunkIndexDict__keys[i] = new int[removedChunkIndexDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < removedChunkIndexDict_bucketCount; i++)
-        {
-            removedChunkIndexDict__keys[0][i] = int.MaxValue;
-        }
-
-        removedChunkIndexDict__values = new bool[len][];
-        for (int i = 0; i < len; i++)
-        {
-            removedChunkIndexDict__values[i] = new bool[removedChunkIndexDict_bucketCount];
-        }
-    }
-
-    public bool removedChunkIndexDict_HasItem(int key)
-    {
-        var index = removedChunkIndexDict_Hash(key);
-        var hashKeys = removedChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int removedChunkIndexDict_Hash(int key)
-    {
-        var len = removedChunkIndexDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool removedChunkIndexDict_Add(int key, bool value)
-    {
-        int index = removedChunkIndexDict_Hash(key);
-        var hashKeys = removedChunkIndexDict__keys[index];
-        if (key == int.MaxValue)
-        {
-            Debug.LogError("not allowed key value");
-        }
-
-        if (index == 0)
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    removedChunkIndexDict__keys[index][i] = key;
-                    removedChunkIndexDict__values[index][i] = value;
-                    removedChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    removedChunkIndexDict__keys[index][i] = key;
-                    removedChunkIndexDict__values[index][i] = value;
-                    removedChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoolDictionary Add: Dictionary is full");
-        var preLen = hashKeys.Length;
-        removedChunkIndexDict_ExpandList(index);
-        removedChunkIndexDict__keys[index][preLen] = key;
-        removedChunkIndexDict__values[index][preLen] = value;
-        removedChunkIndexDict__size++;
-        return true;
-    }
-
-    const int removedChunkIndexDict_expand = 10;
-    void removedChunkIndexDict_ExpandList(int index)
-    {
-        var hashKeys = removedChunkIndexDict__keys[index];
-        var hashValues = removedChunkIndexDict__values[index];
-        var len = removedChunkIndexDict__keys[index].Length + removedChunkIndexDict_expand;
-        var newKeys = new int[len];
-        var newValues = new bool[len];
-        for (int i = 0; i < removedChunkIndexDict__keys[index].Length; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = removedChunkIndexDict__keys[index].Length; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        removedChunkIndexDict__keys[index] = newKeys;
-        removedChunkIndexDict__values[index] = newValues;
-    }
-
-    public bool removedChunkIndexDict_AddOrSetValue(int key, bool value)
-    {
-        int index = removedChunkIndexDict_Hash(key);
-        var hashKeys = removedChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    removedChunkIndexDict__keys[index][i] = key;
-                    removedChunkIndexDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    removedChunkIndexDict__keys[index][i] = key;
-                    removedChunkIndexDict__values[index][i] = value;
-                    removedChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    removedChunkIndexDict__keys[index][i] = key;
-                    removedChunkIndexDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    removedChunkIndexDict__keys[index][i] = key;
-                    removedChunkIndexDict__values[index][i] = value;
-                    removedChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogError("InkEyBoolDictionary AddOrSetValue: Dictionary is full");
-        //return false;
-        var preLen = hashKeys.Length;
-        removedChunkIndexDict_ExpandList(index);
-        removedChunkIndexDict__keys[index][preLen] = key;
-        removedChunkIndexDict__values[index][preLen] = value;
-        removedChunkIndexDict__size++;
-        return true;
-    }
-
-    public void removedChunkIndexDict_SetValue(int key, bool value)
-    {
-        int index = removedChunkIndexDict_Hash(key);
-        var hashKeys = removedChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    removedChunkIndexDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    removedChunkIndexDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public bool removedChunkIndexDict_GetValueOrDefault(int key, bool defaultValue)
-    {
-        int index = removedChunkIndexDict_Hash(key);
-        var hashKeys = removedChunkIndexDict__keys[index];
-        var hashValues = removedChunkIndexDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        return defaultValue;
-    }
-
-    public bool removedChunkIndexDict_GetValue(int key)
-    {
-        int index = removedChunkIndexDict_Hash(key);
-        var hashKeys = removedChunkIndexDict__keys[index];
-        var hashValues = removedChunkIndexDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void removedChunkIndexDict_TryRemoveBatch(int[] keys, bool[] result)
-    {
-        for (int i = 0; i < keys.Length; i++)
-        {
-            result[i] = removedChunkIndexDict_TryRemove(keys[i]);
-        }
-    }
-
-    public bool removedChunkIndexDict_TryRemove(int key)
-    {
-        int index = removedChunkIndexDict_Hash(key);
-        var hashKeys = removedChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    removedChunkIndexDict__size--;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    removedChunkIndexDict__size--;
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    public void removedChunkIndexDict_Remove(int key)
-    {
-        if (!removedChunkIndexDict_TryRemove(key))
-            Debug.LogError("Key not found");
-    }
-
-    int[][] loadedChunkIndexDict__keys;
-    bool[][] loadedChunkIndexDict__values;
-    int loadedChunkIndexDict__size;
-    public int loadedChunkIndexDict_Count => loadedChunkIndexDict__size;
-
-    public int[] loadedChunkIndexDict_GenerateKeysArray()
-    {
-        int[] keys = new int[loadedChunkIndexDict__size];
-        int index = 0;
-        for (int i = 0; i < loadedChunkIndexDict__keys.Length; i++)
-        {
-            var hashKeys = loadedChunkIndexDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int loadedChunkIndexDict_bucketCount = 2;
-    public void loadedChunkIndexDict_SetCapacity(int capacity)
-    {
-        int len = capacity / loadedChunkIndexDict_bucketCount;
-        loadedChunkIndexDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            loadedChunkIndexDict__keys[i] = new int[loadedChunkIndexDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < loadedChunkIndexDict_bucketCount; i++)
-        {
-            loadedChunkIndexDict__keys[0][i] = int.MaxValue;
-        }
-
-        loadedChunkIndexDict__values = new bool[len][];
-        for (int i = 0; i < len; i++)
-        {
-            loadedChunkIndexDict__values[i] = new bool[loadedChunkIndexDict_bucketCount];
-        }
-    }
-
-    public bool loadedChunkIndexDict_HasItem(int key)
-    {
-        var index = loadedChunkIndexDict_Hash(key);
-        var hashKeys = loadedChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int loadedChunkIndexDict_Hash(int key)
-    {
-        var len = loadedChunkIndexDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool loadedChunkIndexDict_Add(int key, bool value)
-    {
-        int index = loadedChunkIndexDict_Hash(key);
-        var hashKeys = loadedChunkIndexDict__keys[index];
-        if (key == int.MaxValue)
-        {
-            Debug.LogError("not allowed key value");
-        }
-
-        if (index == 0)
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    loadedChunkIndexDict__keys[index][i] = key;
-                    loadedChunkIndexDict__values[index][i] = value;
-                    loadedChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    loadedChunkIndexDict__keys[index][i] = key;
-                    loadedChunkIndexDict__values[index][i] = value;
-                    loadedChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoolDictionary Add: Dictionary is full");
-        var preLen = hashKeys.Length;
-        loadedChunkIndexDict_ExpandList(index);
-        loadedChunkIndexDict__keys[index][preLen] = key;
-        loadedChunkIndexDict__values[index][preLen] = value;
-        loadedChunkIndexDict__size++;
-        return true;
-    }
-
-    const int loadedChunkIndexDict_expand = 10;
-    void loadedChunkIndexDict_ExpandList(int index)
-    {
-        var hashKeys = loadedChunkIndexDict__keys[index];
-        var hashValues = loadedChunkIndexDict__values[index];
-        var len = loadedChunkIndexDict__keys[index].Length + loadedChunkIndexDict_expand;
-        var newKeys = new int[len];
-        var newValues = new bool[len];
-        for (int i = 0; i < loadedChunkIndexDict__keys[index].Length; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = loadedChunkIndexDict__keys[index].Length; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        loadedChunkIndexDict__keys[index] = newKeys;
-        loadedChunkIndexDict__values[index] = newValues;
-    }
-
-    public bool loadedChunkIndexDict_AddOrSetValue(int key, bool value)
-    {
-        int index = loadedChunkIndexDict_Hash(key);
-        var hashKeys = loadedChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    loadedChunkIndexDict__keys[index][i] = key;
-                    loadedChunkIndexDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    loadedChunkIndexDict__keys[index][i] = key;
-                    loadedChunkIndexDict__values[index][i] = value;
-                    loadedChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    loadedChunkIndexDict__keys[index][i] = key;
-                    loadedChunkIndexDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    loadedChunkIndexDict__keys[index][i] = key;
-                    loadedChunkIndexDict__values[index][i] = value;
-                    loadedChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogError("InkEyBoolDictionary AddOrSetValue: Dictionary is full");
-        //return false;
-        var preLen = hashKeys.Length;
-        loadedChunkIndexDict_ExpandList(index);
-        loadedChunkIndexDict__keys[index][preLen] = key;
-        loadedChunkIndexDict__values[index][preLen] = value;
-        loadedChunkIndexDict__size++;
-        return true;
-    }
-
-    public void loadedChunkIndexDict_SetValue(int key, bool value)
-    {
-        int index = loadedChunkIndexDict_Hash(key);
-        var hashKeys = loadedChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    loadedChunkIndexDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    loadedChunkIndexDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public bool loadedChunkIndexDict_GetValueOrDefault(int key, bool defaultValue)
-    {
-        int index = loadedChunkIndexDict_Hash(key);
-        var hashKeys = loadedChunkIndexDict__keys[index];
-        var hashValues = loadedChunkIndexDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        return defaultValue;
-    }
-
-    public bool loadedChunkIndexDict_GetValue(int key)
-    {
-        int index = loadedChunkIndexDict_Hash(key);
-        var hashKeys = loadedChunkIndexDict__keys[index];
-        var hashValues = loadedChunkIndexDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void loadedChunkIndexDict_TryRemoveBatch(int[] keys, bool[] result)
-    {
-        for (int i = 0; i < keys.Length; i++)
-        {
-            result[i] = loadedChunkIndexDict_TryRemove(keys[i]);
-        }
-    }
-
-    public bool loadedChunkIndexDict_TryRemove(int key)
-    {
-        int index = loadedChunkIndexDict_Hash(key);
-        var hashKeys = loadedChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    loadedChunkIndexDict__size--;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    loadedChunkIndexDict__size--;
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    public void loadedChunkIndexDict_Remove(int key)
-    {
-        if (!loadedChunkIndexDict_TryRemove(key))
-            Debug.LogError("Key not found");
-    }
-
     float generateAdditionalDelta = -1f;
     float searchAdditionalDelta = -1f;
     [SerializeField]
@@ -15371,23 +10012,20 @@ public class UnrolledMapGenerator : IMapGenerator
             xQuickSearchEndChunkIndex = GetInRangeEndXChunkIndex(ppos, zQuickSearchStartChunkIndex, quickSearchRange);
             while (true)
             {
+                if (!IsStart)
+                    break;
                 var x = xQuickSearchStartChunkIndex;
                 var z = zQuickSearchStartChunkIndex;
                 var chunkIndex = ToChunkIndex(x, z);
-                if (loadedChunkIndexDict_GetValueOrDefault(chunkIndex, false))
+                if (chunkStateDict_IsUnDetailed(chunkIndex))
                 {
                     var diffx = x - ppos.x;
                     var diffz = z - ppos.z;
                     var distance = diffx * diffx + diffz * diffz;
                     if (distance <= chunkDetailRange * chunkDetailRange)
                     {
-                        if (!detailChunkIndexDict_GetValueOrDefault(chunkIndex, false))
-                        {
-                            detailOperationDictionary_AddOrSetValue(chunkIndex, true);
-                            unloadOperationDictionary_AddOrSetValue(chunkIndex, false);
-                            priorityDetailQueue_Enqueue(chunkIndex);
-                        }
-                    //DetailChunk((int)x,(int)z);
+                        chunkOperationDictionary_AddOrSetValue(chunkIndex, ChunkOperation.Detail);
+                        priorityDetailQueue_Enqueue(chunkIndex);
                     }
                 }
 
@@ -15406,90 +10044,72 @@ public class UnrolledMapGenerator : IMapGenerator
         }
     }
 
+    int xClearStartChunkIndex, zClearStartChunkIndex;
+    int xClearEndChunkIndex, zClearEndChunkIndex;
+    bool isPermanentCellsClearing = false;
     void Update()
     {
-        if (isGenerating)
+        if (!IsStart)
         {
-            //if(isUnLoading)return;
-            for (costIndex = 0; costIndex < batchCount * isInstantiatedCost;)
+            if (isClearing)
             {
-                //delay=generateInterval * count / batchCount;
-                mode = GenerateChunk();
-                if (isInstantiated)
+                costIndex = 0;
+                for (int i = 0; i < operationBatchCount; i++)
                 {
-                    costIndex += isInstantiatedCost;
-                    isInstantiated = false;
-                }
-                else if (mode == GenerateChunkMode.Pass)
-                {
-                    storeCount++;
-                    if (storeCount == storeMax)
+                    UnLoadChunk(unloadIndexes[unloadIndexStart], true);
+                    unloadIndexStart++;
+                    if (unloadIndexStart == unloadIndexes.Length)
                     {
-                        StoreCell();
-                        storeCount = 0;
+                        isClearing = false;
+                        isPermanentCellsClearing = true;
+                        break;
                     }
+                /*var x=xClearStartChunkIndex;
+                    var z=zClearStartChunkIndex;
+                    var chunkIndex=ToChunkIndex(x,z);
+                    if(chunkStateDict.IsLoaded(chunkIndex)){
+                        UnLoadChunk(chunkIndex,true);
+                        costIndex++;
+                    }
+                    xClearStartChunkIndex++;
+                    if(xClearStartChunkIndex>xClearEndChunkIndex){
+                        zClearStartChunkIndex++;
+                        xClearStartChunkIndex=GetInRangeStartXChunkIndex(gameOverPos,zClearStartChunkIndex,chunkUnLoadRange+clearMargin);
+                        xClearEndChunkIndex=GetInRangeEndXChunkIndex(gameOverPos,zClearStartChunkIndex,chunkUnLoadRange+clearMargin);
+                        if(zClearStartChunkIndex>=zClearEndChunkIndex){
+                            isClearing=false;
+                            isPermanentCellsClearing=true;
+                            break;
+                        }
+                    }*/
+                }
+            }
 
-                    if (isInstantiated)
+            if (isPermanentCellsClearing)
+            {
+                for (int i = 0; i < batchCount * 2; i++)
+                {
+                    permanentBreakCellArrLength--;
+                    if (permanentBreakCellArrLength >= 0)
                     {
-                        costIndex += isInstantiatedCost;
-                        isInstantiated = false;
+                        var cellIndex = permanentBreakCellArr[permanentBreakCellArrLength];
+                        permanentBreakCellDictionary_Remove(cellIndex);
                     }
                     else
                     {
-                        costIndex++;
+                        permanentBreakCellArrLength = 0;
+                        isPermanentCellsClearing = false;
+                        unloadQueue_Clear();
+                        detailQueue_Clear();
+                        undetailQueue_Clear();
+                        priorityDetailQueue_Clear();
+                        isGenerating = false;
+                        isSearching = false;
                     }
                 }
-                else
-                {
-                    costIndex += poolCost;
-                }
-
-                if (mode == GenerateChunkMode.Complete || mode == GenerateChunkMode.Pass)
-                {
-                    chunkXIndex = 0;
-                    chunkZIndex = 0;
-                    chunkYIndex = 0;
-                    xStartChunkIndex++;
-                    if (xStartChunkIndex > xEndChunkIndex)
-                    {
-                        zStartChunkIndex++;
-                        xStartChunkIndex = GetInRangeStartXChunkIndex(playerPos + posCorrection, zStartChunkIndex, chunkLoadRange);
-                        xEndChunkIndex = GetInRangeEndXChunkIndex(playerPos + posCorrection, zStartChunkIndex, chunkLoadRange);
-                        if (zStartChunkIndex >= zEndChunkIndex)
-                        {
-                            isGenerating = false;
-                            //GenerateAdditional();
-                            if (generateAdditionalInterval == 0)
-                            {
-                                GenerateAdditional();
-                            }
-                            else
-                            {
-                                generateAdditionalDelta = generateAdditionalInterval;
-                            }
-
-                            //SendCustomEventDelayedSeconds(nameof(GenerateAdditional),generateAdditionalInterval);
-                            break;
-                        }
-                    }
-                }
-
-                if (mode == GenerateChunkMode.Complete)
-                {
-                    break;
-                }
             }
-        }
-        else
-        {
-            if (generateAdditionalDelta >= 0)
-            {
-                generateAdditionalDelta -= Time.deltaTime;
-                if (generateAdditionalDelta < 0)
-                {
-                    GenerateAdditional();
-                }
-            }
+
+            return;
         }
 
         if (isSearching)
@@ -15500,36 +10120,32 @@ public class UnrolledMapGenerator : IMapGenerator
                 var x = xSearchStartChunkIndex;
                 var z = zSearchStartChunkIndex;
                 var chunkIndex = ToChunkIndex(x, z);
-                if (loadedChunkIndexDict_GetValueOrDefault(chunkIndex, false))
+                if (chunkStateDict_IsLoaded(chunkIndex))
                 {
                     var diffx = x - playerPos.x;
                     var diffz = z - playerPos.z;
                     var distance = diffx * diffx + diffz * diffz;
+                    var detailMargin = 1;
                     if (distance >= chunkUnLoadRange * chunkUnLoadRange)
                     {
-                        if (!unloadOperationDictionary_GetValueOrDefault(chunkIndex, false))
-                        {
-                            unloadOperationDictionary_AddOrSetValue(chunkIndex, true);
-                            unloadQueue_Enqueue(chunkIndex);
-                        }
+                        chunkOperationDictionary_AddOrSetValue(chunkIndex, ChunkOperation.UnLoad);
+                        unloadQueue_Enqueue(chunkIndex);
                     //UnLoadChunk((int)x,(int)z,true);
                     }
-                    else if (distance >= chunkDetailRange * chunkDetailRange)
+                    else if (distance >= (chunkDetailRange + detailMargin) * (chunkDetailRange + detailMargin))
                     {
-                        if (detailOperationDictionary_GetValueOrDefault(chunkIndex, false))
+                        if (chunkStateDict_IsDetailed(chunkIndex))
                         {
-                            detailOperationDictionary_AddOrSetValue(chunkIndex, false);
-                            unloadOperationDictionary_AddOrSetValue(chunkIndex, false);
+                            chunkOperationDictionary_AddOrSetValue(chunkIndex, ChunkOperation.UnDetail);
                             undetailQueue_Enqueue(chunkIndex);
                         }
                     //UnDetailChunk((int)x,(int)z);
                     }
-                    else
+                    else if (distance <= chunkDetailRange * chunkDetailRange)
                     {
-                        if (!detailOperationDictionary_GetValueOrDefault(chunkIndex, false))
+                        if (chunkStateDict_IsUnDetailed(chunkIndex))
                         {
-                            detailOperationDictionary_AddOrSetValue(chunkIndex, true);
-                            unloadOperationDictionary_AddOrSetValue(chunkIndex, false);
+                            chunkOperationDictionary_AddOrSetValue(chunkIndex, ChunkOperation.Detail);
                             detailQueue_Enqueue(chunkIndex);
                         }
                     //DetailChunk((int)x,(int)z);
@@ -15573,12 +10189,13 @@ public class UnrolledMapGenerator : IMapGenerator
         costIndex = 0;
         if (detailFlag)
         {
-            while (costIndex < operationBatchCount * 2)
+            while (costIndex < operationBatchCount)
             {
                 if (priorityDetailQueue_Count == 0)
                     break;
                 var chunkIndex = priorityDetailQueue_Dequeue();
-                var shouldOperate = detailOperationDictionary_GetValueOrDefault(chunkIndex, false);
+                var shouldOperate = chunkOperationDictionary_GetValueOrDefault(chunkIndex, ChunkOperation.None) == ChunkOperation.Detail;
+                chunkOperationDictionary_SetValue(chunkIndex, ChunkOperation.None);
                 if (shouldOperate && DetailChunk(chunkIndex))
                     costIndex++;
             }
@@ -15588,21 +10205,9 @@ public class UnrolledMapGenerator : IMapGenerator
                 if (detailQueue_Count == 0)
                     break;
                 var chunkIndex = detailQueue_Dequeue();
-                var shouldOperate = detailOperationDictionary_GetValueOrDefault(chunkIndex, false);
+                var shouldOperate = chunkOperationDictionary_GetValueOrDefault(chunkIndex, ChunkOperation.None) == ChunkOperation.Detail;
+                chunkOperationDictionary_SetValue(chunkIndex, ChunkOperation.None);
                 if (shouldOperate && DetailChunk(chunkIndex))
-                    costIndex++;
-            }
-        }
-
-        if (undetailFlag)
-        {
-            while (costIndex < operationBatchCount)
-            {
-                if (unloadQueue_Count == 0)
-                    break;
-                var chunkIndex = unloadQueue_Dequeue();
-                var shouldOperate = unloadOperationDictionary_GetValueOrDefault(chunkIndex, false);
-                if (shouldOperate && UnLoadChunk(chunkIndex, true))
                     costIndex++;
             }
         }
@@ -15611,27 +10216,120 @@ public class UnrolledMapGenerator : IMapGenerator
         {
             while (costIndex < operationBatchCount)
             {
+                if (unloadQueue_Count == 0)
+                    break;
+                var chunkIndex = unloadQueue_Dequeue();
+                var shouldOperate = chunkOperationDictionary_GetValueOrDefault(chunkIndex, ChunkOperation.None) == ChunkOperation.UnLoad;
+                chunkOperationDictionary_SetValue(chunkIndex, ChunkOperation.None);
+                if (shouldOperate && UnLoadChunk(chunkIndex, true))
+                    costIndex++;
+            }
+        }
+
+        if (undetailFlag)
+        {
+            while (costIndex < operationBatchCount)
+            {
                 if (undetailQueue_Count == 0)
                     break;
                 var chunkIndex = undetailQueue_Dequeue();
-                var shouldOperate = !detailOperationDictionary_GetValueOrDefault(chunkIndex, false);
+                var shouldOperate = chunkOperationDictionary_GetValueOrDefault(chunkIndex, ChunkOperation.None) == ChunkOperation.UnDetail;
+                chunkOperationDictionary_SetValue(chunkIndex, ChunkOperation.None);
                 if (shouldOperate && UnDetailChunk(chunkIndex))
                     costIndex++;
+            }
+        }
+
+        if (costIndex == operationBatchCount)
+            return;
+        if (isGenerating)
+        {
+            //if(isUnLoading)return;
+            for (costIndex = 0; costIndex < batchCount * isInstantiatedCost;)
+            {
+                //delay=generateInterval * count / batchCount;
+                mode = GenerateChunk();
+                if (isInstantiated)
+                {
+                    costIndex += isInstantiatedCost;
+                    isInstantiated = false;
+                }
+                else if (mode == GenerateChunkMode.Pass)
+                {
+                    storeCount++;
+                    costIndex += isInstantiatedCost / 2;
+                /*if(storeCount==storeMax){
+                        StoreCell();
+                        storeCount=0;
+                    }
+                    if(isInstantiated){
+                        costIndex+=isInstantiatedCost;
+                        isInstantiated=false;
+                    }else{
+                        costIndex++;
+                    }*/
+                }
+                else
+                {
+                    costIndex += poolCost;
+                }
+
+                if (mode == GenerateChunkMode.Complete || mode == GenerateChunkMode.Pass)
+                {
+                    chunkXIndex = 0;
+                    chunkZIndex = 0;
+                    chunkYIndex = 0;
+                    xStartChunkIndex++;
+                    if (xStartChunkIndex > xEndChunkIndex)
+                    {
+                        zStartChunkIndex++;
+                        xStartChunkIndex = GetInRangeStartXChunkIndex(playerPos + posCorrection, zStartChunkIndex, chunkLoadRange);
+                        xEndChunkIndex = GetInRangeEndXChunkIndex(playerPos + posCorrection, zStartChunkIndex, chunkLoadRange);
+                        if (zStartChunkIndex >= zEndChunkIndex)
+                        {
+                            isGenerating = false;
+                            //GenerateAdditional();
+                            if (generateAdditionalInterval == 0)
+                            {
+                                GenerateAdditional();
+                            }
+                            else
+                            {
+                                generateAdditionalDelta = generateAdditionalInterval;
+                            }
+
+                            break;
+                        }
+                    }
+                }
+
+                if (mode == GenerateChunkMode.Complete)
+                {
+                    break;
+                }
+            }
+        }
+        else
+        {
+            if (generateAdditionalDelta >= 0)
+            {
+                generateAdditionalDelta -= Time.deltaTime;
+                if (generateAdditionalDelta < 0)
+                {
+                    GenerateAdditional();
+                }
             }
         }
     }
 
     float searchMargin => chunkDetailRange * 2;
 
+    float clearMargin => chunkDetailRange * 6;
+
     bool isSearching = false;
     int searchBatchCount => settings_searchBatchCount;
 
     bool searchOn => settings_searchOn;
-
-    int ToChunkIndex(int x, int z)
-    {
-        return (z - ZSTARTINDEX) * chunkWidth + (x - XSTARTINDEX);
-    }
 
     public const float AnimHeight = 10f;
     private int[] unloadQueue__array;
@@ -15650,21 +10348,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void unloadQueue_Clear()
     {
-        if (unloadQueue__size != 0)
-        {
-            if (unloadQueue__head < unloadQueue__tail)
-            {
-                Array.Clear(unloadQueue__array, unloadQueue__head, unloadQueue__size);
-            }
-            else
-            {
-                Array.Clear(unloadQueue__array, unloadQueue__head, unloadQueue__array.Length - unloadQueue__head);
-                Array.Clear(unloadQueue__array, 0, unloadQueue__tail);
-            }
-
-            unloadQueue__size = 0;
-        }
-
+        unloadQueue__size = 0;
         unloadQueue__head = 0;
         unloadQueue__tail = 0;
         unloadQueue__version++;
@@ -15832,21 +10516,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void undetailQueue_Clear()
     {
-        if (undetailQueue__size != 0)
-        {
-            if (undetailQueue__head < undetailQueue__tail)
-            {
-                Array.Clear(undetailQueue__array, undetailQueue__head, undetailQueue__size);
-            }
-            else
-            {
-                Array.Clear(undetailQueue__array, undetailQueue__head, undetailQueue__array.Length - undetailQueue__head);
-                Array.Clear(undetailQueue__array, 0, undetailQueue__tail);
-            }
-
-            undetailQueue__size = 0;
-        }
-
+        undetailQueue__size = 0;
         undetailQueue__head = 0;
         undetailQueue__tail = 0;
         undetailQueue__version++;
@@ -16014,21 +10684,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void detailQueue_Clear()
     {
-        if (detailQueue__size != 0)
-        {
-            if (detailQueue__head < detailQueue__tail)
-            {
-                Array.Clear(detailQueue__array, detailQueue__head, detailQueue__size);
-            }
-            else
-            {
-                Array.Clear(detailQueue__array, detailQueue__head, detailQueue__array.Length - detailQueue__head);
-                Array.Clear(detailQueue__array, 0, detailQueue__tail);
-            }
-
-            detailQueue__size = 0;
-        }
-
+        detailQueue__size = 0;
         detailQueue__head = 0;
         detailQueue__tail = 0;
         detailQueue__version++;
@@ -16196,21 +10852,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void priorityDetailQueue_Clear()
     {
-        if (priorityDetailQueue__size != 0)
-        {
-            if (priorityDetailQueue__head < priorityDetailQueue__tail)
-            {
-                Array.Clear(priorityDetailQueue__array, priorityDetailQueue__head, priorityDetailQueue__size);
-            }
-            else
-            {
-                Array.Clear(priorityDetailQueue__array, priorityDetailQueue__head, priorityDetailQueue__array.Length - priorityDetailQueue__head);
-                Array.Clear(priorityDetailQueue__array, 0, priorityDetailQueue__tail);
-            }
-
-            priorityDetailQueue__size = 0;
-        }
-
+        priorityDetailQueue__size = 0;
         priorityDetailQueue__head = 0;
         priorityDetailQueue__tail = 0;
         priorityDetailQueue__version++;
@@ -16362,18 +11004,79 @@ public class UnrolledMapGenerator : IMapGenerator
         priorityDetailQueue__version++;
     }
 
-    int[][] detailChunkIndexDict__keys;
-    bool[][] detailChunkIndexDict__values;
-    int detailChunkIndexDict__size;
-    public int detailChunkIndexDict_Count => detailChunkIndexDict__size;
+    int[][] chunkStateDict__keys;
+    ChunkState[][] chunkStateDict__values;
+    int chunkStateDict__size;
+    public int chunkStateDict_Count => chunkStateDict__size;
 
-    public int[] detailChunkIndexDict_GenerateKeysArray()
+    const int chunkStateDict_bucketCount = 1;
+    public void chunkStateDict_SetCapacity(int capacity)
     {
-        int[] keys = new int[detailChunkIndexDict__size];
-        int index = 0;
-        for (int i = 0; i < detailChunkIndexDict__keys.Length; i++)
+        int len = capacity / chunkStateDict_bucketCount;
+        chunkStateDict__keys = new int[len][];
+        for (int i = 0; i < chunkStateDict__keys.Length; i++)
         {
-            var hashKeys = detailChunkIndexDict__keys[i];
+            chunkStateDict__keys[i] = new int[chunkStateDict_bucketCount];
+        }
+
+        // 0-value-key 対策
+        for (int i = 0; i < chunkStateDict_bucketCount; i++)
+        {
+            chunkStateDict__keys[0][i] = int.MaxValue;
+        }
+
+        chunkStateDict__values = new ChunkState[len][];
+        for (int i = 0; i < chunkStateDict__values.Length; i++)
+        {
+            chunkStateDict__values[i] = new ChunkState[chunkStateDict_bucketCount];
+        }
+    }
+
+    public bool chunkStateDict_HasItem(int key)
+    {
+        var index = chunkStateDict_Hash(key);
+        var hashKeys = chunkStateDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+        }
+
+        for (int i = 0; i < hashKeys.Length; i++)
+        {
+            if (hashKeys[i] == key)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private int chunkStateDict_Hash(int key)
+    {
+        var len = chunkStateDict__keys.Length;
+        var mod = key % len;
+        if (mod >= 0)
+        {
+            return mod;
+        }
+        else
+        {
+            return mod + len;
+        }
+    // return 0 to len-1;
+    }
+
+    public int[] chunkStateDict_GenerateKeysArray()
+    {
+        int[] keys = new int[chunkStateDict__size];
+        int index = 0;
+        for (int i = 0; i < chunkStateDict__keys.Length; i++)
+        {
+            var hashKeys = chunkStateDict__keys[i];
             if (i == 0)
             {
                 for (int j = 0; j < hashKeys.Length; j++)
@@ -16401,90 +11104,30 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int detailChunkIndexDict_bucketCount = 2;
-    public void detailChunkIndexDict_SetCapacity(int capacity)
+    public bool chunkStateDict_Add(int key, ChunkState value)
     {
-        int len = capacity / detailChunkIndexDict_bucketCount;
-        detailChunkIndexDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            detailChunkIndexDict__keys[i] = new int[detailChunkIndexDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < detailChunkIndexDict_bucketCount; i++)
-        {
-            detailChunkIndexDict__keys[0][i] = int.MaxValue;
-        }
-
-        detailChunkIndexDict__values = new bool[len][];
-        for (int i = 0; i < len; i++)
-        {
-            detailChunkIndexDict__values[i] = new bool[detailChunkIndexDict_bucketCount];
-        }
-    }
-
-    public bool detailChunkIndexDict_HasItem(int key)
-    {
-        var index = detailChunkIndexDict_Hash(key);
-        var hashKeys = detailChunkIndexDict__keys[index];
+        int index = chunkStateDict_Hash(key);
+        var hashKeys = chunkStateDict__keys[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
             {
                 Debug.LogError("not allowed key value");
             }
-        }
 
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int detailChunkIndexDict_Hash(int key)
-    {
-        var len = detailChunkIndexDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool detailChunkIndexDict_Add(int key, bool value)
-    {
-        int index = detailChunkIndexDict_Hash(key);
-        var hashKeys = detailChunkIndexDict__keys[index];
-        if (key == int.MaxValue)
-        {
-            Debug.LogError("not allowed key value");
-        }
-
-        if (index == 0)
-        {
             for (int i = 0; i < hashKeys.Length; i++)
             {
                 if (hashKeys[i] == key)
                 {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
+                    Debug.LogError("IntKeyChunkStateArrDictionary: Key already exists " + key.ToString());
+                    return true;
                 }
 
                 if (hashKeys[i] == int.MaxValue)
                 {
-                    detailChunkIndexDict__keys[index][i] = key;
-                    detailChunkIndexDict__values[index][i] = value;
-                    detailChunkIndexDict__size++;
+                    chunkStateDict__keys[index][i] = key;
+                    chunkStateDict__values[index][i] = value;
+                    chunkStateDict__size++;
                     return true;
                 }
             }
@@ -16495,37 +11138,37 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    Debug.LogError("InkEyBoolDictionary: Key already exists " + key.ToString());
+                    Debug.LogError("IntKeyChunkStateArrDictionary: Key already exists " + key.ToString());
+                    return true;
                 }
 
                 if (hashKeys[i] == default)
                 {
-                    detailChunkIndexDict__keys[index][i] = key;
-                    detailChunkIndexDict__values[index][i] = value;
-                    detailChunkIndexDict__size++;
+                    chunkStateDict__keys[index][i] = key;
+                    chunkStateDict__values[index][i] = value;
+                    chunkStateDict__size++;
                     return true;
                 }
             }
         }
 
-        //Debug.LogWarning("InkEyBoolDictionary Add: Dictionary is full");
         var preLen = hashKeys.Length;
-        detailChunkIndexDict_ExpandList(index);
-        detailChunkIndexDict__keys[index][preLen] = key;
-        detailChunkIndexDict__values[index][preLen] = value;
-        detailChunkIndexDict__size++;
+        chunkStateDict_ExpandList(index);
+        chunkStateDict__keys[index][preLen] = key;
+        chunkStateDict__values[index][preLen] = value;
+        chunkStateDict__size++;
         return true;
     }
 
-    const int detailChunkIndexDict_expand = 10;
-    void detailChunkIndexDict_ExpandList(int index)
+    const int chunkStateDict_expand = 5;
+    void chunkStateDict_ExpandList(int index)
     {
-        var hashKeys = detailChunkIndexDict__keys[index];
-        var hashValues = detailChunkIndexDict__values[index];
-        var len = detailChunkIndexDict__keys[index].Length + detailChunkIndexDict_expand;
+        var hashKeys = chunkStateDict__keys[index];
+        var hashValues = chunkStateDict__values[index];
+        var len = chunkStateDict__keys[index].Length + chunkStateDict_expand;
         var newKeys = new int[len];
-        var newValues = new bool[len];
-        for (int i = 0; i < detailChunkIndexDict__keys[index].Length; i++)
+        var newValues = new ChunkState[len];
+        for (int i = 0; i < chunkStateDict__keys[index].Length; i++)
         {
             newKeys[i] = hashKeys[i];
             newValues[i] = hashValues[i];
@@ -16533,20 +11176,20 @@ public class UnrolledMapGenerator : IMapGenerator
 
         if (index == 0)
         {
-            for (int i = detailChunkIndexDict__keys[index].Length; i < len; i++)
+            for (int i = chunkStateDict__keys[index].Length; i < len; i++)
             {
                 newKeys[i] = int.MaxValue;
             }
         }
 
-        detailChunkIndexDict__keys[index] = newKeys;
-        detailChunkIndexDict__values[index] = newValues;
+        chunkStateDict__keys[index] = newKeys;
+        chunkStateDict__values[index] = newValues;
     }
 
-    public bool detailChunkIndexDict_AddOrSetValue(int key, bool value)
+    public void chunkStateDict_AddOrSetValue(int key, ChunkState value)
     {
-        int index = detailChunkIndexDict_Hash(key);
-        var hashKeys = detailChunkIndexDict__keys[index];
+        int index = chunkStateDict_Hash(key);
+        var hashKeys = chunkStateDict__keys[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
@@ -16558,67 +11201,16 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    detailChunkIndexDict__keys[index][i] = key;
-                    detailChunkIndexDict__values[index][i] = value;
-                    return true;
+                    chunkStateDict__keys[index][i] = key;
+                    chunkStateDict__values[index][i] = value;
+                    return;
                 }
 
                 if (hashKeys[i] == int.MaxValue)
                 {
-                    detailChunkIndexDict__keys[index][i] = key;
-                    detailChunkIndexDict__values[index][i] = value;
-                    detailChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    detailChunkIndexDict__keys[index][i] = key;
-                    detailChunkIndexDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    detailChunkIndexDict__keys[index][i] = key;
-                    detailChunkIndexDict__values[index][i] = value;
-                    detailChunkIndexDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogError("InkEyBoolDictionary AddOrSetValue: Dictionary is full");
-        //return false;
-        var preLen = hashKeys.Length;
-        detailChunkIndexDict_ExpandList(index);
-        detailChunkIndexDict__keys[index][preLen] = key;
-        detailChunkIndexDict__values[index][preLen] = value;
-        detailChunkIndexDict__size++;
-        return true;
-    }
-
-    public void detailChunkIndexDict_SetValue(int key, bool value)
-    {
-        int index = detailChunkIndexDict_Hash(key);
-        var hashKeys = detailChunkIndexDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    detailChunkIndexDict__values[index][i] = value;
+                    chunkStateDict__keys[index][i] = key;
+                    chunkStateDict__values[index][i] = value;
+                    chunkStateDict__size++;
                     return;
                 }
             }
@@ -16629,7 +11221,55 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    detailChunkIndexDict__values[index][i] = value;
+                    chunkStateDict__keys[index][i] = key;
+                    chunkStateDict__values[index][i] = value;
+                    return;
+                }
+
+                if (hashKeys[i] == default)
+                {
+                    chunkStateDict__keys[index][i] = key;
+                    chunkStateDict__values[index][i] = value;
+                    chunkStateDict__size++;
+                    return;
+                }
+            }
+        }
+
+        var preLen = hashKeys.Length;
+        chunkStateDict_ExpandList(index);
+        chunkStateDict__keys[index][preLen] = key;
+        chunkStateDict__values[index][preLen] = value;
+        chunkStateDict__size++;
+    }
+
+    public void chunkStateDict_SetValue(int key, ChunkState value)
+    {
+        int index = chunkStateDict_Hash(key);
+        var hashKeys = chunkStateDict__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    chunkStateDict__values[index][i] = value;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    chunkStateDict__values[index][i] = value;
                     return;
                 }
             }
@@ -16638,11 +11278,35 @@ public class UnrolledMapGenerator : IMapGenerator
         Debug.LogError("Key not found");
     }
 
-    public bool detailChunkIndexDict_GetValueOrDefault(int key, bool defaultValue)
+    public bool chunkStateDict_IsLoaded(int key)
     {
-        int index = detailChunkIndexDict_Hash(key);
-        var hashKeys = detailChunkIndexDict__keys[index];
-        var hashValues = detailChunkIndexDict__values[index];
+        var state = chunkStateDict_GetValueOrDefault(key, ChunkState.None);
+        return state == ChunkState.Detailed || state == ChunkState.UnDetailed;
+    }
+
+    public bool chunkStateDict_IsDetailed(int key)
+    {
+        var state = chunkStateDict_GetValueOrDefault(key, ChunkState.None);
+        return state == ChunkState.Detailed;
+    }
+
+    public bool chunkStateDict_IsUnDetailed(int key)
+    {
+        var state = chunkStateDict_GetValueOrDefault(key, ChunkState.None);
+        return state == ChunkState.UnDetailed;
+    }
+
+    public bool chunkStateDict_IsUnLoaded(int key)
+    {
+        var state = chunkStateDict_GetValueOrDefault(key, ChunkState.None);
+        return state == ChunkState.UnLoaded;
+    }
+
+    public ChunkState chunkStateDict_GetValueOrDefault(int key, ChunkState defaultValue)
+    {
+        int index = chunkStateDict_Hash(key);
+        var hashKeys = chunkStateDict__keys[index];
+        var hashValues = chunkStateDict__values[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
@@ -16672,11 +11336,11 @@ public class UnrolledMapGenerator : IMapGenerator
         return defaultValue;
     }
 
-    public bool detailChunkIndexDict_GetValue(int key)
+    public ChunkState chunkStateDict_GetValue(int key)
     {
-        int index = detailChunkIndexDict_Hash(key);
-        var hashKeys = detailChunkIndexDict__keys[index];
-        var hashValues = detailChunkIndexDict__values[index];
+        int index = chunkStateDict_Hash(key);
+        var hashKeys = chunkStateDict__keys[index];
+        var hashValues = chunkStateDict__values[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
@@ -16707,18 +11371,10 @@ public class UnrolledMapGenerator : IMapGenerator
         return default;
     }
 
-    public void detailChunkIndexDict_TryRemoveBatch(int[] keys, bool[] result)
+    public void chunkStateDict_Remove(int key)
     {
-        for (int i = 0; i < keys.Length; i++)
-        {
-            result[i] = detailChunkIndexDict_TryRemove(keys[i]);
-        }
-    }
-
-    public bool detailChunkIndexDict_TryRemove(int key)
-    {
-        int index = detailChunkIndexDict_Hash(key);
-        var hashKeys = detailChunkIndexDict__keys[index];
+        int index = chunkStateDict_Hash(key);
+        var hashKeys = chunkStateDict__keys[index];
         if (index == 0)
         {
             if (key == int.MaxValue)
@@ -16731,8 +11387,8 @@ public class UnrolledMapGenerator : IMapGenerator
                 if (hashKeys[i] == key)
                 {
                     hashKeys[i] = int.MaxValue;
-                    detailChunkIndexDict__size--;
-                    return true;
+                    chunkStateDict__size--;
+                    return;
                 }
             }
         }
@@ -16743,25 +11399,19 @@ public class UnrolledMapGenerator : IMapGenerator
                 if (hashKeys[i] == key)
                 {
                     hashKeys[i] = default;
-                    detailChunkIndexDict__size--;
-                    return true;
+                    chunkStateDict__size--;
+                    return;
                 }
             }
         }
 
-        return false;
-    }
-
-    public void detailChunkIndexDict_Remove(int key)
-    {
-        if (!detailChunkIndexDict_TryRemove(key))
-            Debug.LogError("Key not found");
+        Debug.LogError("Key not found");
     }
 
     bool DetailChunk(int chunkIndex)
     {
         //int chunkIndex=ToChunkIndex(xIndex,zIndex);
-        if (loadedChunkIndexDict_GetValueOrDefault(chunkIndex, false) && !detailChunkIndexDict_GetValueOrDefault(chunkIndex, false))
+        if (chunkStateDict_IsUnDetailed(chunkIndex))
         {
             if (outlineDict_HasItem(chunkIndex))
             {
@@ -16776,7 +11426,7 @@ public class UnrolledMapGenerator : IMapGenerator
 
                 var outlineId = chunkIndexToInstanceIdDictionary_GetValue(chunkIndex);
                 meshCombiner_SwitchCombineMesh(false, outline, outlineId, chunkToCells, cellInstanceIds, brokenArr);
-                detailChunkIndexDict_AddOrSetValue(chunkIndex, true);
+                chunkStateDict_SetValue(chunkIndex, ChunkState.Detailed);
                 return true;
             }
             else
@@ -16789,10 +11439,11 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     bool[] brokenArr;
+    bool[] colOnlyArr;
     bool UnDetailChunk(int chunkIndex)
     {
         //int chunkIndex=ToChunkIndex(xIndex,zIndex);
-        if (loadedChunkIndexDict_GetValueOrDefault(chunkIndex, false) && detailChunkIndexDict_GetValueOrDefault(chunkIndex, false))
+        if (chunkStateDict_IsDetailed(chunkIndex))
         {
             if (outlineDict_HasItem(chunkIndex))
             {
@@ -16802,7 +11453,7 @@ public class UnrolledMapGenerator : IMapGenerator
                 cellInstanceIds = chunkToCellInstanceIdsDictionary_GetValue(chunkIndex);
                 var outlineId = chunkIndexToInstanceIdDictionary_GetValue(chunkIndex);
                 meshCombiner_SwitchCombineMesh(true, outline, outlineId, chunkToCells, cellInstanceIds, brokenArr);
-                detailChunkIndexDict_AddOrSetValue(chunkIndex, false);
+                chunkStateDict_SetValue(chunkIndex, ChunkState.UnDetailed);
                 return true;
             }
             else
@@ -16821,7 +11472,7 @@ public class UnrolledMapGenerator : IMapGenerator
     public bool UnLoadChunk(int chunkIndex, bool setOnly = false)
     {
         //int chunkIndex=ToChunkIndex(xIndex,zIndex);
-        if (!loadedChunkIndexDict_GetValueOrDefault(chunkIndex, false))
+        if (!chunkStateDict_IsLoaded(chunkIndex))
         {
             //Debug.Log("UnLoadChunk: not yet loaded");
             //遅延実行の関係上このケースは起こりえる
@@ -16831,15 +11482,6 @@ public class UnrolledMapGenerator : IMapGenerator
         if (outlineDict_HasItem(chunkIndex))
         {
             //Debug.Log("UnLoadChunk:"+chunkIndex);
-            if (setOnly)
-            {
-                loadedChunkIndexDict_SetValue(chunkIndex, false);
-            }
-            else
-            {
-                loadedChunkIndexDict_AddOrSetValue(chunkIndex, false);
-            }
-
             //chunkIndexDict.Remove(chunkIndex);
             var chunkMesh = outlineDict_GetValue(chunkIndex);
             //var id=chunkMesh.GetInstanceID();
@@ -16872,10 +11514,13 @@ public class UnrolledMapGenerator : IMapGenerator
                     Debug.LogError("Cell pool is empty!");
                 }*/
                 var id = cellInstanceIds[i];
-                UnloadCell(cell, id, biomeTypes[i]);
+                if (!permanentBreakCellDictionary_GetValueOrDefault(ToGlobalCellIndex(i, chunkIndex), false))
+                {
+                    UnloadCell(cell, id, biomeTypes[i]);
+                }
             }
 
-            detailChunkIndexDict_AddOrSetValue(chunkIndex, false);
+            chunkStateDict_SetValue(chunkIndex, ChunkState.UnLoaded); //AddOrSetValue(chunkIndex,false );
             return true;
         }
 
@@ -16921,7 +11566,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int permanentBreakCellDictionary_bucketCount = 2;
+    const int permanentBreakCellDictionary_bucketCount = 1;
     public void permanentBreakCellDictionary_SetCapacity(int capacity)
     {
         int len = capacity / permanentBreakCellDictionary_bucketCount;
@@ -17037,7 +11682,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int permanentBreakCellDictionary_expand = 10;
+    const int permanentBreakCellDictionary_expand = 5;
     void permanentBreakCellDictionary_ExpandList(int index)
     {
         var hashKeys = permanentBreakCellDictionary__keys[index];
@@ -17283,7 +11928,7 @@ public class UnrolledMapGenerator : IMapGenerator
     int chunkIndexToCellBiomesDictionary__size;
     public int chunkIndexToCellBiomesDictionary_Count => chunkIndexToCellBiomesDictionary__size;
 
-    const int chunkIndexToCellBiomesDictionary_bucketCount = 2;
+    const int chunkIndexToCellBiomesDictionary_bucketCount = 1;
     public void chunkIndexToCellBiomesDictionary_SetCapacity(int capacity)
     {
         int len = capacity / chunkIndexToCellBiomesDictionary_bucketCount;
@@ -17426,15 +12071,15 @@ public class UnrolledMapGenerator : IMapGenerator
             }
         }
 
-        chunkIndexToCellBiomesDictionary_ExpandList(index);
         var preLen = hashKeys.Length;
+        chunkIndexToCellBiomesDictionary_ExpandList(index);
         chunkIndexToCellBiomesDictionary__keys[index][preLen] = key;
         chunkIndexToCellBiomesDictionary__values[index][preLen] = value;
         chunkIndexToCellBiomesDictionary__size++;
         return true;
     }
 
-    const int chunkIndexToCellBiomesDictionary_expand = 10;
+    const int chunkIndexToCellBiomesDictionary_expand = 5;
     void chunkIndexToCellBiomesDictionary_ExpandList(int index)
     {
         var hashKeys = chunkIndexToCellBiomesDictionary__keys[index];
@@ -17629,7 +12274,7 @@ public class UnrolledMapGenerator : IMapGenerator
     int instanceIDToGlobalCellIndexDictionary__size;
     public int instanceIDToGlobalCellIndexDictionary_Count => instanceIDToGlobalCellIndexDictionary__size;
 
-    const int instanceIDToGlobalCellIndexDictionary_bucketCount = 2;
+    const int instanceIDToGlobalCellIndexDictionary_bucketCount = 1;
     public void instanceIDToGlobalCellIndexDictionary_SetCapacity(int capacity)
     {
         int len = capacity / instanceIDToGlobalCellIndexDictionary_bucketCount;
@@ -17739,7 +12384,7 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    Debug.LogError("IntKeyintArrDictionary: Key already exists " + key.ToString());
+                    Debug.LogError("IntKeyintDictionary: Key already exists " + key.ToString());
                     return true;
                 }
 
@@ -17758,7 +12403,7 @@ public class UnrolledMapGenerator : IMapGenerator
             {
                 if (hashKeys[i] == key)
                 {
-                    Debug.LogError("IntKeyintArrDictionary: Key already exists " + key.ToString());
+                    Debug.LogError("IntKeyintDictionary: Key already exists " + key.ToString());
                     return true;
                 }
 
@@ -17772,15 +12417,15 @@ public class UnrolledMapGenerator : IMapGenerator
             }
         }
 
-        instanceIDToGlobalCellIndexDictionary_ExpandList(index);
         var preLen = hashKeys.Length;
+        instanceIDToGlobalCellIndexDictionary_ExpandList(index);
         instanceIDToGlobalCellIndexDictionary__keys[index][preLen] = key;
         instanceIDToGlobalCellIndexDictionary__values[index][preLen] = value;
         instanceIDToGlobalCellIndexDictionary__size++;
         return true;
     }
 
-    const int instanceIDToGlobalCellIndexDictionary_expand = 10;
+    const int instanceIDToGlobalCellIndexDictionary_expand = 5;
     void instanceIDToGlobalCellIndexDictionary_ExpandList(int index)
     {
         var hashKeys = instanceIDToGlobalCellIndexDictionary__keys[index];
@@ -17969,6 +12614,13 @@ public class UnrolledMapGenerator : IMapGenerator
 
     public void instanceIDToGlobalCellIndexDictionary_Remove(int key)
     {
+        if (instanceIDToGlobalCellIndexDictionary_TryRemove(key))
+            return;
+        Debug.LogError("Key not found");
+    }
+
+    public bool instanceIDToGlobalCellIndexDictionary_TryRemove(int key)
+    {
         int index = instanceIDToGlobalCellIndexDictionary_Hash(key);
         var hashKeys = instanceIDToGlobalCellIndexDictionary__keys[index];
         if (index == 0)
@@ -17984,7 +12636,7 @@ public class UnrolledMapGenerator : IMapGenerator
                 {
                     hashKeys[i] = int.MaxValue;
                     instanceIDToGlobalCellIndexDictionary__size--;
-                    return;
+                    return true;
                 }
             }
         }
@@ -17996,6 +12648,352 @@ public class UnrolledMapGenerator : IMapGenerator
                 {
                     hashKeys[i] = default;
                     instanceIDToGlobalCellIndexDictionary__size--;
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    int[][] instanceIDToBiomeDictionary__keys;
+    Biome[][] instanceIDToBiomeDictionary__values;
+    int instanceIDToBiomeDictionary__size;
+    public int instanceIDToBiomeDictionary_Count => instanceIDToBiomeDictionary__size;
+
+    const int instanceIDToBiomeDictionary_bucketCount = 1;
+    public void instanceIDToBiomeDictionary_SetCapacity(int capacity)
+    {
+        int len = capacity / instanceIDToBiomeDictionary_bucketCount;
+        instanceIDToBiomeDictionary__keys = new int[len][];
+        for (int i = 0; i < instanceIDToBiomeDictionary__keys.Length; i++)
+        {
+            instanceIDToBiomeDictionary__keys[i] = new int[instanceIDToBiomeDictionary_bucketCount];
+        }
+
+        // 0-value-key 対策
+        for (int i = 0; i < instanceIDToBiomeDictionary_bucketCount; i++)
+        {
+            instanceIDToBiomeDictionary__keys[0][i] = int.MaxValue;
+        }
+
+        instanceIDToBiomeDictionary__values = new Biome[len][];
+        for (int i = 0; i < instanceIDToBiomeDictionary__values.Length; i++)
+        {
+            instanceIDToBiomeDictionary__values[i] = new Biome[instanceIDToBiomeDictionary_bucketCount];
+        }
+    }
+
+    public bool instanceIDToBiomeDictionary_HasItem(int key)
+    {
+        var index = instanceIDToBiomeDictionary_Hash(key);
+        var hashKeys = instanceIDToBiomeDictionary__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+        }
+
+        for (int i = 0; i < hashKeys.Length; i++)
+        {
+            if (hashKeys[i] == key)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private int instanceIDToBiomeDictionary_Hash(int key)
+    {
+        var len = instanceIDToBiomeDictionary__keys.Length;
+        var mod = key % len;
+        if (mod >= 0)
+        {
+            return mod;
+        }
+        else
+        {
+            return mod + len;
+        }
+    // return 0 to len-1;
+    }
+
+    public int[] instanceIDToBiomeDictionary_GenerateKeysArray()
+    {
+        int[] keys = new int[instanceIDToBiomeDictionary__size];
+        int index = 0;
+        for (int i = 0; i < instanceIDToBiomeDictionary__keys.Length; i++)
+        {
+            var hashKeys = instanceIDToBiomeDictionary__keys[i];
+            if (i == 0)
+            {
+                for (int j = 0; j < hashKeys.Length; j++)
+                {
+                    if (hashKeys[j] != int.MaxValue)
+                    {
+                        keys[index] = hashKeys[j];
+                        index++;
+                    }
+                }
+            }
+            else
+            {
+                for (int j = 0; j < hashKeys.Length; j++)
+                {
+                    if (hashKeys[j] != default)
+                    {
+                        keys[index] = hashKeys[j];
+                        index++;
+                    }
+                }
+            }
+        }
+
+        return keys;
+    }
+
+    public bool instanceIDToBiomeDictionary_Add(int key, Biome value)
+    {
+        int index = instanceIDToBiomeDictionary_Hash(key);
+        var hashKeys = instanceIDToBiomeDictionary__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    Debug.LogError("IntKeyBiomeArrDictionary: Key already exists " + key.ToString());
+                    return true;
+                }
+
+                if (hashKeys[i] == int.MaxValue)
+                {
+                    instanceIDToBiomeDictionary__keys[index][i] = key;
+                    instanceIDToBiomeDictionary__values[index][i] = value;
+                    instanceIDToBiomeDictionary__size++;
+                    return true;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    Debug.LogError("IntKeyBiomeArrDictionary: Key already exists " + key.ToString());
+                    return true;
+                }
+
+                if (hashKeys[i] == default)
+                {
+                    instanceIDToBiomeDictionary__keys[index][i] = key;
+                    instanceIDToBiomeDictionary__values[index][i] = value;
+                    instanceIDToBiomeDictionary__size++;
+                    return true;
+                }
+            }
+        }
+
+        var preLen = hashKeys.Length;
+        instanceIDToBiomeDictionary_ExpandList(index);
+        instanceIDToBiomeDictionary__keys[index][preLen] = key;
+        instanceIDToBiomeDictionary__values[index][preLen] = value;
+        instanceIDToBiomeDictionary__size++;
+        return true;
+    }
+
+    const int instanceIDToBiomeDictionary_expand = 5;
+    void instanceIDToBiomeDictionary_ExpandList(int index)
+    {
+        var hashKeys = instanceIDToBiomeDictionary__keys[index];
+        var hashValues = instanceIDToBiomeDictionary__values[index];
+        var len = instanceIDToBiomeDictionary__keys[index].Length + instanceIDToBiomeDictionary_expand;
+        var newKeys = new int[len];
+        var newValues = new Biome[len];
+        for (int i = 0; i < instanceIDToBiomeDictionary__keys[index].Length; i++)
+        {
+            newKeys[i] = hashKeys[i];
+            newValues[i] = hashValues[i];
+        }
+
+        if (index == 0)
+        {
+            for (int i = instanceIDToBiomeDictionary__keys[index].Length; i < len; i++)
+            {
+                newKeys[i] = int.MaxValue;
+            }
+        }
+
+        instanceIDToBiomeDictionary__keys[index] = newKeys;
+        instanceIDToBiomeDictionary__values[index] = newValues;
+    }
+
+    public void instanceIDToBiomeDictionary_AddOrSetValue(int key, Biome value)
+    {
+        int index = instanceIDToBiomeDictionary_Hash(key);
+        var hashKeys = instanceIDToBiomeDictionary__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    instanceIDToBiomeDictionary__keys[index][i] = key;
+                    instanceIDToBiomeDictionary__values[index][i] = value;
+                    return;
+                }
+
+                if (hashKeys[i] == int.MaxValue)
+                {
+                    instanceIDToBiomeDictionary__keys[index][i] = key;
+                    instanceIDToBiomeDictionary__values[index][i] = value;
+                    instanceIDToBiomeDictionary__size++;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    instanceIDToBiomeDictionary__keys[index][i] = key;
+                    instanceIDToBiomeDictionary__values[index][i] = value;
+                    return;
+                }
+
+                if (hashKeys[i] == default)
+                {
+                    instanceIDToBiomeDictionary__keys[index][i] = key;
+                    instanceIDToBiomeDictionary__values[index][i] = value;
+                    instanceIDToBiomeDictionary__size++;
+                    return;
+                }
+            }
+        }
+
+        var preLen = hashKeys.Length;
+        instanceIDToBiomeDictionary_ExpandList(index);
+        instanceIDToBiomeDictionary__keys[index][preLen] = key;
+        instanceIDToBiomeDictionary__values[index][preLen] = value;
+        instanceIDToBiomeDictionary__size++;
+    }
+
+    public void instanceIDToBiomeDictionary_SetValue(int key, Biome value)
+    {
+        int index = instanceIDToBiomeDictionary_Hash(key);
+        var hashKeys = instanceIDToBiomeDictionary__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    instanceIDToBiomeDictionary__values[index][i] = value;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    instanceIDToBiomeDictionary__values[index][i] = value;
+                    return;
+                }
+            }
+        }
+
+        Debug.LogError("Key not found");
+    }
+
+    public Biome instanceIDToBiomeDictionary_GetValue(int key)
+    {
+        int index = instanceIDToBiomeDictionary_Hash(key);
+        var hashKeys = instanceIDToBiomeDictionary__keys[index];
+        var hashValues = instanceIDToBiomeDictionary__values[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    return hashValues[i];
+                }
+            }
+        }
+
+        Debug.LogError("Key not found");
+        return default;
+    }
+
+    public void instanceIDToBiomeDictionary_Remove(int key)
+    {
+        int index = instanceIDToBiomeDictionary_Hash(key);
+        var hashKeys = instanceIDToBiomeDictionary__keys[index];
+        if (index == 0)
+        {
+            if (key == int.MaxValue)
+            {
+                Debug.LogError("not allowed key value");
+            }
+
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    hashKeys[i] = int.MaxValue;
+                    instanceIDToBiomeDictionary__size--;
+                    return;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < hashKeys.Length; i++)
+            {
+                if (hashKeys[i] == key)
+                {
+                    hashKeys[i] = default;
+                    instanceIDToBiomeDictionary__size--;
                     return;
                 }
             }
@@ -18017,68 +13015,62 @@ public class UnrolledMapGenerator : IMapGenerator
             Debug.LogWarning("Cell pool is empty!");
         }*/
         var cellId = cell.GetInstanceID();
-        var globalCellIndex = instanceIDToGlobalCellIndexDictionary_GetValue(cellId);
-        permanentBreakCellDictionary_AddOrSetValue(globalCellIndex, true);
+        var globalCellIndex = instanceIDToGlobalCellIndexDictionary_GetValueOrDefault(cellId, int.MaxValue);
+        if (globalCellIndex != int.MaxValue)
+        {
+            permanentBreakCellDictionary_AddOrSetValue(globalCellIndex, true);
+            if (permanentBreakCellArrLength < permanentBreakCellArr.Length)
+            {
+                permanentBreakCellArr[permanentBreakCellArrLength] = globalCellIndex;
+                permanentBreakCellArrLength++;
+            }
+        }
+        else
+        {
+            Debug.LogWarning(cellId + " :globalCellIndex is -1");
+        }
+
         //tempBreakCellDictionary.AddOrSetValue(cellId,true); // may colision this is beacause not broken cells disappaer bug haapens 
-        UnloadCell(cell, cellId);
+        var biome = instanceIDToBiomeDictionary_GetValue(cellId);
+        UnloadCell(cell, cellId, biome);
     }
 
+    int permanentBreakCellArrLength = 0;
     public override void BreakCells(GameObject[] cells, int length)
     {
         for (int i = 0; i < length; i++)
         {
             var cell = cells[i];
             var cellId = cell.GetInstanceID();
-            var globalCellIndex = instanceIDToGlobalCellIndexDictionary_GetValue(cellId);
-            permanentBreakCellDictionary_AddOrSetValue(globalCellIndex, true);
-            //tempBreakCellDictionary.AddOrSetValue(cellId,true); // may colision this is beacause not broken cells disappaer bug haapens 
-            UnloadCell(cell, cellId);
+            var globalCellIndex = instanceIDToGlobalCellIndexDictionary_GetValueOrDefault(cellId, int.MaxValue);
+            if (globalCellIndex != int.MaxValue)
+            {
+                permanentBreakCellDictionary_AddOrSetValue(globalCellIndex, true);
+                if (permanentBreakCellArrLength < permanentBreakCellArr.Length)
+                {
+                    permanentBreakCellArr[permanentBreakCellArrLength] = globalCellIndex;
+                    permanentBreakCellArrLength++;
+                }
+            }
+            else
+            {
+                Debug.LogWarning(cellId + " :globalCellIndex is -1");
+            }
+
+            var biome = instanceIDToBiomeDictionary_GetValue(cellId);
+            meshCombiner_BreakCell(cell, cellId);
+        //UnloadCell(cell,cellId,biome);
         }
     }
 
     void UnloadCell(GameObject cell, int id, Biome biomeType)
     {
-        BiomeReturn(biomeType, cell, id);
-    }
+        if (!instanceIDToGlobalCellIndexDictionary_TryRemove(id))
+        {
+            Debug.LogWarning("UnloadCell: instanceIDToGlobalCellIndexDictionary not has item " + id);
+        }
 
-    void UnloadCell(GameObject cell, int id)
-    {
-        if (grassPool_IsMine(cell))
-        {
-            grassPool_Return(cell, id, true);
-        }
-        else if (sandPool_IsMine(cell))
-        {
-            sandPool_Return(cell, id, true);
-        }
-        else if (waterPool_IsMine(cell))
-        {
-            waterPool_Return(cell, id, true);
-        }
-        else if (rockPool_IsMine(cell))
-        {
-            rockPool_Return(cell, id, true);
-        }
-        else if (dirtPool_IsMine(cell))
-        {
-            dirtPool_Return(cell, id, true);
-        }
-        else if (desertPool_IsMine(cell))
-        {
-            desertPool_Return(cell, id, true);
-        }
-        else if (tundraPool_IsMine(cell))
-        {
-            tundraPool_Return(cell, id, true);
-        }
-        else if (darkPool_IsMine(cell))
-        {
-            darkPool_Return(cell, id, true);
-        }
-        else
-        {
-            Debug.LogWarning("Cell " + cell.name + " pool is empty! Or Make sure obj is cell type");
-        }
+        BiomeReturn(biomeType, cell, id);
     }
 
     float scale => settings_scale;
@@ -18111,738 +13103,29 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    [SerializeField]
-    int meshCombiner_itemOperator_capacity = 300000;
+    public bool meshCombiner_itemOperator_SetColliderActive(GameObject obj, bool active)
+    {
+        BoxCollider col = obj.GetComponent<BoxCollider>();
+        meshCombiner_itemOperator_col.enabled = active;
+        //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
+        return true;
+    }
+
+    //[SerializeField]int capacity=300000;
     void meshCombiner_itemOperator_Start()
     {
-        meshCombiner_itemOperator_idToColDict_SetCapacity(meshCombiner_itemOperator_capacity);
-        meshCombiner_itemOperator_idToMeshDict_SetCapacity(meshCombiner_itemOperator_capacity);
+    //idToColDict.SetCapacity(capacity);
+    //idToMeshDict.SetCapacity(capacity);
     }
 
-    int[][] meshCombiner_itemOperator_idToColDict__keys;
-    BoxCollider[][] meshCombiner_itemOperator_idToColDict__values;
-    int meshCombiner_itemOperator_idToColDict__size;
-    public int meshCombiner_itemOperator_idToColDict_Count => meshCombiner_itemOperator_idToColDict__size;
-
-    public int[] meshCombiner_itemOperator_idToColDict_GenerateKeysArray()
-    {
-        int[] keys = new int[meshCombiner_itemOperator_idToColDict__size];
-        int index = 0;
-        for (int i = 0; i < meshCombiner_itemOperator_idToColDict__keys.Length; i++)
-        {
-            var hashKeys = meshCombiner_itemOperator_idToColDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int meshCombiner_itemOperator_idToColDict_bucketCount = 2;
-    public int meshCombiner_itemOperator_idToColDict_KeyLength => meshCombiner_itemOperator_idToColDict__keys.Length;
-
-    public void meshCombiner_itemOperator_idToColDict_SetCapacity(int capacity)
-    {
-        int len = meshCombiner_itemOperator_capacity / meshCombiner_itemOperator_idToColDict_bucketCount;
-        meshCombiner_itemOperator_idToColDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            meshCombiner_itemOperator_idToColDict__keys[i] = new int[meshCombiner_itemOperator_idToColDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < meshCombiner_itemOperator_idToColDict_bucketCount; i++)
-        {
-            meshCombiner_itemOperator_idToColDict__keys[0][i] = int.MaxValue;
-        }
-
-        meshCombiner_itemOperator_idToColDict__values = new BoxCollider[len][];
-        for (int i = 0; i < len; i++)
-        {
-            meshCombiner_itemOperator_idToColDict__values[i] = new BoxCollider[meshCombiner_itemOperator_idToColDict_bucketCount];
-        }
-    }
-
-    public bool meshCombiner_itemOperator_idToColDict_HasItem(int key)
-    {
-        var index = meshCombiner_itemOperator_idToColDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int meshCombiner_itemOperator_idToColDict_Hash(int key)
-    {
-        var len = meshCombiner_itemOperator_idToColDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool meshCombiner_itemOperator_idToColDict_Add(int key, BoxCollider value)
-    {
-        int index = meshCombiner_itemOperator_idToColDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    meshCombiner_itemOperator_idToColDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToColDict__values[index][i] = value;
-                    meshCombiner_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyBoxColliderDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    meshCombiner_itemOperator_idToColDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToColDict__values[index][i] = value;
-                    meshCombiner_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        meshCombiner_itemOperator_idToColDict_ExpandList(index);
-        meshCombiner_itemOperator_idToColDict__keys[index][preLen] = key;
-        meshCombiner_itemOperator_idToColDict__values[index][preLen] = value;
-        meshCombiner_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    const int meshCombiner_itemOperator_idToColDict_expand = 10;
-    void meshCombiner_itemOperator_idToColDict_ExpandList(int index)
-    {
-        var hashKeys = meshCombiner_itemOperator_idToColDict__keys[index];
-        var hashValues = meshCombiner_itemOperator_idToColDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + meshCombiner_itemOperator_idToColDict_expand;
-        var newKeys = new int[len];
-        var newValues = new BoxCollider[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        meshCombiner_itemOperator_idToColDict__keys[index] = newKeys;
-        meshCombiner_itemOperator_idToColDict__values[index] = newValues;
-    }
-
-    public bool meshCombiner_itemOperator_idToColDict_AddOrSetValue(int key, BoxCollider value)
-    {
-        int index = meshCombiner_itemOperator_idToColDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    meshCombiner_itemOperator_idToColDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    meshCombiner_itemOperator_idToColDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToColDict__values[index][i] = value;
-                    meshCombiner_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    meshCombiner_itemOperator_idToColDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToColDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    meshCombiner_itemOperator_idToColDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToColDict__values[index][i] = value;
-                    meshCombiner_itemOperator_idToColDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyBoxColliderDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        meshCombiner_itemOperator_idToColDict_ExpandList(index);
-        meshCombiner_itemOperator_idToColDict__keys[index][preLen] = key;
-        meshCombiner_itemOperator_idToColDict__values[index][preLen] = value;
-        meshCombiner_itemOperator_idToColDict__size++;
-        return true;
-    }
-
-    public void meshCombiner_itemOperator_idToColDict_SetValue(int key, BoxCollider value)
-    {
-        int index = meshCombiner_itemOperator_idToColDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    meshCombiner_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    meshCombiner_itemOperator_idToColDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public BoxCollider meshCombiner_itemOperator_idToColDict_GetValue(int key)
-    {
-        int index = meshCombiner_itemOperator_idToColDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToColDict__keys[index];
-        var hashValues = meshCombiner_itemOperator_idToColDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void meshCombiner_itemOperator_idToColDict_Remove(int key)
-    {
-        int index = meshCombiner_itemOperator_idToColDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToColDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    meshCombiner_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    meshCombiner_itemOperator_idToColDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    int[][] meshCombiner_itemOperator_idToMeshDict__keys;
-    MeshRenderer[][] meshCombiner_itemOperator_idToMeshDict__values;
-    int meshCombiner_itemOperator_idToMeshDict__size;
-    public int meshCombiner_itemOperator_idToMeshDict_Count => meshCombiner_itemOperator_idToMeshDict__size;
-
-    public int[] meshCombiner_itemOperator_idToMeshDict_GenerateKeysArray()
-    {
-        int[] keys = new int[meshCombiner_itemOperator_idToMeshDict__size];
-        int index = 0;
-        for (int i = 0; i < meshCombiner_itemOperator_idToMeshDict__keys.Length; i++)
-        {
-            var hashKeys = meshCombiner_itemOperator_idToMeshDict__keys[i];
-            if (i == 0)
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != int.MaxValue)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                for (int j = 0; j < hashKeys.Length; j++)
-                {
-                    if (hashKeys[j] != default)
-                    {
-                        keys[index] = hashKeys[j];
-                        index++;
-                    }
-                }
-            }
-        }
-
-        return keys;
-    }
-
-    const int meshCombiner_itemOperator_idToMeshDict_bucketCount = 2;
-    public int meshCombiner_itemOperator_idToMeshDict_KeyLength => meshCombiner_itemOperator_idToMeshDict__keys.Length;
-
-    public void meshCombiner_itemOperator_idToMeshDict_SetCapacity(int capacity)
-    {
-        int len = meshCombiner_itemOperator_capacity / meshCombiner_itemOperator_idToMeshDict_bucketCount;
-        meshCombiner_itemOperator_idToMeshDict__keys = new int[len][];
-        for (int i = 0; i < len; i++)
-        {
-            meshCombiner_itemOperator_idToMeshDict__keys[i] = new int[meshCombiner_itemOperator_idToMeshDict_bucketCount];
-        }
-
-        // 0-value-key 対策
-        for (int i = 0; i < meshCombiner_itemOperator_idToMeshDict_bucketCount; i++)
-        {
-            meshCombiner_itemOperator_idToMeshDict__keys[0][i] = int.MaxValue;
-        }
-
-        meshCombiner_itemOperator_idToMeshDict__values = new MeshRenderer[len][];
-        for (int i = 0; i < len; i++)
-        {
-            meshCombiner_itemOperator_idToMeshDict__values[i] = new MeshRenderer[meshCombiner_itemOperator_idToMeshDict_bucketCount];
-        }
-    }
-
-    public bool meshCombiner_itemOperator_idToMeshDict_HasItem(int key)
-    {
-        var index = meshCombiner_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-        }
-
-        for (int i = 0; i < hashKeys.Length; i++)
-        {
-            if (hashKeys[i] == key)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private int meshCombiner_itemOperator_idToMeshDict_Hash(int key)
-    {
-        var len = meshCombiner_itemOperator_idToMeshDict__keys.Length;
-        var mod = key % len;
-        if (mod >= 0)
-        {
-            return mod;
-        }
-        else
-        {
-            return mod + len;
-        }
-    // return 0 to len-1;
-    }
-
-    public bool meshCombiner_itemOperator_idToMeshDict_Add(int key, MeshRenderer value)
-    {
-        int index = meshCombiner_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    meshCombiner_itemOperator_idToMeshDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToMeshDict__values[index][i] = value;
-                    meshCombiner_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    Debug.LogError("IntKeyMeshRendererDictionary: Key already exists " + key.ToString());
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    meshCombiner_itemOperator_idToMeshDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToMeshDict__values[index][i] = value;
-                    meshCombiner_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary Add: Dictionary is full "+value.name);
-        var preLen = hashKeys.Length;
-        meshCombiner_itemOperator_idToMeshDict_ExpandList(index);
-        meshCombiner_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        meshCombiner_itemOperator_idToMeshDict__values[index][preLen] = value;
-        meshCombiner_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    const int meshCombiner_itemOperator_idToMeshDict_expand = 10;
-    void meshCombiner_itemOperator_idToMeshDict_ExpandList(int index)
-    {
-        var hashKeys = meshCombiner_itemOperator_idToMeshDict__keys[index];
-        var hashValues = meshCombiner_itemOperator_idToMeshDict__values[index];
-        var preLen = hashKeys.Length;
-        var len = preLen + meshCombiner_itemOperator_idToMeshDict_expand;
-        var newKeys = new int[len];
-        var newValues = new MeshRenderer[len];
-        for (int i = 0; i < preLen; i++)
-        {
-            newKeys[i] = hashKeys[i];
-            newValues[i] = hashValues[i];
-        }
-
-        if (index == 0)
-        {
-            for (int i = preLen; i < len; i++)
-            {
-                newKeys[i] = int.MaxValue;
-            }
-        }
-
-        meshCombiner_itemOperator_idToMeshDict__keys[index] = newKeys;
-        meshCombiner_itemOperator_idToMeshDict__values[index] = newValues;
-    }
-
-    public bool meshCombiner_itemOperator_idToMeshDict_AddOrSetValue(int key, MeshRenderer value)
-    {
-        int index = meshCombiner_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    meshCombiner_itemOperator_idToMeshDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == int.MaxValue)
-                {
-                    meshCombiner_itemOperator_idToMeshDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToMeshDict__values[index][i] = value;
-                    meshCombiner_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    meshCombiner_itemOperator_idToMeshDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToMeshDict__values[index][i] = value;
-                    return true;
-                }
-
-                if (hashKeys[i] == default)
-                {
-                    meshCombiner_itemOperator_idToMeshDict__keys[index][i] = key;
-                    meshCombiner_itemOperator_idToMeshDict__values[index][i] = value;
-                    meshCombiner_itemOperator_idToMeshDict__size++;
-                    return true;
-                }
-            }
-        }
-
-        //Debug.LogWarning("InkEyMeshRendererDictionary AddOrSet: Dictionary is full");
-        var preLen = hashKeys.Length;
-        meshCombiner_itemOperator_idToMeshDict_ExpandList(index);
-        meshCombiner_itemOperator_idToMeshDict__keys[index][preLen] = key;
-        meshCombiner_itemOperator_idToMeshDict__values[index][preLen] = value;
-        meshCombiner_itemOperator_idToMeshDict__size++;
-        return true;
-    }
-
-    public void meshCombiner_itemOperator_idToMeshDict_SetValue(int key, MeshRenderer value)
-    {
-        int index = meshCombiner_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    meshCombiner_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    meshCombiner_itemOperator_idToMeshDict__values[index][i] = value;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
-    public MeshRenderer meshCombiner_itemOperator_idToMeshDict_GetValue(int key)
-    {
-        int index = meshCombiner_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToMeshDict__keys[index];
-        var hashValues = meshCombiner_itemOperator_idToMeshDict__values[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    return hashValues[i];
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-        return default;
-    }
-
-    public void meshCombiner_itemOperator_idToMeshDict_Remove(int key)
-    {
-        int index = meshCombiner_itemOperator_idToMeshDict_Hash(key);
-        var hashKeys = meshCombiner_itemOperator_idToMeshDict__keys[index];
-        if (index == 0)
-        {
-            if (key == int.MaxValue)
-            {
-                Debug.LogError("not allowed key value");
-            }
-
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = int.MaxValue;
-                    meshCombiner_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < hashKeys.Length; i++)
-            {
-                if (hashKeys[i] == key)
-                {
-                    hashKeys[i] = default;
-                    meshCombiner_itemOperator_idToMeshDict__size--;
-                    return;
-                }
-            }
-        }
-
-        Debug.LogError("Key not found");
-    }
-
+    //[SerializeField,UnrollAttribute]IntToBoxColliderDictionary idToColDict;
+    //[SerializeField,UnrollAttribute]IntToMeshRendererDictionary idToMeshDict;
     BoxCollider meshCombiner_itemOperator_col;
     MeshRenderer meshCombiner_itemOperator_mesh;
     public bool meshCombiner_itemOperator_SetActive(GameObject obj, int instanceID, bool active)
     {
-        if (meshCombiner_itemOperator_idToColDict_HasItem(instanceID))
-        {
-            meshCombiner_itemOperator_col = meshCombiner_itemOperator_idToColDict_GetValue(instanceID);
-        }
-        else
-        {
-            meshCombiner_itemOperator_col = obj.GetComponent<BoxCollider>();
-            meshCombiner_itemOperator_idToColDict_Add(instanceID, meshCombiner_itemOperator_col);
-        }
-
-        if (meshCombiner_itemOperator_idToMeshDict_HasItem(instanceID))
-        {
-            meshCombiner_itemOperator_mesh = meshCombiner_itemOperator_idToMeshDict_GetValue(instanceID);
-        }
-        else
-        {
-            meshCombiner_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
-            meshCombiner_itemOperator_idToMeshDict_Add(instanceID, meshCombiner_itemOperator_mesh);
-        }
-
+        meshCombiner_itemOperator_col = obj.GetComponent<BoxCollider>();
+        meshCombiner_itemOperator_mesh = obj.GetComponent<MeshRenderer>();
         meshCombiner_itemOperator_col.enabled = active;
         meshCombiner_itemOperator_mesh.enabled = active;
         //  mesh.material.SetFloat("_UpDown",0); // コメントアウトによってshaderによる落下アニメーションは機能しなくなる
@@ -18920,29 +13203,6 @@ public class UnrolledMapGenerator : IMapGenerator
         return mesh.enabled;
     }
 
-    public int meshCombiner_mapGeneratorSettings_chunkSize = 3;
-    public int meshCombiner_mapGeneratorSettings_chunkSizeY = 3;
-    public int meshCombiner_mapGeneratorSettings_batchCount = 1000;
-    public int meshCombiner_mapGeneratorSettings_chunkWidth = 100;
-    public int meshCombiner_mapGeneratorSettings_chunkDepth = 100;
-    public int meshCombiner_mapGeneratorSettings_fieldHeight = 3;
-    public float meshCombiner_mapGeneratorSettings_scale = 0.015f;
-    public float meshCombiner_mapGeneratorSettings_scaleT = 0.003f;
-    public float meshCombiner_mapGeneratorSettings_scaleH = 0.003f;
-    public float meshCombiner_mapGeneratorSettings_cellAnimationTime = 1f;
-    public float meshCombiner_mapGeneratorSettings_TileScale = 1.5f;
-    public float meshCombiner_mapGeneratorSettings_chunkLoadRange = 6f;
-    public float meshCombiner_mapGeneratorSettings_chunkUnLoadRange = 12f;
-    public float meshCombiner_mapGeneratorSettings_chunkDetailRange = 1f;
-    public float meshCombiner_mapGeneratorSettings_generateAdditionalInterval = 5f;
-    public float meshCombiner_mapGeneratorSettings_searchAdditionalInterval = 3f;
-    public float meshCombiner_mapGeneratorSettings_removeBatchCount = 100;
-    public float meshCombiner_mapGeneratorSettings_removeInterval = 0.1f;
-    public float meshCombiner_mapGeneratorSettings_waterPercentage = 0.2f;
-    public int meshCombiner_mapGeneratorSettings_operationBatchCount = 1;
-    public int meshCombiner_mapGeneratorSettings_searchBatchCount = 30;
-    public bool meshCombiner_mapGeneratorSettings_removeOn = true;
-    public bool meshCombiner_mapGeneratorSettings_searchOn = true;
     /*public  GameObject[] GetAllParts(int count){
         var target=allPartsCache[count];
         if(target==null){
@@ -18957,9 +13217,13 @@ public class UnrolledMapGenerator : IMapGenerator
     void meshCombiner_Start()
     {
         meshCombiner_itemOperator_Start();
-        var size = meshCombiner_mapGeneratorSettings_chunkSize;
     //combineCache = new CombineInstance[size*size*size][];
     //allPartsCache = new GameObject[10][];
+    }
+
+    public void meshCombiner_BreakCell(GameObject cell, int id)
+    {
+        meshCombiner_itemOperator_SetActive(cell, id, false);
     }
 
     public void meshCombiner_SwitchCombineMesh(bool active, GameObject outline, int outlineId, GameObject[] cells, int[] cellIds, bool[] brokenArr)
@@ -18973,6 +13237,9 @@ public class UnrolledMapGenerator : IMapGenerator
             for (int i = 0; i < cells.Length; i++)
             {
                 meshCombiner_itemOperator_SetActive(cells[i], cellIds[i], false);
+            /*if(colOnlyArr[i]){
+                    itemOperator.SetColliderActive(cells[i],true);
+                }*/
             }
         }
         else
@@ -19008,9 +13275,18 @@ public class UnrolledMapGenerator : IMapGenerator
                 combineCount++;
             }
         }*/
-        int combineCount = meshFilters.Length;
+        int combineCount = 0;
+        for (int i = 0; i < meshFilters.Length; i++)
+        {
+            if (!brokenArr[i])
+            {
+                combineCount++;
+            }
+        }
+
+        int combineIndex = 0;
         // 結合するメッシュの配列を作成します。
-        if (meshCombiner_combine == null)
+        if (meshCombiner_combine == null && !hasItem)
             meshCombiner_combine = new CombineInstance[combineCount];
         //CombineInstance[] combine = GetCombine(combineCount);//new CombineInstance[combineCount];//
         //GameObject[] allParts = new GameObject[meshFilters.Length-combineCount+1];
@@ -19021,10 +13297,11 @@ public class UnrolledMapGenerator : IMapGenerator
         {
             var mesh = meshFilters[i];
             //TODO: destory block dictionaryを参照する
-            if (!hasItem)
+            if (!hasItem && !brokenArr[i])
             {
-                meshCombiner_combine[i].mesh = mesh.sharedMesh;
-                meshCombiner_combine[i].transform = mesh.transform.localToWorldMatrix;
+                meshCombiner_combine[combineIndex].mesh = mesh.sharedMesh;
+                meshCombiner_combine[combineIndex].transform = mesh.transform.localToWorldMatrix;
+                combineIndex++;
             }
 
             if (isInDetailRange)
@@ -19034,6 +13311,9 @@ public class UnrolledMapGenerator : IMapGenerator
             else
             {
                 meshCombiner_itemOperator_SetActive(mesh.gameObject, ids[i], false); // try to spawnでtrueは保証されている
+            /*if(colOnlyArr[i]){
+                    itemOperator.SetColliderActive(mesh.gameObject,true);
+                }*/
             }
         /*if(mesh.GetComponent<MeshRenderer>().material.name==combinedMat.name){
                 combine[index].mesh = mesh.sharedMesh;
@@ -19066,7 +13346,7 @@ public class UnrolledMapGenerator : IMapGenerator
     int chunkToCellsDict__size;
     public int chunkToCellsDict_Count => chunkToCellsDict__size;
 
-    const int chunkToCellsDict_bucketCount = 2;
+    const int chunkToCellsDict_bucketCount = 1;
     public void chunkToCellsDict_SetCapacity(int capacity)
     {
         int len = capacity / chunkToCellsDict_bucketCount;
@@ -19209,15 +13489,15 @@ public class UnrolledMapGenerator : IMapGenerator
             }
         }
 
-        chunkToCellsDict_ExpandList(index);
         var preLen = hashKeys.Length;
+        chunkToCellsDict_ExpandList(index);
         chunkToCellsDict__keys[index][preLen] = key;
         chunkToCellsDict__values[index][preLen] = value;
         chunkToCellsDict__size++;
         return true;
     }
 
-    const int chunkToCellsDict_expand = 10;
+    const int chunkToCellsDict_expand = 5;
     void chunkToCellsDict_ExpandList(int index)
     {
         var hashKeys = chunkToCellsDict__keys[index];
@@ -19409,6 +13689,11 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     GameObject chunkPool_prefab;
+    public void chunkPool_SetPrefab(GameObject prefab)
+    {
+        this.chunkPool_prefab = chunkPool_prefab;
+    }
+
     int[][] chunkPool_idToObjDict__keys;
     GameObject[][] chunkPool_idToObjDict__values;
     int chunkPool_idToObjDict__size;
@@ -19448,7 +13733,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return keys;
     }
 
-    const int chunkPool_idToObjDict_bucketCount = 2;
+    const int chunkPool_idToObjDict_bucketCount = 1;
     public int chunkPool_idToObjDict_KeyLength => chunkPool_idToObjDict__keys.Length;
 
     public void chunkPool_idToObjDict_SetCapacity(int capacity)
@@ -19566,7 +13851,7 @@ public class UnrolledMapGenerator : IMapGenerator
         return true;
     }
 
-    const int chunkPool_idToObjDict_expand = 10;
+    const int chunkPool_idToObjDict_expand = 5;
     void chunkPool_idToObjDict_ExpandList(int index)
     {
         var hashKeys = chunkPool_idToObjDict__keys[index];
@@ -19794,7 +14079,7 @@ public class UnrolledMapGenerator : IMapGenerator
     }
 
     [SerializeField]
-    int chunkPool_Capacity = 100000;
+    int chunkPool_Capacity = 50021;
     public bool chunkPool_itemOperator_SetActive(GameObject obj, bool active)
     {
         MeshCollider col = obj.GetComponent<MeshCollider>();
@@ -19870,21 +14155,7 @@ public class UnrolledMapGenerator : IMapGenerator
     // Removes all Objects from the queue.
     public void chunkPool_notActiveObjQueue_Clear()
     {
-        if (chunkPool_notActiveObjQueue__size != 0)
-        {
-            if (chunkPool_notActiveObjQueue__head < chunkPool_notActiveObjQueue__tail)
-            {
-                Array.Clear(chunkPool_notActiveObjQueue__array, chunkPool_notActiveObjQueue__head, chunkPool_notActiveObjQueue__size);
-            }
-            else
-            {
-                Array.Clear(chunkPool_notActiveObjQueue__array, chunkPool_notActiveObjQueue__head, chunkPool_notActiveObjQueue__array.Length - chunkPool_notActiveObjQueue__head);
-                Array.Clear(chunkPool_notActiveObjQueue__array, 0, chunkPool_notActiveObjQueue__tail);
-            }
-
-            chunkPool_notActiveObjQueue__size = 0;
-        }
-
+        chunkPool_notActiveObjQueue__size = 0;
         chunkPool_notActiveObjQueue__head = 0;
         chunkPool_notActiveObjQueue__tail = 0;
         chunkPool_notActiveObjQueue__version++;
@@ -20036,11 +14307,9 @@ public class UnrolledMapGenerator : IMapGenerator
         chunkPool_notActiveObjQueue__version++;
     }
 
-    [SerializeField]
-    Transform chunkPool_parent;
+    //[SerializeField]Transform parent;
     void chunkPool_Start()
     {
-        chunkPool_prefabName = chunkPool_prefab.name;
         chunkPool_idToObjDict_SetCapacity(chunkPool_Capacity);
         chunkPool_notActiveObjQueue_SetCapacity(chunkPool_Capacity);
     }
@@ -20070,7 +14339,6 @@ public class UnrolledMapGenerator : IMapGenerator
         chunkPool_notActiveObjQueue_Enqueue(id);
     }
 
-    string chunkPool_prefabName;
     GameObject chunkPool_instance;
     // falseで出してmeshcombinerで切り替える
     int chunkPool_uniqueId = 0;
@@ -20172,10 +14440,14 @@ public class UnrolledMapGenerator : IMapGenerator
     Biome[] generatingCellBiomes;
     int[] generatingCellInstanceIds;
     int chunkXIndex, chunkYIndex, chunkZIndex;
-    GameObject chunkObj;
     int chunkID;
-    public const string IndestructibleTag = "Ignore Raycast";
+    public const string IndestructibleTag = "Cell";
     public const string CellTag = "Cell";
+    int ToChunkIndex(int x, int z)
+    {
+        return (z - ZSTARTINDEX) * chunkWidth + (x - XSTARTINDEX);
+    }
+
     int ToLocalCellIndex(int xIndex, int yIndex, int zIndex)
     {
         return (xIndex * chunkSize + zIndex) * chunkSizeY + yIndex;
@@ -20186,10 +14458,11 @@ public class UnrolledMapGenerator : IMapGenerator
         return localCellIndex + chunkIndex * chunkSize * chunkSize * chunkSizeY;
     }
 
+    GameObject chunkObj;
     GenerateChunkMode GenerateChunk()
     {
         int chunkIndex = ToChunkIndex(xStartChunkIndex, zStartChunkIndex);
-        if (loadedChunkIndexDict_GetValueOrDefault(chunkIndex, false))
+        if (chunkStateDict_IsLoaded(chunkIndex))
             return GenerateChunkMode.Pass;
         bool isInit = false;
         if (chunkXIndex == 0 && chunkZIndex == 0 && chunkYIndex == 0)
@@ -20226,22 +14499,19 @@ public class UnrolledMapGenerator : IMapGenerator
 
         //MeshFilter[] meshFilters = new MeshFilter[chunkSize*chunkSize];
         var resCell = GenerateCell(xStartChunkIndex * chunkSize + chunkXIndex, zStartChunkIndex * chunkSize + chunkZIndex, chunkYIndex - chunkSizeY + 1, null);
-        if (chunkYIndex < indestructibleLine)
-        {
-            resCell.layer = LayerMask.NameToLayer(IndestructibleTag);
-        }
-        else
-        {
-            resCell.layer = LayerMask.NameToLayer(CellTag);
-        }
-
+        /*if(chunkYIndex<indestructibleLine){
+            resCell.layer=LayerMask.NameToLayer(IndestructibleTag);
+        } else {
+            resCell.layer=LayerMask.NameToLayer(CellTag);
+        }*/
         int localIndex = ToLocalCellIndex(chunkXIndex, chunkYIndex, chunkZIndex);
         int instanceId = resCell.GetInstanceID();
         meshFilters[localIndex] = resCell.GetComponent<MeshFilter>();
         generatingCells[localIndex] = resCell;
         generatingCellInstanceIds[localIndex] = instanceId;
         generatingCellBiomes[localIndex] = currentCellBiome;
-        instanceIDToGlobalCellIndexDictionary_AddOrSetValue(instanceId, ToGlobalCellIndex(localIndex, chunkIndex));
+        instanceIDToGlobalCellIndexDictionary_Add(instanceId, ToGlobalCellIndex(localIndex, chunkIndex));
+        instanceIDToBiomeDictionary_AddOrSetValue(instanceId, currentCellBiome);
         chunkYIndex++;
         if (chunkYIndex == chunkSizeY)
         {
@@ -20259,34 +14529,28 @@ public class UnrolledMapGenerator : IMapGenerator
                         chunkToCellsDict_Add(chunkIndex, generatingCells);
                         chunkIndexToCellBiomesDictionary_Add(chunkIndex, generatingCellBiomes);
                         chunkToCellInstanceIdsDictionary_Add(chunkIndex, generatingCellInstanceIds);
-                        loadedChunkIndexDict_Add(chunkIndex, true);
                     }
                     else
                     {
-                        loadedChunkIndexDict_SetValue(chunkIndex, true);
+                    // no need to call
+                    /*chunkToCellsDict.SetValue(chunkIndex,generatingCells);
+                        chunkIndexToCellBiomesDictionary.SetValue(chunkIndex,generatingCellBiomes);
+                        chunkToCellInstanceIdsDictionary.SetValue(chunkIndex,generatingCellInstanceIds);
+                        */
                     }
 
                     bool isInDetailRange = IsInDetailRange(GetPlayerPosition(), xStartChunkIndex, zStartChunkIndex);
-                    if (isInDetailRange)
+                    for (int i = 0; i < generatingCells.Length; i++)
                     {
-                        for (int i = 0; i < generatingCells.Length; i++)
-                        {
-                            brokenArr[i] = permanentBreakCellDictionary_GetValueOrDefault(ToGlobalCellIndex(i, chunkIndex), false);
-                        }
-
-                        detailChunkIndexDict_AddOrSetValue(chunkIndex, true);
-                        detailOperationDictionary_AddOrSetValue(chunkIndex, true);
+                        brokenArr[i] = isInDetailRange && permanentBreakCellDictionary_GetValueOrDefault(ToGlobalCellIndex(i, chunkIndex), false);
                     }
 
-                    var hasIItem = outlineDict_HasItem(chunkIndex);
-                    var outline = meshCombiner_CombineMesh(chunkObj, meshFilters, generatingCellInstanceIds, isInDetailRange, brokenArr, hasIItem);
-                    if (!hasIItem)
-                    {
-                        outlineDict_Add(chunkIndex, outline);
-                    }
-
-                    chunkObj = null;
-                    unloadOperationDictionary_AddOrSetValue(chunkIndex, false);
+                    chunkStateDict_AddOrSetValue(chunkIndex, isInDetailRange ? ChunkState.Detailed : ChunkState.UnDetailed);
+                    var hasIItem = false; //outlineDict.HasItem(chunkIndex);
+                    meshCombiner_CombineMesh(chunkObj, meshFilters, generatingCellInstanceIds, isInDetailRange, brokenArr, hasIItem);
+                    outlineDict_AddOrSetValue(chunkIndex, chunkObj);
+                    //}
+                    //chunkObj=null;
                     return GenerateChunkMode.Complete;
                 }
             }
@@ -20299,6 +14563,10 @@ public class UnrolledMapGenerator : IMapGenerator
 
     [SerializeField]
     int indestructibleLine = 2;
+    [SerializeField]
+    Transform playerSpawnPos;
+    [SerializeField]
+    float IndestructibleRange = 5;
     public GameObject GenerateCell(int xIndex, int zIndex, int yIndex, Transform parent)
     {
         xValue = xIndex * scale + _seedX;
@@ -20310,6 +14578,15 @@ public class UnrolledMapGenerator : IMapGenerator
         //spawnPos = new Vector3((xIndex)*TileScale,height,zIndex*TileScale);
         biomeCell = GenerateBiome(xIndex, zIndex, parent);
         biomeCell.transform.localPosition = spawnPos;
+        ///////////////////////////
+        // WARNING: 特別処理
+        float playerSpawnChunkDist = (playerSpawnPos.position.x - spawnPos.x) * (playerSpawnPos.position.x - spawnPos.x) + (playerSpawnPos.position.z - spawnPos.z) * (playerSpawnPos.position.z - spawnPos.z);
+        if (playerSpawnChunkDist < IndestructibleRange * IndestructibleRange)
+        {
+            biomeCell.layer = 22;
+        }
+
+        ////////////////////////////
         //gc alloc
         /*if(biomeCell!=null){
             biomeCell.transform.localPosition = spawnPos;
@@ -20342,7 +14619,22 @@ public class UnrolledMapGenerator : IMapGenerator
         {
             int tempIndex = Math.Min((int)(temperature * 5), 4);
             int humIndex = Math.Min((int)(humidity * 5), 4);
-            biomeType = biomeMap[tempIndex][humIndex];
+            switch (mission.PlanetType)
+            {
+                case PlanetType.Earth:
+                    biomeType = biomeEarthMap[tempIndex][humIndex];
+                    break;
+                case PlanetType.Moon:
+                    biomeType = biomeMoonMap[tempIndex][humIndex];
+                    break;
+                case PlanetType.Mars:
+                    biomeType = biomeMarsMap[tempIndex][humIndex];
+                    break;
+                default:
+                    Debug.LogError("PlanetType is not set");
+                    biomeType = Biome.Water;
+                    break;
+            }
         }
 
         var cell = BiomeTryToSpawn(biomeType);

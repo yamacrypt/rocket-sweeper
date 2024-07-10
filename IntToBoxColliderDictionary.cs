@@ -38,7 +38,7 @@ using VRC.Udon;
             return keys;
         }
 
-        const int bucketCount=2;
+        const int bucketCount=1;
 
         public int KeyLength => _keys.Length;
 
@@ -131,7 +131,7 @@ using VRC.Udon;
             _size++;
             return true;
         }
-        const int expand=10;
+        const int expand=5;
         void ExpandList(int index){
             var hashKeys=_keys[index];
             var hashValues=_values[index];

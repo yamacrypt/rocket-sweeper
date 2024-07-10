@@ -1,6 +1,7 @@
 ﻿
 using System;
 using BuildSoft.UdonSharp.Collection;
+using Pokeyi.UdonSharp;
 using UdonObjectPool;
 using UdonSharp;
 using UnityEngine;
@@ -13,16 +14,33 @@ using VRC.Udon;
 //[RequireComponent(typeof(WeaponList),typeof(EnemyList))]
 public class GunController : UdonSharpBehaviour
 {
-    [SerializeField]LocalObjectPool bulletPool;
+    //[SerializeField]LocalObjectPool bulletPool;
     [SerializeField]SyncedObjectPool bulletSyncedPool;
+    /*[UdonSynced]Vector3 gunPos;
+    [UdonSynced]Quaternion gunRot;
 
+    public override void OnDeserialization()
+    {
+        rg.MovePosition(gunPos);
+        rg.MoveRotation(gunRot);
+    }
+
+
+    public void SyncTransform(){
+        if(player.IsYourGun(this)){
+            gunPos=this.transform.position;
+            gunRot=this.transform.rotation;
+            RequestSerialization();
+        }
+    }*/
     [SerializeField]Player player;
-
+    Rigidbody rg;
     void Start()
     {
         if(bulletSyncedPool==null){
             Debug.Log("WARNING: bulletSyncedPool is null");
         }
+        rg=this.GetComponent<Rigidbody>();
     }
 
 
@@ -31,31 +49,44 @@ public class GunController : UdonSharpBehaviour
     void OnDisable()
     {
     }
-
-    public override bool OnOwnershipRequest(VRC.SDKBase.VRCPlayerApi requestingPlayer, VRC.SDKBase.VRCPlayerApi requestedOwner){
-        player.UnTap();
-        return true;
-    }
+    
+    // requestされた側が処理するわけでもなさそう
+    /*public override bool OnOwnershipRequest(VRC.SDKBase.VRCPlayerApi requestingPlayer, VRC.SDKBase.VRCPlayerApi requestedOwner){
+        if(player.IsYourGun(this)){
+            return true;
+        }
+        return false;
+    }*/
 
     float ThresholdFireTime => 1.0f / FireRate();
-
+    float fireRateMultiplier=1f;
+    public void SetFireRateMultiplier(float f){
+        fireRateMultiplier=f;
+    }
+    [SerializeField]ExplosionSetting explosionSetting;
     float FireRate(){
-        float multi=0f;
-        return baseFireRate;
+        return baseFireRate*fireRateMultiplier*explosionSetting.FireRateMultiplier;
     }
 
     float deltaTime=0f;
     float isStuckingTime=0f;
     [SerializeField]LineRenderer lineRenderer;
+    [SerializeField]MeshRenderer rocketHead;
     void Update()
     {
         lineRenderer.SetPosition(0,bulletSource.position);
         lineRenderer.SetPosition(1,bulletSource.position+getVelDir()*30);   
+        //SyncTransform();
     }
+    bool isOwner=false;
     void FixedUpdate()
     {
+        if(!isOwner)return;
         deltaTime-=Time.deltaTime;
-        if(isPickingUp && onTrigger){
+        if(deltaTime<=0){
+            rocketHead.enabled=true;
+        }
+        if(isPickingUp&&onTrigger){
             if(deltaTime<=0){
                 deltaTime=ThresholdFireTime;
                 if(player.IsEquipGun(this))Fire();
@@ -78,18 +109,21 @@ public class GunController : UdonSharpBehaviour
         mapGenerator.RequestResearch();
     }
     [SerializeField]float recoilPower=4f;
+    [SerializeField]P_HapticsProfile p_HapticesProfile;
+    [SerializeField]GameSpeedManager gameSpeedManager;
     void Fire(){
         if(shootAudioSource!=null){
             shootAudioSource.Stop();
             shootAudioSource.Play();
         }
+        rocketHead.enabled=false;
+        p_HapticesProfile._TriggerHaptics();
         var syncedBullet = bulletSyncedPool!=null? bulletSyncedPool.TryToSpawn() :null;
         if(syncedBullet!=null){
             var bc=syncedBullet.GetComponent<SyncedBullet>();
             if(bc!=null){
                 isStacking=false;
-                bc.transform.localRotation=rotTarget.transform.rotation;
-                bc.Init(this,getVelDir()*velocityMag,bulletSource.position,bulletSyncedPool);
+                bc.Init(this,getVelDir()*velocityMag*gameSpeedManager.GameSpeed,bulletSource.position,rotTarget.transform.rotation,bulletSyncedPool);
                 Networking.LocalPlayer.SetVelocity(getVelDir()*-1f*recoilPower+Networking.LocalPlayer.GetVelocity());
                 SendCustomEventDelayedSeconds(nameof(RequestResearch),1.5f);
                 /*Ray ray = new Ray( bulletSource.position, getVel() );
@@ -146,10 +180,7 @@ public class GunController : UdonSharpBehaviour
             return;
         }
         //deltaTime=0f;
-        onTrigger=!onTrigger;
-        if(!Networking.LocalPlayer.IsOwner(this.gameObject)){
-            Networking.SetOwner(Networking.LocalPlayer,this.gameObject);
-        }
+        onTrigger=true;
     }
 
     [SerializeField]float baseFireRate=1f;
@@ -160,39 +191,40 @@ public class GunController : UdonSharpBehaviour
     public override void Interact(){
         //Debug.Log("OnInteract");
     }
-    public override void OnPickup(){
-        if(player.IsEquipGun(this)){
-            return;
-        }
-        this.transform.SetParent(player.transform);
-        foreach(var holder in itemHolders){
-            holder.OnPickUpCallback();
-        }
-        Debug.Log("OnPickup");
-        player.Equip(this);
-        isPickingUp=true;
-        deltaTime=0f;
-        if(!Networking.LocalPlayer.IsOwner(this.gameObject)){
-            Networking.SetOwner(Networking.LocalPlayer,this.gameObject);
-            SendCustomEventDelayedSeconds(nameof(ClearSyncPool),10f);
-        }
-        if(bulletSyncedPool!=null && !Networking.LocalPlayer.IsOwner(bulletSyncedPool.gameObject)){
-            Networking.SetOwner(Networking.LocalPlayer,bulletSyncedPool.gameObject);
+    public void TransferOwnerShip(VRCPlayerApi player){
+        Networking.SetOwner(player,this.gameObject);
+        SendCustomEventDelayedSeconds(nameof(ClearSyncPool),10f);
+        if(bulletSyncedPool!=null && !player.IsOwner(bulletSyncedPool.gameObject)){
+            Networking.SetOwner(player,bulletSyncedPool.gameObject);
             foreach(var obj in bulletSyncedPool.Pool){
-               Networking.SetOwner(Networking.LocalPlayer,obj.gameObject);
+               Networking.SetOwner(player,obj.gameObject);
             }
         }
-        if(damageSyncByOne!=null)damageSyncByOne.TransferOwnership(Networking.LocalPlayer);
-        else {
-            Debug.Log("WARNING: damageSyncByOne is null");
+    }
+    public override void OnPickup(){
+        if(!player.IsYourGun(this)){
+            GetComponent<VRC_Pickup>().Drop();
+            return;
+        }else if(player.IsEquipGun(this)){
+            return;
         }
+        //TransferOwnerShip(Networking.LocalPlayer);
+        isOwner=Networking.LocalPlayer.IsOwner(this.gameObject);
+        //this.transform.SetParent(player.transform);
+        //Debug.Log("OnPickup: "+isOwner);
+        player.Equip();
+        isPickingUp=true;
+        deltaTime=0f;
+        
 
     }
+    //[SerializeField]IObjectPool explosionSyncedPool;
 
-    [SerializeField]DamageSyncByOne damageSyncByOne;
+    //[SerializeField]DamageSyncByOne damageSyncByOne;
 
     public void ClearSyncPool(){
         if(bulletSyncedPool!=null)bulletSyncedPool.Clear();
+        //if(explosionSyncedPool!=null)explosionSyncedPool.Clear();
     }
 
     /*public void SetBulletSyncPool(SyncedObjectPool pool){
@@ -200,17 +232,17 @@ public class GunController : UdonSharpBehaviour
     }*/
 
     public override void OnDrop(){
-        if(player.IsEquipGun(this)){
+        /*if(player.IsEquipGun(this)){
             player.UnEquip();
-        }
+        }*/
         Debug.Log("OnDrop");
         isPickingUp=false;
         onTrigger=false;
-        foreach(var holder in itemHolders){
+        player.UnEquip();
+        /*foreach(var holder in itemHolders){
             holder.OnDropCallback();
-        }
+        }*/
     }
-    [SerializeField]ItemHolder[] itemHolders;
     public override void OnPickupUseUp(){
         onTrigger=false;
         //deltaTime=0f;

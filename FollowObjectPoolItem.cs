@@ -129,6 +129,10 @@ public class FollowObjectPoolItem : IObjectPoolItem
     }
     void OnEnable()
     {
-        initialPos=transform.parent.position- transform.position;
+        if(transform.parent!=null){
+            initialPos=transform.parent.position- transform.position;
+        } else{
+            initialPos=transform.position;
+        }
     }
 }

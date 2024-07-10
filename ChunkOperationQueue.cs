@@ -7,6 +7,9 @@ using System;
 public enum ChunkOperation{
     Detail,UnDetail,UnLoad,None
 }
+public enum ChunkState{
+    Detailed,UnDetailed,UnLoaded,None
+}
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class ChunkOperationQueue : UdonSharpBehaviour
 {

@@ -4,6 +4,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class IObjectPoolItem : UdonSharpBehaviour
 {
     public virtual bool SetActive(bool active,bool forceChange=false){

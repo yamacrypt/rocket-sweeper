@@ -6,15 +6,18 @@ using VRC.Udon;
 
 public enum GameMessage{
     GameOver,
+    LocalGameOver,
+    //TimeOver,
     EnemyDeath,
-    Damage
+    Damage,
+    GameStart,
 }
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class GameMessageTransporter : IMessenger
 {
     [SerializeField]IMessenger parent;
 
-    public override void Publish(IMessenger self,GameMessage message){
+    public override void Publish(GameObject self,GameMessage message){
         parent.Publish(self,message);
     }
 

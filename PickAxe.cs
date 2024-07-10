@@ -4,6 +4,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class PickAxe : UdonSharpBehaviour
 {
     [SerializeField]IMapGenerator mapGenerator;

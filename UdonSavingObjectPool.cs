@@ -11,15 +11,17 @@ public enum PoolOperatorType{
 public class UdonSavingObjectPool : UdonSharpBehaviour
 {
     [SerializeField]GameObject prefab;
+    public void SetPrefab(GameObject prefab){
+        this.prefab=prefab;
+    }
     [SerializeField][UnrollAttribute]IntKeyGameObjectDictionary idToObjDict;
-    [SerializeField]int Capacity=100000;
+    [SerializeField]int Capacity=50021;
     [SerializeField][UnrollAttribute]IPoolItemOperator itemOperator;
     int poolSize;
     [SerializeField][UnrollAttribute]IntQueue notActiveObjQueue;
-    [SerializeField]Transform parent;
+    //[SerializeField]Transform parent;
     void Start()
     {
-        prefabName=prefab.name;
         idToObjDict.SetCapacity(Capacity);
         notActiveObjQueue.SetCapacity(Capacity);
     }
@@ -45,7 +47,6 @@ public class UdonSavingObjectPool : UdonSharpBehaviour
         idToObjDict.Add(id,instance);
         notActiveObjQueue.Enqueue(id);
     }
-    string prefabName;
     GameObject instance;
     // falseで出してmeshcombinerで切り替える
     int uniqueId=0;

@@ -122,17 +122,12 @@ public class Enemy : UdonSharpBehaviour
         RequestSerialization();
     }
     bool isTriggerKillEvent=false;
-    public void BeKilled(){
-        if(isTriggerKillEvent || IsInPool)return;
+    public bool BeKilled(){
+        if(isTriggerKillEvent || IsInPool)return false;
         isTriggerKillEvent=true;
-        Debug.Log("Death");
-        if(Networking.LocalPlayer.isMaster){
-           BeKilledProcess();
-        } else {
-            //SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, nameof(BeKilledProcess));
-            DelayDeath();
-            //VisibleObj.SetActive(false);
-        }
+        //Debug.Log("Death");
+        Death();
+        return true;
     }
 
     [SerializeField]bool isBoss=false;
@@ -147,13 +142,29 @@ public class Enemy : UdonSharpBehaviour
 
     [SerializeField]AudioSource deathSound;
     [SerializeField]AudioSource appearSound;
+    [SerializeField]Renderer renderer;
+    [SerializeField]Renderer[] renderers;
+    [SerializeField]BoxCollider enemyCollider;
 
     public void Death(){
+        if(isInPool)return;
         if(isBoss&& deathSound!=null){
             deathSound.Stop();
             deathSound.Play();
         }
         pool.Return(this.gameObject);
+    }
+    float apparentDeathTime=0.5f;
+    public void ApparentDeath(){
+        if(isInPool)return;
+        if(renderer!=null)renderer.enabled=false;
+        if(renderers!=null){
+            foreach(Renderer r in renderers){
+                r.enabled=false;
+            }
+        }
+        if(enemyCollider!=null)enemyCollider.enabled=false;
+        SendCustomEventDelayedSeconds(nameof(Death),apparentDeathTime);
     }
 
     public bool isAlive=>CurrentLife>0 ;
@@ -163,19 +174,8 @@ public class Enemy : UdonSharpBehaviour
 
     Vector3 target;
 
-    Rigidbody rg;
-    CharacterController cc;
 
     //bool Networking.LocalPlayer.isMaster=false;//Networking.IsOwner(Networking.LocalPlayer, gameObject);
-    void Start()
-    {
-        //isOwner=Networking.IsOwner(Networking.LocalPlayer, gameObject);
-        rg=GetComponent<Rigidbody>();
-        cc = GetComponent<CharacterController>();
-        //target = Networking.LocalPlayer.GetPosition();//Networking.LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position;
-        //CalcDirInterval();
-    }
-
 
     byte MaxLife=>Life> byte.MaxValue ? byte.MaxValue : (byte)Life;
     public void _OnEnable()
@@ -199,14 +199,12 @@ public class Enemy : UdonSharpBehaviour
             appearSound.Stop();
             appearSound.Play();
         }
-        SendCustomEventDelayedSeconds(nameof(Death),aliveTime);
+        SendCustomEventDelayedSeconds(nameof(ApparentDeath),aliveTime);
 
     }
 
     [SerializeField]float aliveTime=60;
 
-    [SerializeField]EnemySetting setting;
-   
     public void _OnDisable()
     {
         //Debug.Log("Enemy OnDisable");
@@ -217,9 +215,7 @@ public class Enemy : UdonSharpBehaviour
     }
 
 
-    Vector3 targetDir=Vector3.zero;
 
-    [SerializeField]float velocityModifier=1f;
     /*void FixedUpdate()
     {
         if( IsInPool)return;

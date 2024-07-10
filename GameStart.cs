@@ -6,21 +6,14 @@ using VRC.Udon;
 
 public class GameStart : UdonSharpBehaviour
 {
-    [SerializeField]IMapGenerator mapGenerator;
-    [SerializeField]EnemyGenerator enemyGenerator;
-    [SerializeField]ScoreManager scoreManager;
+    [SerializeField]IMessenger messenger;
     void Start()
     {
 
     }
     bool isStart=false;
     public override void Interact(){
-        scoreManager.StartMeasure();
-        if(!isStart){
-            mapGenerator.GenerateInit();
-            if(!Networking.LocalPlayer.IsOwner(gameObject))return;
-            if(enemyGenerator!=null)enemyGenerator.SpawnInterval();
-        }
+        //messenger.Publish(messenger,GameMessage.GameStart);
         isStart=true;
     }
 }

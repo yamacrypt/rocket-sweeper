@@ -22,7 +22,7 @@ namespace UdonObjectPool{
         [UdonSynced]bool[] actives=new bool[poolMaxSize];
         [UdonSynced]bool[] syncedChanges=new bool[poolMaxSize];
         bool[] _changes=null;
-        const int poolMaxSize=500;
+        const int poolMaxSize=200;
 
         bool[] changes{
             get{
@@ -109,7 +109,6 @@ namespace UdonObjectPool{
             Debug.Log("Return failed");
             Debug.Log("Return obj is " +obj);
         }
-
     
         public  override void Shuffle(){
             if(!Networking.IsOwner(Networking.LocalPlayer,gameObject))return;

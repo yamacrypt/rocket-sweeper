@@ -7,6 +7,6 @@ using VRC.Udon;
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class IMessenger : UdonSharpBehaviour
 {
-    public  virtual void Publish(IMessenger self,GameMessage message){
+    public  virtual void Publish(GameObject self,GameMessage message){
     }
 }

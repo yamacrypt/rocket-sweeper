@@ -9,7 +9,6 @@ public class MeshCombiner : UdonSharpBehaviour
 {
     [SerializeField,UnrollAttribute]TilePoolItemOperator itemOperator;
     [SerializeField,UnrollAttribute]ChunkPoolItemOperator chunkOperator;
-    [SerializeField,UnrollAttribute]MapGeneratorSetting mapGeneratorSettings;
 
 
 
@@ -28,9 +27,12 @@ public class MeshCombiner : UdonSharpBehaviour
 
     void Start()
     {
-        var size=mapGeneratorSettings.chunkSize;
         //combineCache = new CombineInstance[size*size*size][];
         //allPartsCache = new GameObject[10][];
+    }
+
+    public void BreakCell(GameObject cell,int id){
+        itemOperator.SetActive(cell,id,false);
     }
 
     public void SwitchCombineMesh(bool active, GameObject outline,int outlineId,GameObject[] cells,int[] cellIds,bool[] brokenArr){
@@ -41,6 +43,9 @@ public class MeshCombiner : UdonSharpBehaviour
         if(active){
             for(int i=0;i<cells.Length;i++){
                 itemOperator.SetActive(cells[i],cellIds[i],false);
+                /*if(colOnlyArr[i]){
+                    itemOperator.SetColliderActive(cells[i],true);
+                }*/
             }
         } else {
             for(int i=0;i<cells.Length;i++){
@@ -52,6 +57,7 @@ public class MeshCombiner : UdonSharpBehaviour
     CombineInstance[] combine;
     MeshFilter parentMeshFilter;
     MeshCollider meshCol;
+
     public GameObject CombineMesh(GameObject fieldParent,MeshFilter[] meshFilters,int[] ids,bool isInDetailRange,bool[] brokenArr,bool hasItem)
     {
         // 親オブジェクトにMeshFilterがあるかどうか確認します。
@@ -77,9 +83,15 @@ public class MeshCombiner : UdonSharpBehaviour
                 combineCount++;
             }
         }*/
-        int combineCount=meshFilters.Length;
+        int combineCount=0;
+        for(int i=0;i<meshFilters.Length;i++){
+            if(!brokenArr[i]){
+                combineCount++;
+            }
+        }
+        int combineIndex=0;
          // 結合するメッシュの配列を作成します。
-        if(combine==null)combine=new CombineInstance[combineCount];
+        if(combine==null&&!hasItem)combine=new CombineInstance[combineCount];
         //CombineInstance[] combine = GetCombine(combineCount);//new CombineInstance[combineCount];//
         //GameObject[] allParts = new GameObject[meshFilters.Length-combineCount+1];
         //GameObject[] allParts = new GameObject[1];
@@ -89,14 +101,18 @@ public class MeshCombiner : UdonSharpBehaviour
         {
             var mesh=meshFilters[i];
             //TODO: destory block dictionaryを参照する
-            if(!hasItem){
-                combine[i].mesh = mesh.sharedMesh;
-                combine[i].transform = mesh.transform.localToWorldMatrix;
+            if(!hasItem&&!brokenArr[i]){
+                combine[combineIndex].mesh = mesh.sharedMesh;
+                combine[combineIndex].transform = mesh.transform.localToWorldMatrix;
+                combineIndex++;
             }
             if(isInDetailRange){
                 itemOperator.SetActive(mesh.gameObject,ids[i],!brokenArr[i]);// try to spawnでtrueは保証されている
             } else{
                 itemOperator.SetActive(mesh.gameObject,ids[i],false); // try to spawnでtrueは保証されている
+                /*if(colOnlyArr[i]){
+                    itemOperator.SetColliderActive(mesh.gameObject,true);
+                }*/
             }
             /*if(mesh.GetComponent<MeshRenderer>().material.name==combinedMat.name){
                 combine[index].mesh = mesh.sharedMesh;

@@ -17,7 +17,7 @@ public class BreakBlockSync : UdonSharpBehaviour
     }*/
     public override void OnDeserialization()
     {
-        Debug.Log("OnDeserialization DamageSyncController");
+        //Debug.Log("OnDeserialization DamageSyncController");
         for(var i=0;i<syncedBreakCellIndexes.Length;i++){
             var cellIndex = syncedBreakCellIndexes[i];
         }

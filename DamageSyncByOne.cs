@@ -19,7 +19,7 @@ public class DamageSyncByOne : UdonSharpBehaviour
     }*/
     public override void OnDeserialization()
     {
-        Debug.Log("OnDeserialization DamageSyncController");
+        //Debug.Log("OnDeserialization DamageSyncController");
         for(var i=0;i<enemies.Length;i++){
             var enemy = enemies[i];
             enemy.TakeSyncDamage(syncedSumDamages[i]);

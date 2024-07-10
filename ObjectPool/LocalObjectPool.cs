@@ -21,7 +21,7 @@ namespace UdonObjectPool{
                 Debug.LogError("UdonObjectPool Setting Error: Pool Length must be less than"+maxSpawnCount);
             }
         }
-        bool[] actives=new bool[50]; // You can change this value to fit your needs.
+        bool[] actives=new bool[200]; // You can change this value to fit your needs.
 
         int[] _shuffles=null;
         int[] shuffles{
@@ -61,7 +61,7 @@ namespace UdonObjectPool{
             return obj.gameObject;
         }
         public override  void Return(GameObject obj){
-            if(obj==null)return;
+            //if(obj==null)return;
             for(int i=0;i<Pool.Length;i++){
                 if(Pool[i].gameObject==obj){
                     var res =Pool[i].SetActive(false);

@@ -19,14 +19,32 @@ public class MapGenerator : IMapGenerator
     [InterfaceToClassAttribute("IPoolItemOperator","TilePoolItemOperator")][SerializeField,UnrollAttribute]UdonSavingObjectPool sandPool;
     [InterfaceToClassAttribute("IPoolItemOperator","TilePoolItemOperator")][SerializeField,UnrollAttribute]UdonSavingObjectPool waterPool;
     [InterfaceToClassAttribute("IPoolItemOperator","TilePoolItemOperator")][SerializeField,UnrollAttribute]UdonSavingObjectPool darkPool;
+    [InterfaceToClassAttribute("IPoolItemOperator","TilePoolItemOperator")][SerializeField,UnrollAttribute]UdonSavingObjectPool orangeRockPool;
+    [InterfaceToClassAttribute("IPoolItemOperator","TilePoolItemOperator")][SerializeField,UnrollAttribute]UdonSavingObjectPool redRockPool;
     [InterfaceToClassAttribute("IPoolItemOperator","TilePoolItemOperator")][SerializeField,UnrollAttribute]MapGeneratorSetting settings;
-
-    Biome[][] biomeMap=new Biome[][]{
+    
+    Biome[][] biomeEarthMap=new Biome[][]{
         new Biome[]{Biome.Dirt,Biome.Dirt,Biome.Dark,Biome.Dark,Biome.Rock},
         new Biome[]{Biome.Dirt,Biome.Dirt,Biome.Dark,Biome.Grass,Biome.Rock},
         new Biome[]{Biome.Tundra,Biome.Dark,Biome.Grass,Biome.Rock,Biome.Sand},
         new Biome[]{Biome.Tundra,Biome.Grass,Biome.Rock,Biome.Desert,Biome.Sand},
         new Biome[]{Biome.Tundra,Biome.Grass,Biome.Desert,Biome.Desert,Biome.Sand},
+    };
+
+    Biome[][] biomeMoonMap=new Biome[][]{
+        new Biome[]{Biome.Dark,Biome.Dark,Biome.Dark,Biome.Dark,Biome.Rock},
+        new Biome[]{Biome.Dark,Biome.Rock,Biome.Rock,Biome.Rock,Biome.OrangeRock},
+        new Biome[]{Biome.Rock,Biome.OrangeRock,Biome.OrangeRock,Biome.OrangeRock,Biome.Rock},
+        new Biome[]{Biome.OrangeRock,Biome.Rock,Biome.Rock,Biome.Rock,Biome.Sand},
+        new Biome[]{Biome.Rock,Biome.Sand,Biome.Sand,Biome.Sand,Biome.Sand},
+    };
+
+    Biome[][] biomeMarsMap=new Biome[][]{
+        new Biome[]{Biome.Rock,Biome.Rock,Biome.Rock,Biome.RedRock,Biome.RedRock},
+        new Biome[]{Biome.Rock,Biome.RedRock,Biome.RedRock,Biome.RedRock,Biome.OrangeRock},
+        new Biome[]{Biome.RedRock,Biome.RedRock,Biome.RedRock,Biome.OrangeRock,Biome.OrangeRock},
+        new Biome[]{Biome.RedRock,Biome.RedRock,Biome.OrangeRock,Biome.OrangeRock,Biome.Sand},
+        new Biome[]{Biome.OrangeRock,Biome.OrangeRock,Biome.Sand,Biome.Sand,Biome.Sand},
     };
 
     bool BiomePeekIsInstantiated(Biome biome){
@@ -47,6 +65,10 @@ public class MapGenerator : IMapGenerator
                 return dirtPool.PeekIsInstantiated();
             case Biome.Dark:
                 return darkPool.PeekIsInstantiated();
+            case Biome.OrangeRock:
+                return orangeRockPool.PeekIsInstantiated();
+            case Biome.RedRock:
+                return redRockPool.PeekIsInstantiated();
             default:
                 Debug.LogError("Invalid biome: "+biome);
                 return false;
@@ -70,12 +92,15 @@ public class MapGenerator : IMapGenerator
                 return dirtPool.TryToSpawn();
             case Biome.Dark:
                 return darkPool.TryToSpawn();
+            case Biome.OrangeRock:
+                return orangeRockPool.TryToSpawn();
+            case Biome.RedRock:
+                return redRockPool.TryToSpawn();
             default:
                 Debug.LogError("Invalid biome: "+biome);
                 return null;
         }
     }
-
      void BiomeReturn(Biome biome,GameObject cell,int id){
         switch(biome){
             case Biome.Grass:
@@ -101,6 +126,12 @@ public class MapGenerator : IMapGenerator
                 return;
             case Biome.Dark:
                 darkPool.Return(cell,id);
+                return;
+            case Biome.OrangeRock:
+                orangeRockPool.Return(cell,id);
+                return;
+            case Biome.RedRock:
+                redRockPool.Return(cell,id);
                 return;
             default:
                 Debug.LogError("Invalid biome: "+biome);
@@ -134,6 +165,12 @@ public class MapGenerator : IMapGenerator
             case (int)Biome.Dark:
                 darkPool.Store();
                 return;
+            case (int)Biome.OrangeRock:
+                orangeRockPool.Store();
+                return;
+            case (int)Biome.RedRock:
+                redRockPool.Store();
+                return;
             default:
                 Debug.LogError("Invalid biome: "+biomeIndex);
                 return;
@@ -165,7 +202,10 @@ public class MapGenerator : IMapGenerator
                 
             case (int)Biome.Dark:
                 return darkPool.PeekIsInstantiated();
-                
+            case (int)Biome.OrangeRock:
+                return orangeRockPool.PeekIsInstantiated();
+            case (int)Biome.RedRock:
+                return redRockPool.PeekIsInstantiated();
             default:
                 Debug.LogError("Invalid biome: "+biomeIndex);
                 return false;
@@ -189,7 +229,7 @@ public class MapGenerator : IMapGenerator
     float cellAnimationTime=>settings.cellAnimationTime;
     float removeBatchCount=>settings.removeBatchCount;
     float removeInterval=>settings.removeInterval;
-    float waterPercentage=>settings.waterPercentage;
+    float waterPercentage;
     float chunkUnLoadRange=>settings.chunkUnLoadRange;
     float chunkDetailRange=>settings.chunkDetailRange;
     float operationBatchCount=>settings.operationBatchCount;
@@ -197,9 +237,11 @@ public class MapGenerator : IMapGenerator
 
     public override void OnDeserialization()
     {
-        isSynced=true;
+        Debug.Log("OnDeserialization: MapGenerator");
+        isSyncedLocal=true;
     }
-    bool isSynced=false;
+    bool isSyncedLocal=true;
+    [UdonSynced]bool isSyncedInit=false;
     void Assert(bool b){
         if(!b){
             Debug.LogError("Assertion failed!");
@@ -207,37 +249,35 @@ public class MapGenerator : IMapGenerator
     }
 
     int[] detailChunkCellInstanceIds;
-    [SerializeField,UnrollAttribute]IntKeyBoolDictionary detailOperationDictionary;
-    [SerializeField,UnrollAttribute]IntKeyBoolDictionary unloadOperationDictionary;
+    [SerializeField,UnrollAttribute]IntKeyChunkOperationDictionary chunkOperationDictionary;
     [SerializeField,UnrollAttribute]IntKeyIntDictionary chunkIndexToInstanceIdDictionary;
+    int[] permanentBreakCellArr;
     void Start()
     {
+        waterPercentage=settings.waterPercentage;
+
+
         outlineDict.SetCapacity(chunkCapacity);
-        removedChunkIndexDict.SetCapacity(chunkCapacity);
-        loadedChunkIndexDict.SetCapacity(chunkCapacity);
         chunkToCellsDict.SetCapacity(chunkCapacity);
-        detailChunkIndexDict.SetCapacity(chunkCapacity);
-        instanceIDToGlobalCellIndexDictionary.SetCapacity(100000);
+        chunkStateDict.SetCapacity(chunkCapacity);
+        instanceIDToGlobalCellIndexDictionary.SetCapacity(20011);
         undetailQueue.SetCapacity(chunkCapacity);
         detailQueue.SetCapacity(chunkCapacity);
         priorityDetailQueue.SetCapacity(chunkCapacity);
         unloadQueue.SetCapacity(chunkCapacity);
-        detailOperationDictionary.SetCapacity(100000);
-        unloadOperationDictionary.SetCapacity(100000);
         chunkIndexToCellBiomesDictionary.SetCapacity(chunkCapacity);
         chunkToCellInstanceIdsDictionary.SetCapacity(chunkCapacity);
         //tempBreakCellDictionary.SetCapacity(chunkCapacity);
         permanentBreakCellDictionary.SetCapacity(chunkCapacity);
+        permanentBreakCellArr=new int[20011];
         chunkIndexToInstanceIdDictionary.SetCapacity(chunkCapacity);
+        chunkOperationDictionary.SetCapacity(chunkCapacity);
+        instanceIDToBiomeDictionary.SetCapacity(20011);
         brokenArr=new bool[chunkSize*chunkSize*chunkSizeY];
-        _seedX = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedZ = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedTX = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedTZ = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedHX = UnityEngine.Random.value * (float)Int16.MaxValue;
-        _seedHZ = UnityEngine.Random.value * (float)Int16.MaxValue;
-        isSynced=true;
-        RequestSerialization();
+        colOnlyArr=new bool[chunkSize*chunkSize*chunkSizeY];
+        MapSync();
+        SendCustomEventDelayedSeconds(nameof(ReqSync), 5f);
+        SendCustomEventDelayedSeconds(nameof(ReqSync), 10f);
         /*chunkWidth=settings.chunkWidth;
         chunkDepth=settings.chunkDepth;
         chunkSize=settings.chunkSize;
@@ -251,25 +291,78 @@ public class MapGenerator : IMapGenerator
         XSTARTINDEX=-chunkWidth/2;
         XENDINDEX=chunkWidth-1-chunkWidth/2;
         ZSTARTINDEX=0;
-        ZENDINDEX=chunkDepth;
+        ZENDINDEX = chunkDepth; 
+        QuickSearchInterval();
+    }
+    [SerializeField]float quickSearchInterval=0.5f;
+    public void QuickSearchInterval(){
+        if(IsStart){
+            QuickSearch();
+        }
+        SendCustomEventDelayedSeconds(nameof(QuickSearchInterval),quickSearchInterval);
     }
     [SerializeField,UnrollAttribute]IntKeyIntArrDictionary chunkToCellInstanceIdsDictionary;
     int XSTARTINDEX,XENDINDEX,ZSTARTINDEX,ZENDINDEX;
-    public override void GenerateInit(){
-        if(!isSynced)return;
-        if(isGenerating)return;
-        isGenerating=true;
-        playerPos = Networking.LocalPlayer.GetPosition() /(chunkSize*TileScale);
-        CalcPosCorrection();
-        zStartChunkIndex=GetInRangeStartZChunkIndex(playerPos+posCorrection,chunkLoadRange);
-        zEndChunkIndex=GetInRangeEndZChunkIndex(playerPos+posCorrection,chunkLoadRange);
-        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
-        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+    public void MapSync()
+    {
+        if (Networking.LocalPlayer.IsOwner(this.gameObject))
+        {
+            isSyncedLocal=true;
+            isSyncedInit=true;
+            _seedX = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedZ = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedTX = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedTZ = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedHX = UnityEngine.Random.value * (float)Int16.MaxValue;
+            _seedHZ = UnityEngine.Random.value * (float)Int16.MaxValue;
+            RequestSerialization();
+            SendCustomEventDelayedSeconds(nameof(ReqSync), 5f);
+        }
+    }
+
+    public void ReqSync(){
+        RequestSerialization();
+    }
+    int[] unloadIndexes;
+    int unloadIndexStart;
+    public override void GameOver(){
+        base.GameOver();
+        gameOverPos=GetPlayerPosition();
+        zClearStartChunkIndex=GetInRangeStartZChunkIndex(gameOverPos,chunkUnLoadRange+clearMargin);
+        zClearEndChunkIndex=GetInRangeEndZChunkIndex(gameOverPos,chunkUnLoadRange+clearMargin);
+        xClearStartChunkIndex=GetInRangeStartXChunkIndex(gameOverPos,zClearStartChunkIndex,chunkUnLoadRange+clearMargin);
+        xClearEndChunkIndex=GetInRangeEndXChunkIndex(gameOverPos,zClearStartChunkIndex,chunkUnLoadRange+clearMargin);
+        unloadIndexes=chunkIndexToInstanceIdDictionary.GenerateKeysArray();
+        unloadIndexStart=0;
+        isClearing=true;
+        isPermanentCellsClearing=false;
+        unloadQueue.Clear();
+        detailQueue.Clear();
+        undetailQueue.Clear();
+        priorityDetailQueue.Clear();
+        isGenerating=false;
+        isSearching=false;
+        SetGravity(9.8f);
+        isSyncedLocal=false;
+        MapSync();
+    }
+    public override bool IsReadyToGameStart(){
+        Debug.Log("IsReadyToGameStart: "+base.IsReadyToGameStart() + " isSyncedLocal: "+isSyncedLocal+" isSynced: "+isSyncedInit+" isSearching: "+isSearching+"_seedX: "+_seedX);
+        return base.IsReadyToGameStart()&&!isClearing&&!isPermanentCellsClearing&&!isGenerating&&isSyncedLocal&&isSyncedInit&&!isSearching;
+;
+    }
+    Vector3 gameOverPos;
+    bool isClearing = false;
+    Mission mission;
+    public override void GameStart(Mission mission){
+        base.GameStart(mission);
+        this.mission=mission;
+        waterPercentage=mission.WaterPercentage;
+        isSyncedLocal=false;
+        SetGravity(mission.Gravity);
         //GenerateInitCellInterval();
 
-        chunkXIndex=0;
-        chunkZIndex=0;
-        chunkYIndex=0;
+        GenerateAdditional();
         SearchAdditional();
         
         //RemoveChunkInterval();
@@ -279,6 +372,13 @@ public class MapGenerator : IMapGenerator
     Vector3 posCorrection=Vector3.zero;
     Vector3 GetPlayerPosition(){
         return Networking.LocalPlayer.GetPosition() / (chunkSize*TileScale);
+    }
+    float baseGravity;
+    public override float Gravity=>baseGravity;
+
+    public override void SetGravity(float gravity){
+        Physics.gravity=Vector3.down*gravity;
+        baseGravity=gravity;
     }
     void CalcPosCorrection(){
         playerRot = Networking.LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).rotation;
@@ -290,10 +390,13 @@ public class MapGenerator : IMapGenerator
         //Debug.Log("posCorrection: "+posCorrection);
     }
     void GenerateAdditional(){
-        if(isGenerating)return;
+        if(isGenerating||!IsStart)return;
         prePlayerPos=playerPos;
         playerPos = GetPlayerPosition();//Networking.LocalPlayer.GetPosition() / (chunkSize*TileScale);
         CalcPosCorrection();
+        chunkXIndex=0;
+        chunkZIndex=0;
+        chunkYIndex=0;
         //Debug.Log("GenerateAdditional");
         //Debug.Log("player pos: "+playerPos);
         zStartChunkIndex=GetInRangeStartZChunkIndex(playerPos+posCorrection,chunkLoadRange);
@@ -307,10 +410,32 @@ public class MapGenerator : IMapGenerator
         //GenerateCellInterval();
     }
 
+    public override void GenerateOnSpawn(){
+        if(!IsStart)return;
+        prePlayerPos=playerPos;
+        playerPos = playerSpawnPos.position / (chunkSize*TileScale);//Networking.LocalPlayer.GetPosition() / (chunkSize*TileScale);
+        CalcPosCorrection();
+        chunkXIndex=0;
+        chunkZIndex=0;
+        chunkYIndex=0;
+        //Debug.Log("GenerateAdditional");
+        //Debug.Log("player pos: "+playerPos);
+        zStartChunkIndex=GetInRangeStartZChunkIndex(playerPos+posCorrection,chunkLoadRange);
+        zEndChunkIndex=GetInRangeEndZChunkIndex(playerPos+posCorrection,chunkLoadRange);
+        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);//-1;
+        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);//-1;
+        //exceptXStartChunkIndex=GetInRangeStartXChunkIndex(prePlayerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+        //exceptXEndChunkIndex=GetInRangeEndXChunkIndex(prePlayerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+
+        isGenerating=true;
+    }
+
     void SearchAdditional(){
         if(searchOn){
+            if(!IsStart)return;
             if(isSearching){
                 Debug.LogWarning("already searching");
+                return;
             }
             zSearchStartChunkIndex=GetInRangeStartZChunkIndex(playerPos,chunkUnLoadRange+searchMargin);;
             zSearchEndChunkIndex=GetInRangeEndZChunkIndex(playerPos,chunkUnLoadRange+searchMargin);;
@@ -321,6 +446,8 @@ public class MapGenerator : IMapGenerator
             researchFlag=false;
         }
     }
+
+    
 
  
     Vector3 playerPos;
@@ -356,8 +483,6 @@ public class MapGenerator : IMapGenerator
     int exceptZEndChunkIndex;
     bool isGenerating=false;
     [SerializeField,UnrollAttribute]IntKeyGameObjectDictionary outlineDict;
-    [SerializeField,UnrollAttribute]IntKeyBoolDictionary removedChunkIndexDict;
-    [SerializeField,UnrollAttribute]IntKeyBoolDictionary loadedChunkIndexDict;
     float generateAdditionalDelta=-1f;
     float searchAdditionalDelta=-1f;
 
@@ -397,20 +522,17 @@ public class MapGenerator : IMapGenerator
             xQuickSearchStartChunkIndex=GetInRangeStartXChunkIndex(ppos,zQuickSearchStartChunkIndex,quickSearchRange);
             xQuickSearchEndChunkIndex=GetInRangeEndXChunkIndex(ppos,zQuickSearchStartChunkIndex,quickSearchRange);
             while(true){
+                if(!IsStart)break;
                 var x=xQuickSearchStartChunkIndex;
                 var z=zQuickSearchStartChunkIndex;
                 var chunkIndex=ToChunkIndex(x,z);
-                if(loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
+                if(chunkStateDict.IsUnDetailed(chunkIndex)){
                     var diffx=x-ppos.x;
                     var diffz=z-ppos.z;
                     var distance = diffx*diffx+diffz*diffz;
                     if(distance<=chunkDetailRange*chunkDetailRange){
-                        if(!detailChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
-                            detailOperationDictionary.AddOrSetValue(chunkIndex,true);
-                            unloadOperationDictionary.AddOrSetValue(chunkIndex,false);
-                            priorityDetailQueue.Enqueue(chunkIndex);
-                        }
-                        //DetailChunk((int)x,(int)z);
+                        chunkOperationDictionary.AddOrSetValue(chunkIndex,ChunkOperation.Detail);
+                        priorityDetailQueue.Enqueue(chunkIndex);
                     }
                 }
                 xQuickSearchStartChunkIndex++;
@@ -425,97 +547,88 @@ public class MapGenerator : IMapGenerator
             }
         }
     }
-
+    int xClearStartChunkIndex,zClearStartChunkIndex;
+    int xClearEndChunkIndex,zClearEndChunkIndex;
+    bool isPermanentCellsClearing=false;
     void Update()
     {
-        if(isGenerating){
-            //if(isUnLoading)return;
-            for(costIndex=0;costIndex<batchCount*isInstantiatedCost;){
-                //delay=generateInterval * count / batchCount;
-               
-                mode=GenerateChunk();
-                if(isInstantiated){
-                    costIndex+=isInstantiatedCost;
-                    isInstantiated=false;
-                } else if(mode==GenerateChunkMode.Pass){
-                    storeCount++;
-                    if(storeCount==storeMax){
-                        StoreCell();
-                        storeCount=0;
+        if(!IsStart){
+            if(isClearing){
+                costIndex=0;
+                for(int i=0;i<operationBatchCount;i++){
+                    UnLoadChunk(unloadIndexes[unloadIndexStart],true);
+                    unloadIndexStart++;
+                    if(unloadIndexStart==unloadIndexes.Length){
+                        isClearing=false;
+                        isPermanentCellsClearing=true;
+                        break;
                     }
-                    if(isInstantiated){
-                        costIndex+=isInstantiatedCost;
-                        isInstantiated=false;
-                    }else{
+                    /*var x=xClearStartChunkIndex;
+                    var z=zClearStartChunkIndex;
+                    var chunkIndex=ToChunkIndex(x,z);
+                    if(chunkStateDict.IsLoaded(chunkIndex)){
+                        UnLoadChunk(chunkIndex,true);
                         costIndex++;
                     }
-                } else{
-                    costIndex+=poolCost;
-                }
-                if(mode==GenerateChunkMode.Complete || mode==GenerateChunkMode.Pass){  
-                    chunkXIndex=0;
-                    chunkZIndex=0;
-                    chunkYIndex=0;
-                    xStartChunkIndex++;
-                    if(xStartChunkIndex>xEndChunkIndex){
-                        zStartChunkIndex++;
-                        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
-                        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
-                        if(zStartChunkIndex>=zEndChunkIndex){
-                            isGenerating=false;
-                            //GenerateAdditional();
-                            if(generateAdditionalInterval==0){
-                                GenerateAdditional();
-                            } else {
-                                generateAdditionalDelta=generateAdditionalInterval;
-                            }
-                            //SendCustomEventDelayedSeconds(nameof(GenerateAdditional),generateAdditionalInterval);
+                    xClearStartChunkIndex++;
+                    if(xClearStartChunkIndex>xClearEndChunkIndex){
+                        zClearStartChunkIndex++;
+                        xClearStartChunkIndex=GetInRangeStartXChunkIndex(gameOverPos,zClearStartChunkIndex,chunkUnLoadRange+clearMargin);
+                        xClearEndChunkIndex=GetInRangeEndXChunkIndex(gameOverPos,zClearStartChunkIndex,chunkUnLoadRange+clearMargin);
+                        if(zClearStartChunkIndex>=zClearEndChunkIndex){
+                            isClearing=false;
+                            isPermanentCellsClearing=true;
                             break;
                         }
+                    }*/
+                }
+            }
+            if(isPermanentCellsClearing){
+                for(int i=0;i<batchCount*2;i++){
+                    permanentBreakCellArrLength--;
+                    if(permanentBreakCellArrLength>=0){
+                        var cellIndex=permanentBreakCellArr[permanentBreakCellArrLength];
+                        permanentBreakCellDictionary.Remove(cellIndex);
+                    }else{
+                        permanentBreakCellArrLength=0;
+                        isPermanentCellsClearing=false;
+                        unloadQueue.Clear();
+                        detailQueue.Clear();
+                        undetailQueue.Clear();
+                        priorityDetailQueue.Clear();
+                        isGenerating=false;
+                        isSearching=false;
                     }
                 }
-                if(mode==GenerateChunkMode.Complete){
-                    break;
-                }
             }
-        } else {
-            if(generateAdditionalDelta>=0){
-                generateAdditionalDelta-=Time.deltaTime;
-                if(generateAdditionalDelta<0){
-                    GenerateAdditional();
-                }
-            }
+            
+            return;
         }
         
-
         if(isSearching){
             //if(isUnLoading)return;
             for(costIndex=0;costIndex<searchBatchCount;costIndex++){
                 var x=xSearchStartChunkIndex;
                 var z=zSearchStartChunkIndex;
                 var chunkIndex=ToChunkIndex(x,z);
-                if(loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
+                if(chunkStateDict.IsLoaded(chunkIndex)){
                     var diffx=x-playerPos.x;
                     var diffz=z-playerPos.z;
                     var distance = diffx*diffx+diffz*diffz;
+                    var detailMargin=1;
                     if(distance>=chunkUnLoadRange*chunkUnLoadRange){
-                        if(!unloadOperationDictionary.GetValueOrDefault(chunkIndex,false)){
-                            //detailOperationDictionary.AddOrSetValue(chunkIndex,false);
-                            unloadOperationDictionary.AddOrSetValue(chunkIndex,true);
-                            unloadQueue.Enqueue(chunkIndex);
-                        }
+                        chunkOperationDictionary.AddOrSetValue(chunkIndex,ChunkOperation.UnLoad);
+                        unloadQueue.Enqueue(chunkIndex);
                         //UnLoadChunk((int)x,(int)z,true);
-                    }  else if(distance>=chunkDetailRange*chunkDetailRange){
-                        if(detailOperationDictionary.GetValueOrDefault(chunkIndex,false)){
-                            detailOperationDictionary.AddOrSetValue(chunkIndex,false);
-                            unloadOperationDictionary.AddOrSetValue(chunkIndex,false);
+                    }  else if(distance>=(chunkDetailRange+detailMargin)*(chunkDetailRange+detailMargin)){
+                        if(chunkStateDict.IsDetailed(chunkIndex)){
+                            chunkOperationDictionary.AddOrSetValue(chunkIndex,ChunkOperation.UnDetail);
                             undetailQueue.Enqueue(chunkIndex);
                         }
                         //UnDetailChunk((int)x,(int)z);
-                    }else {
-                        if(!detailOperationDictionary.GetValueOrDefault(chunkIndex,false)){
-                            detailOperationDictionary.AddOrSetValue(chunkIndex,true);
-                            unloadOperationDictionary.AddOrSetValue(chunkIndex,false);
+                    }else if(distance<=chunkDetailRange*chunkDetailRange){
+                        if(chunkStateDict.IsUnDetailed(chunkIndex)){
+                            chunkOperationDictionary.AddOrSetValue(chunkIndex,ChunkOperation.Detail);
                             detailQueue.Enqueue(chunkIndex);
                         }
                         //DetailChunk((int)x,(int)z);
@@ -548,39 +661,109 @@ public class MapGenerator : IMapGenerator
         // detail
         costIndex=0;
         if(detailFlag){
-            while(costIndex<operationBatchCount*2){
+            while(costIndex<operationBatchCount){
                 if(priorityDetailQueue.Count==0)break;
                 var chunkIndex=priorityDetailQueue.Dequeue();
-                var shouldOperate=detailOperationDictionary.GetValueOrDefault(chunkIndex,false);
+                var shouldOperate=chunkOperationDictionary.GetValueOrDefault(chunkIndex,ChunkOperation.None) == ChunkOperation.Detail;
+                chunkOperationDictionary.SetValue(chunkIndex,ChunkOperation.None);
                 if(shouldOperate&&DetailChunk(chunkIndex))costIndex++;
             }
             while(costIndex<operationBatchCount){
                 if(detailQueue.Count==0)break;
                 var chunkIndex=detailQueue.Dequeue();
-                var shouldOperate=detailOperationDictionary.GetValueOrDefault(chunkIndex,false);
+                var shouldOperate=chunkOperationDictionary.GetValueOrDefault(chunkIndex,ChunkOperation.None) == ChunkOperation.Detail;
+                chunkOperationDictionary.SetValue(chunkIndex,ChunkOperation.None);
                 if(shouldOperate&&DetailChunk(chunkIndex))costIndex++;
+            }
+        }
+
+        if(unloadFlag){
+            while(costIndex<operationBatchCount){
+                if(unloadQueue.Count==0)break;
+                var chunkIndex=unloadQueue.Dequeue();
+                var shouldOperate=chunkOperationDictionary.GetValueOrDefault(chunkIndex,ChunkOperation.None) == ChunkOperation.UnLoad;
+                chunkOperationDictionary.SetValue(chunkIndex,ChunkOperation.None);
+                if(shouldOperate&&UnLoadChunk(chunkIndex,true))costIndex++;
             }
         }
         if(undetailFlag){
             while(costIndex<operationBatchCount){
-                if(unloadQueue.Count==0)break;
-                var chunkIndex=unloadQueue.Dequeue();
-                var shouldOperate=unloadOperationDictionary.GetValueOrDefault(chunkIndex,false);
-                if(shouldOperate&&UnLoadChunk(chunkIndex,true))costIndex++;
-            }
-        }
-        if(unloadFlag){
-            while(costIndex<operationBatchCount){
                 if(undetailQueue.Count==0)break;
                 var chunkIndex=undetailQueue.Dequeue();
-                var shouldOperate=!detailOperationDictionary.GetValueOrDefault(chunkIndex,false);
+                var shouldOperate=chunkOperationDictionary.GetValueOrDefault(chunkIndex,ChunkOperation.None) == ChunkOperation.UnDetail;
+                chunkOperationDictionary.SetValue(chunkIndex,ChunkOperation.None);
                 if(shouldOperate&&UnDetailChunk(chunkIndex))costIndex++;
             }
         }
+        if(costIndex==operationBatchCount)return;
+        
+        if(isGenerating){
+            //if(isUnLoading)return;
+            for(costIndex=0;costIndex<batchCount*isInstantiatedCost;){
+                //delay=generateInterval * count / batchCount;
+               
+                mode=GenerateChunk();
+                if(isInstantiated){
+                    costIndex+=isInstantiatedCost;
+                    isInstantiated=false;
+                } else if(mode==GenerateChunkMode.Pass){
+                    storeCount++;
+                    costIndex+=isInstantiatedCost/2;
+                    /*if(storeCount==storeMax){
+                        StoreCell();
+                        storeCount=0;
+                    }
+                    if(isInstantiated){
+                        costIndex+=isInstantiatedCost;
+                        isInstantiated=false;
+                    }else{
+                        costIndex++;
+                    }*/
+                } else{
+                    costIndex+=poolCost;
+                }
+                if(mode==GenerateChunkMode.Complete || mode==GenerateChunkMode.Pass){  
+                    chunkXIndex=0;
+                    chunkZIndex=0;
+                    chunkYIndex=0;
+                    xStartChunkIndex++;
+                    if(xStartChunkIndex>xEndChunkIndex){
+                        zStartChunkIndex++;
+                        xStartChunkIndex=GetInRangeStartXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+                        xEndChunkIndex=GetInRangeEndXChunkIndex(playerPos+posCorrection,zStartChunkIndex,chunkLoadRange);
+                        if(zStartChunkIndex>=zEndChunkIndex){
+                            isGenerating=false;
+                            //GenerateAdditional();
+                            if(generateAdditionalInterval==0){
+                                GenerateAdditional();
+                            } else {
+                                generateAdditionalDelta=generateAdditionalInterval;
+                            }
+                            break;
+                        }
+                    }
+                }
+                if(mode==GenerateChunkMode.Complete){
+                    break;
+                }
+            }
+        } else {
+            if(generateAdditionalDelta>=0){
+                generateAdditionalDelta-=Time.deltaTime;
+                if(generateAdditionalDelta<0){
+                    GenerateAdditional();
+                }
+            }
+        }
+        
+
+        
+        
         
        
     }
     float searchMargin=>chunkDetailRange*2;
+    float clearMargin=>chunkDetailRange*6;
 
     bool isSearching=false;
 
@@ -591,9 +774,7 @@ public class MapGenerator : IMapGenerator
     bool searchOn=> settings.searchOn;
     
 
-    int ToChunkIndex(int x,int z){
-        return (z-ZSTARTINDEX)*chunkWidth + (x-XSTARTINDEX);
-    }
+  
     public const float AnimHeight=10f;
 
     [SerializeField,UnrollAttribute]IntQueue unloadQueue;
@@ -601,11 +782,11 @@ public class MapGenerator : IMapGenerator
     [SerializeField,UnrollAttribute]IntQueue detailQueue;
     [SerializeField,UnrollAttribute]IntQueue priorityDetailQueue;
     
-    [SerializeField,UnrollAttribute]IntKeyBoolDictionary detailChunkIndexDict;
+    [SerializeField,UnrollAttribute]IntKeyChunkStateDictionary chunkStateDict;
 
     bool DetailChunk(int chunkIndex){
         //int chunkIndex=ToChunkIndex(xIndex,zIndex);
-        if(loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false)&& !detailChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
+        if(chunkStateDict.IsUnDetailed(chunkIndex)){
             if(outlineDict.HasItem(chunkIndex)){
                 //Debug.Log("DetailChunk: "+chunkIndex);
                 var outline = outlineDict.GetValue(chunkIndex);
@@ -615,8 +796,9 @@ public class MapGenerator : IMapGenerator
                     brokenArr[i]=permanentBreakCellDictionary.GetValueOrDefault(ToGlobalCellIndex(i,chunkIndex),false);
                 }
                 var outlineId=chunkIndexToInstanceIdDictionary.GetValue(chunkIndex);
+                //WARNING: colOnlyArr は全てで同じなのでそのまま突っ込んだ
                 meshCombiner.SwitchCombineMesh(false,outline,outlineId,chunkToCells,cellInstanceIds,brokenArr);
-                detailChunkIndexDict.AddOrSetValue(chunkIndex,true);
+                chunkStateDict.SetValue(chunkIndex,ChunkState.Detailed);
                 return true;
             }else {
                 Debug.LogWarning("DetailChunk: chunkIndexDict not has item");
@@ -626,18 +808,20 @@ public class MapGenerator : IMapGenerator
     }
 
     bool[] brokenArr;
+    bool[] colOnlyArr;
 
     bool UnDetailChunk(int chunkIndex){
         //int chunkIndex=ToChunkIndex(xIndex,zIndex);
-        if(loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false)&&detailChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
+        if(chunkStateDict.IsDetailed(chunkIndex)){
             if(outlineDict.HasItem(chunkIndex)){
                 //Debug.Log("UnDetailChunk: "+chunkIndex);
                 var outline = outlineDict.GetValue(chunkIndex);
                 chunkToCells=chunkToCellsDict.GetValue(chunkIndex);
                 cellInstanceIds=chunkToCellInstanceIdsDictionary.GetValue(chunkIndex);
                 var outlineId=chunkIndexToInstanceIdDictionary.GetValue(chunkIndex);
+                //WARNING: colOnlyArr は全てで同じなのでそのまま突っ込んだ
                 meshCombiner.SwitchCombineMesh(true,outline,outlineId,chunkToCells,cellInstanceIds,brokenArr);
-                detailChunkIndexDict.AddOrSetValue(chunkIndex,false);
+                chunkStateDict.SetValue(chunkIndex,ChunkState.UnDetailed);
                 return true;
             } else {
                 Debug.LogWarning("UnDetailChunk: chunkIndexDict not has item");
@@ -651,18 +835,13 @@ public class MapGenerator : IMapGenerator
     [SerializeField]float quickSearchRange=6;
     public bool UnLoadChunk(int chunkIndex,bool setOnly=false){
         //int chunkIndex=ToChunkIndex(xIndex,zIndex);
-        if(!loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false)){
+        if(!chunkStateDict.IsLoaded(chunkIndex)){
             //Debug.Log("UnLoadChunk: not yet loaded");
             //遅延実行の関係上このケースは起こりえる
             return false;
         }
         if(outlineDict.HasItem(chunkIndex)){
             //Debug.Log("UnLoadChunk:"+chunkIndex);
-            if(setOnly){
-                loadedChunkIndexDict.SetValue(chunkIndex,false);
-            } else {
-                loadedChunkIndexDict.AddOrSetValue(chunkIndex,false);
-            }
             //chunkIndexDict.Remove(chunkIndex);
             var chunkMesh=outlineDict.GetValue(chunkIndex);
             //var id=chunkMesh.GetInstanceID();
@@ -692,10 +871,12 @@ public class MapGenerator : IMapGenerator
                     Debug.LogError("Cell pool is empty!");
                 }*/
                 var id = cellInstanceIds[i];
-                UnloadCell(cell,id,biomeTypes[i]);
+                if(!permanentBreakCellDictionary.GetValueOrDefault(ToGlobalCellIndex(i,chunkIndex),false)){
+                    UnloadCell(cell,id,biomeTypes[i]);
+                }
             }
-            // unloadされたチャンクはdetailされていないと考える。
-            detailChunkIndexDict.AddOrSetValue(chunkIndex,false);
+            // unloadされたチャンクはdetail dictからkey 削除
+            chunkStateDict.SetValue(chunkIndex,ChunkState.UnLoaded); //AddOrSetValue(chunkIndex,false );
             return true;
         }
         return false;
@@ -705,6 +886,7 @@ public class MapGenerator : IMapGenerator
     [SerializeField,UnrollAttribute]IntKeyBoolDictionary permanentBreakCellDictionary;
     [SerializeField,UnrollAttribute]IntKeyBiomeArrDictionary chunkIndexToCellBiomesDictionary;
     [SerializeField,UnrollAttribute]IntKeyIntDictionary instanceIDToGlobalCellIndexDictionary;
+    [SerializeField,UnrollAttribute]IntKeyBiomeDictionary instanceIDToBiomeDictionary;
     public override void BreakCell(GameObject cell){
         // gc alloc debug only
         /*if(cell!=null){
@@ -717,45 +899,50 @@ public class MapGenerator : IMapGenerator
             Debug.LogWarning("Cell pool is empty!");
         }*/
         var cellId=cell.GetInstanceID();
-        var globalCellIndex=instanceIDToGlobalCellIndexDictionary.GetValue(cellId);
-        permanentBreakCellDictionary.AddOrSetValue(globalCellIndex,true);
+        var globalCellIndex=instanceIDToGlobalCellIndexDictionary.GetValueOrDefault(cellId,int.MaxValue);
+        if(globalCellIndex!=int.MaxValue){
+            permanentBreakCellDictionary.AddOrSetValue(globalCellIndex,true);
+            if(permanentBreakCellArrLength<permanentBreakCellArr.Length){
+                permanentBreakCellArr[permanentBreakCellArrLength]=globalCellIndex;
+                permanentBreakCellArrLength++;
+            }
+        }
+        else{
+            Debug.LogWarning(cellId +" :globalCellIndex is -1");
+        }
         //tempBreakCellDictionary.AddOrSetValue(cellId,true); // may colision this is beacause not broken cells disappaer bug haapens 
-        UnloadCell(cell,cellId);
+        var biome=instanceIDToBiomeDictionary.GetValue(cellId);
+        UnloadCell(cell,cellId,biome);
     }
+    int permanentBreakCellArrLength=0;
     public override void BreakCells(GameObject[] cells,int length){
         for(int i=0;i<length;i++){
             var cell=cells[i];
             var cellId=cell.GetInstanceID();
-            var globalCellIndex=instanceIDToGlobalCellIndexDictionary.GetValue(cellId);
-            permanentBreakCellDictionary.AddOrSetValue(globalCellIndex,true);
+            var globalCellIndex=instanceIDToGlobalCellIndexDictionary.GetValueOrDefault(cellId,int.MaxValue);
+            if(globalCellIndex!=int.MaxValue){
+                permanentBreakCellDictionary.AddOrSetValue(globalCellIndex,true);
+                if(permanentBreakCellArrLength<permanentBreakCellArr.Length){
+                    permanentBreakCellArr[permanentBreakCellArrLength]=globalCellIndex;
+                    permanentBreakCellArrLength++;
+                }
+            }
+            else{
+                Debug.LogWarning(cellId +" :globalCellIndex is -1");
+            }
+            var biome=instanceIDToBiomeDictionary.GetValue(cellId);
             //tempBreakCellDictionary.AddOrSetValue(cellId,true); // may colision this is beacause not broken cells disappaer bug haapens 
-            UnloadCell(cell,cellId);
+            // breakしたセルはunloadのみにのみreturnしないとundetail,detailまわりの処理がおかしくなる
+            meshCombiner.BreakCell(cell,cellId);
+            //UnloadCell(cell,cellId,biome);
         }
         
     }
     void UnloadCell(GameObject cell,int id,Biome biomeType){
-        BiomeReturn(biomeType,cell,  id);
-    }
-    void UnloadCell(GameObject cell,int id){
-        if(grassPool.IsMine(cell)){
-            grassPool.Return(cell,id,true);
-        } else if(sandPool.IsMine(cell)){
-            sandPool.Return(cell,id,true);
-        } else if(waterPool.IsMine(cell)){
-            waterPool.Return(cell,id,true);
-        } else if(rockPool.IsMine(cell)){
-            rockPool.Return(cell,id,true);
-        } else if(dirtPool.IsMine(cell)){
-            dirtPool.Return(cell,id,true);
-        } else if(desertPool.IsMine(cell)){
-            desertPool.Return(cell,id,true);
-        } else if(tundraPool.IsMine(cell)){
-            tundraPool.Return(cell,id,true);
-        } else if(darkPool.IsMine(cell)){
-            darkPool.Return(cell,id,true);
-        } else {
-            Debug.LogWarning("Cell "+ cell.name+" pool is empty! Or Make sure obj is cell type");
+        if(!instanceIDToGlobalCellIndexDictionary.TryRemove(id)){
+            Debug.LogWarning("UnloadCell: instanceIDToGlobalCellIndexDictionary not has item "+ id);
         }
+        BiomeReturn(biomeType,cell,  id);
     }
 
      float scale => settings.scale;
@@ -781,12 +968,13 @@ public class MapGenerator : IMapGenerator
     int[] generatingCellInstanceIds;
 
     int chunkXIndex,chunkYIndex,chunkZIndex;
-    GameObject chunkObj; 
     int chunkID;
-    public const string IndestructibleTag="Ignore Raycast";
+    public const string IndestructibleTag="Cell";
     public const string CellTag="Cell";
 
-
+    int ToChunkIndex(int x,int z){
+        return (z-ZSTARTINDEX)*chunkWidth + (x-XSTARTINDEX);
+    }
     int ToLocalCellIndex(int xIndex,int yIndex,int zIndex){
         return (xIndex*chunkSize+zIndex)*chunkSizeY+yIndex;
     }
@@ -794,10 +982,10 @@ public class MapGenerator : IMapGenerator
     int ToGlobalCellIndex(int localCellIndex,int chunkIndex){
         return localCellIndex+chunkIndex*chunkSize*chunkSize*chunkSizeY;
     }
-
+    GameObject chunkObj; 
     GenerateChunkMode GenerateChunk(){
         int chunkIndex=ToChunkIndex(xStartChunkIndex,zStartChunkIndex);
-        if(loadedChunkIndexDict.GetValueOrDefault(chunkIndex,false))return GenerateChunkMode.Pass;
+        if(chunkStateDict.IsLoaded(chunkIndex))return GenerateChunkMode.Pass;
         bool isInit=false;
         if(chunkXIndex==0&&chunkZIndex==0&&chunkYIndex==0){
             //Debug.Log("GenerateChunk: "+chunkIndex);
@@ -824,18 +1012,22 @@ public class MapGenerator : IMapGenerator
         }
         //MeshFilter[] meshFilters = new MeshFilter[chunkSize*chunkSize];
         var resCell=GenerateCell(xStartChunkIndex*chunkSize+chunkXIndex,zStartChunkIndex*chunkSize+chunkZIndex,chunkYIndex-chunkSizeY+1,null);
-        if(chunkYIndex<indestructibleLine){
+        /*if(chunkYIndex<indestructibleLine){
             resCell.layer=LayerMask.NameToLayer(IndestructibleTag);
         } else {
             resCell.layer=LayerMask.NameToLayer(CellTag);
-        }
+        }*/
+
         int localIndex=ToLocalCellIndex(chunkXIndex,chunkYIndex,chunkZIndex);
         int instanceId=resCell.GetInstanceID();
         meshFilters[localIndex]=resCell.GetComponent<MeshFilter>();
         generatingCells[localIndex]=resCell;
         generatingCellInstanceIds[localIndex]=instanceId;
         generatingCellBiomes[localIndex]=currentCellBiome;
-        instanceIDToGlobalCellIndexDictionary.AddOrSetValue(instanceId,ToGlobalCellIndex(localIndex,chunkIndex));
+        //colOnlyArr[localIndex]=chunkYIndex==chunkSizeY-1;
+        //visibleArr[localIndex]=(chunkYIndex==chunkSizeY-1) || (chunkXIndex==0 || chunkXIndex==chunkSize-1 ) || (chunkZIndex==0 || chunkZIndex==chunkSize-1);
+        instanceIDToGlobalCellIndexDictionary.Add(instanceId,ToGlobalCellIndex(localIndex,chunkIndex));
+        instanceIDToBiomeDictionary.AddOrSetValue(instanceId,currentCellBiome);
         chunkYIndex++;
         if(chunkYIndex==chunkSizeY){
             chunkYIndex=0;
@@ -849,29 +1041,24 @@ public class MapGenerator : IMapGenerator
                         chunkToCellsDict.Add(chunkIndex,generatingCells);
                         chunkIndexToCellBiomesDictionary.Add(chunkIndex,generatingCellBiomes);
                         chunkToCellInstanceIdsDictionary.Add(chunkIndex,generatingCellInstanceIds);
-                        loadedChunkIndexDict.Add(chunkIndex,true);
                     } else {
+                        // no need to call
                         /*chunkToCellsDict.SetValue(chunkIndex,generatingCells);
                         chunkIndexToCellBiomesDictionary.SetValue(chunkIndex,generatingCellBiomes);
                         chunkToCellInstanceIdsDictionary.SetValue(chunkIndex,generatingCellInstanceIds);
                         */
-                        loadedChunkIndexDict.SetValue(chunkIndex,true);
                     }
                     bool isInDetailRange=IsInDetailRange(GetPlayerPosition(),xStartChunkIndex,zStartChunkIndex);
-                    if(isInDetailRange){
-                        for(int i=0;i<generatingCells.Length;i++){
-                            brokenArr[i]=permanentBreakCellDictionary.GetValueOrDefault(ToGlobalCellIndex(i,chunkIndex),false);
-                        }
-                        detailChunkIndexDict.AddOrSetValue(chunkIndex,true);
-                        detailOperationDictionary.AddOrSetValue(chunkIndex,true);
+                    for(int i=0;i<generatingCells.Length;i++){
+                        brokenArr[i]=isInDetailRange&& permanentBreakCellDictionary.GetValueOrDefault(ToGlobalCellIndex(i,chunkIndex),false);
                     }
-                    var hasIItem=outlineDict.HasItem(chunkIndex);
-                    var outline = meshCombiner.CombineMesh(chunkObj,meshFilters,generatingCellInstanceIds,isInDetailRange,brokenArr,hasIItem);
-                    if(!hasIItem){
-                        outlineDict.Add(chunkIndex,outline);
-                    }
-                    chunkObj=null;
-                    unloadOperationDictionary.AddOrSetValue(chunkIndex,false);
+                    chunkStateDict.AddOrSetValue(chunkIndex,isInDetailRange?ChunkState.Detailed:ChunkState.UnDetailed);
+                    var hasIItem=false;//outlineDict.HasItem(chunkIndex);
+                    meshCombiner.CombineMesh(chunkObj,meshFilters,generatingCellInstanceIds,isInDetailRange,brokenArr,hasIItem);
+                    //if(!hasIItem){
+                    outlineDict.AddOrSetValue(chunkIndex,chunkObj);
+                    //}
+                    //chunkObj=null;
                     return GenerateChunkMode.Complete;
                 }
             }
@@ -882,6 +1069,8 @@ public class MapGenerator : IMapGenerator
 
 
     [SerializeField]int indestructibleLine=2;
+    [SerializeField]Transform playerSpawnPos;
+    [SerializeField]float IndestructibleRange=5;
     public GameObject GenerateCell(int xIndex,int zIndex,int yIndex,Transform parent){
         xValue = xIndex * scale + _seedX;
         zValue = zIndex  * scale+ _seedZ;
@@ -894,6 +1083,14 @@ public class MapGenerator : IMapGenerator
         
         biomeCell = GenerateBiome(xIndex,zIndex,parent);
         biomeCell.transform.localPosition = spawnPos;
+        ///////////////////////////
+        // WARNING: 特別処理
+        float playerSpawnChunkDist = (playerSpawnPos.position.x-spawnPos.x)*(playerSpawnPos.position.x-spawnPos.x)+(playerSpawnPos.position.z-spawnPos.z)*(playerSpawnPos.position.z-spawnPos.z);
+        if (playerSpawnChunkDist<IndestructibleRange*IndestructibleRange)
+        {
+            biomeCell.layer = 22;
+        }
+        ////////////////////////////
         //gc alloc
         /*if(biomeCell!=null){
             biomeCell.transform.localPosition = spawnPos;
@@ -923,7 +1120,21 @@ public class MapGenerator : IMapGenerator
         else{
             int tempIndex=Math.Min((int)(temperature * 5), 4);
             int humIndex=Math.Min((int)(humidity * 5), 4);
-            biomeType=biomeMap[tempIndex][humIndex];
+            switch(mission.PlanetType){
+                case PlanetType.Earth:
+                    biomeType=biomeEarthMap[tempIndex][humIndex];
+                    break;
+                case PlanetType.Moon:
+                    biomeType=biomeMoonMap[tempIndex][humIndex];
+                    break;
+                case PlanetType.Mars:
+                    biomeType=biomeMarsMap[tempIndex][humIndex];
+                    break;
+                default:
+                    Debug.LogError("PlanetType is not set");
+                    biomeType=Biome.Water;
+                    break;
+            }
         }
         var cell=BiomeTryToSpawn(biomeType);
         currentCellBiome=biomeType;

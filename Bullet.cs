@@ -19,16 +19,18 @@ public class Bullet : UdonSharpBehaviour
     IObjectPool bulletPool;
     
     float velMag;
+    [SerializeField]IObjectPool explosionPool;
 
     protected bool isOwner=false;
     public virtual void Init(
-        GunController gc,Vector3 velocity,Vector3 position, IObjectPool bulletPool){
+        GunController gc,Vector3 velocity,Vector3 position,Quaternion rotation, IObjectPool bulletPool){
         this.bulletPool=bulletPool;
         isOwner=true;
         if(gc==null)return;
         this.gc=gc;
         rg.MovePosition(position);
         rg.velocity = velocity ;
+        transform.localRotation=rotation;
         timer=0f;
         SendCustomEventDelayedSeconds(nameof(ReturnToPool),thresholdTime);
         ////Debug.Log("bullet Init");
@@ -37,7 +39,7 @@ public class Bullet : UdonSharpBehaviour
     float baseDuration=0.6f;
 
     float timer=-1f;
-    [SerializeField]float thresholdTime=2f;
+    [SerializeField]float thresholdTime=3f;
     public void ReturnToPool(){
         if(isOwner){
             isOwner=false;
@@ -48,7 +50,8 @@ public class Bullet : UdonSharpBehaviour
     }
 
     public void Return(){
-        Debug.Log("bulelt Return");
+        //Debug.Log("bulelt Return");
+        isOwner=false;
        bulletPool.Return(this.gameObject);
     }
 
@@ -58,35 +61,27 @@ public class Bullet : UdonSharpBehaviour
     string Stage="Stage";
     string BulletStage="BulletStage";
 
-    [SerializeField]IObjectPool explosionPool;
     private void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Bullet Enter "+ col.name);
+        //Debug.Log("Bullet Enter "+ col.name);
         _OnTriggerEnter(col);
+    }
+    public void _OnEnable(){
+        
+    }
+    public void _OnDisable(){
+        isOwner=false;
+        bulletPool=null;
     }
     protected virtual void _OnTriggerEnter(Collider col)
     {
-        if(!isOwner)return;
-        isOwner=false;
         var explosion=explosionPool.TryToSpawn();
         if(explosion!=null){
-            explosion.transform.position = this.transform.position;
             var expComp=explosion.GetComponent<RockerExplosion>();
-            expComp.Init(rg.velocity.normalized);
+            expComp.Init(this.transform.position,explosionPool,isOwner);
         }else{
-            Debug.LogError("explosion is empty");
+            Debug.LogWarning("explosion is empty");
         }
-
-        Return();
-    }
-
-
-    bool TryAttack(Enemy enemy){
-        if(enemy == null || !enemy.isAlive || enemy.IsInPool){
-            return false;
-        }
-        ////Debug.Log("TryAttack: count"+enemy.name);
-        if(gc==null || !isOwner)return false;
-        return true;
+        if(isOwner)Return();
     }
 }

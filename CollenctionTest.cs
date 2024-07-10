@@ -60,9 +60,12 @@ public class CollenctionTest : UdonSharpBehaviour
     GameObject[] objArr;
     string strTest="test";
     [SerializeField]UnrolledMapGenerator generator;
+    int GetInRangeStartZChunkIndex(Vector3 pos){
+        return 0;
+    }
     void Update()
     {
-        if(!startSpawn)return;
+        //var hoge=new GameObject[10];
         for(i=0;i<40;i++){
             // no alloc
             //float a1=one.x;
@@ -73,9 +76,15 @@ public class CollenctionTest : UdonSharpBehaviour
             /*foreach(var aa in str){
                 var k=aa;
             }*/
+            GetInRangeStartZChunkIndex(one);
+            //var a= new GameObject[5];
             //var c=obj;
-            var c=obj;
-            GameObject[] w=objArr;
+            //Debug.Log(obj[0]!=null);
+            //obj[0]=null;
+            //obj=null;
+            //GameObject[] w=objArr;
+            //Debug.Log(obj[0]==null);
+            //Debug.Log(temp!=null);
 
             // alloc
             //var ls="test_123".Split('_');
@@ -103,6 +112,34 @@ public class CollenctionTest : UdonSharpBehaviour
     void Start()
     {
         objArr=new GameObject[10];
+        var hoge=new GameObject[10];
+        for(i=0;i<10;i++){
+            // no alloc
+            //float a1=one.x;
+            //float a2=one.y;
+            //float a3=one.z;
+            //Mathf.PerlinNoise(i,i);
+            //var ka2=ka.Contains(strTest);
+            /*foreach(var aa in str){
+                var k=aa;
+            }*/
+            GameObject temp;
+            //var c=obj;
+            //Debug.Log(obj[0]!=null);
+            temp=objArr[i];
+            hoge[i]=temp;
+            //obj[0]=null;
+            //obj=null;
+            //GameObject[] w=objArr;
+            //Debug.Log(obj[0]==null);
+            //Debug.Log(temp!=null);
+        }
+        for(i=0;i<10;i++){
+            objArr[i]=null;
+            Debug.Log(hoge[i]!=objArr[i]);
+        }
+        if(!startSpawn)return;
+        
         iToMdic.SetCapacity(10);
         iToMdic.AddOrSetValue(0,GetComponent<MeshRenderer>());
         zero=new Vector3(0,0,0);
